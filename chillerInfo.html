@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
         <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +28,7 @@
 <style>
     .navbar-brand,
 .navbar-nav li a {
-    /*line-height: 50px;*/
+    line-height: 50px;
     height: 50px;
     padding-top: 0;
 }
@@ -44,6 +46,10 @@ background-color:#d3d3d3;
         font-size:larger;
     }
     .jumbotron{
+        text-align:right;
+        width: 500px;
+        height: 500px;
+        border-color: #080808;
     }
     .large{
      font-size: 200%;
@@ -51,6 +57,44 @@ background-color:#d3d3d3;
     .login{
         padding-top: 25px;
     }
+    ul{
+        list-style-type: none;
+    }
+  .info{
+      border-collapse: collapse;
+      text-align: right;
+  }
+    #center{
+    }
+    .centerTable{
+        alignment:center;
+        background-color: #2e6da4;
+    }
+    .status{
+        background-color: #2e6da4;
+        text-align: center;
+    }
+    .content{
+        width: 500px;
+        height: 500px;
+    }
+.footer{
+    float:right;
+    border-top: 10px;
+}
+.col-md-1{
+        background-color: #ffffff;
+        border-top-color: grey;
+    width:100px;
+}
+    h1{
+        text-align: center;
+    }
+    .text-center
+{
+    text-align: center !important;
+}
+
 </style>
 </head>
 <body>
@@ -76,91 +120,124 @@ background-color:#d3d3d3;
                            </td>
                        </tr>
                    </table>
-
-
           </form>
-
-
-
 </div>
     </div>
+<div class="container">
+<table class="table table-bordered centerTable">
+    <tr>
+        <td>
 
-    <!--<div class="container" id="center">-->
-                    <!--<div class="row">-->
-         <!--<div class="col-md-6">-->
-                   <!--&lt;!&ndash; Jumbotron &ndash;&gt;-->
-      <!--<div class="jumbotron">-->
-        <!--<h1>CENTURY</h1>-->
-          <!--<ul>-->
-              <!--<li><button>Status</button></li>-->
+<div class="box">
+         <h1 class="panel-heading">CENTURY</h1>
+    <div class="box status">
+        <div class="text-center">
+        <div class="row">
+              <div class="col-md-1 btn">Status</div>
+        </div>
+           <div class="row">
+              <div class="col-md-1 btn">Setting</div>
+        </div>
+           <div class="row">
+              <div class="col-md-1 btn">Input/Output</div>
+        </div>
+           <div class="row">
+              <div class="col-md-1 btn">others</div>
+        </div>
+           <!--<ul>-->
+              <!--<li><button class="">Status</button></li>-->
        <!--<li><button>Setting</button></li>-->
               <!--<li><button>Input/Output</button></li>-->
               <!--<li><button>others</button></li>-->
            <!--</ul>-->
-       <!--<input  type="button" class="btn btn-success" value="start" />-->
-          <!--<input  type="button" class="btn btn-danger" value="stop" />-->
-                <!--<footer class="footer">-->
-        <!--<p id="date"></p>-->
+    </div>
+        </div>
+
+         <input  type="button" class="btn" value="start" />
+          <input  type="button" class="btn" value="stop" />
+                <footer class="footer">
+        <p id="date"></p>
+      </footer>
+
+
+
+</div>
+
+
+        </td>
+        <td>
+<div class="box info">
+
+          <ul>
+            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">مجتمع مسکونی معالی اباد شیراز</span></li>
+              </br>
+            <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">؟؟؟؟؟؟؟؟؟؟</span></li>
+                </br>
+               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">نامجو</span></li>
+                </br>
+              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">0000000000</span></li>
+
+           </ul>
+
+</div>
+
+        </td>
+    </tr>
+</table>
+
+
+    </div>
+
+
+
+
+
+
+                   <!-- Jumbotron -->
+
+
+
+
+
+
+
+
+      <!--&lt;!&ndash; Site footer &ndash;&gt;-->
+      <!--<footer class="footer">-->
+        <!--<p>&copy; Company 2014</p>-->
       <!--</footer>-->
-      <!--</div>-->
-         <!--</div>-->
-            <!--<div class="row">-->
-         <!--<div class="col-md-6">-->
-                   <!--&lt;!&ndash; Jumbotron &ndash;&gt;-->
-      <!--<div class="jumbotron">-->
-        <!--<h1>CHILLER #2</h1>-->
-          <!--<ul>-->
-              <!--<li>نام مجموعه : </li>-->
-              <!--<li>نام مالک : </li>-->
-              <!--<li>نام مسیول چیلز : </li>-->
-              <!--<li>تلقن مسیول چیلر : </li>-->
-           <!--</ul>-->
-      <!--</div>-->
-         <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
-
-
-      <!--&lt;!&ndash;&lt;!&ndash; Site footer &ndash;&gt;&ndash;&gt;-->
-      <!--&lt;!&ndash;<footer class="footer">&ndash;&gt;-->
-        <!--&lt;!&ndash;<p>&copy; Company 2014</p>&ndash;&gt;-->
-      <!--&lt;!&ndash;</footer>&ndash;&gt;-->
-<!--</div>-->
-
-<!--</div>-->
 
 
 
 
 
 
-<!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt;-->
-<!--<script src="jquery-2.1.4.min.js"></script>-->
-<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files-->
-<!--as needed &ndash;&gt;-->
-<!--<script src="js/bootstrap.min.js"></script>-->
-    <!--&lt;!&ndash; Bootstrap core JavaScript-->
-    <!--================================================== &ndash;&gt;-->
-    <!--&lt;!&ndash; Placed at the end of the document so the pages load faster &ndash;&gt;-->
-    <!--<script src="js/bootstrap.min.js"></script>-->
-    <!--<script src="js/docs.min.js"></script>-->
-    <!--&lt;!&ndash; IE10 viewport hack for Surface/desktop Windows 8 bug &ndash;&gt;-->
-    <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
-<!--<script>-->
-     <!--$(document).ready(function(){-->
-         <!--$("#date").append(showDate());-->
-     <!--});-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jquery-2.1.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files
+as needed -->
+<script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+<script>
+     $(document).ready(function(){
+         $("#date").append(showDate());
+     });
 
-    <!--function showDate(){-->
-        <!--var d = new Date(),-->
-    <!--minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),-->
-    <!--hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),-->
-    <!--ampm = d.getHours() >= 12 ? 'pm' : 'am',-->
-    <!--months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],-->
-    <!--days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];-->
-<!--return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;-->
-    <!--}-->
-<!--</script>-->
+    function showDate(){
+        var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+    }
+</script>
 </body>
 </html>
