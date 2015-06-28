@@ -23,10 +23,27 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-#logo{
-    width: 100%;
-    height: 100%;
+/*#logo{*/
+    /*width: 200%;*/
+    /*height: 200%;*/
+/*}*/
+.navbar-inner {
+    min-height: 0px;
 }
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+#logo {
+    width: 150px;
+    height: auto;
+    border-top: none;
+}
+
+
 
 .btn {	border:1px solid grey;
 background-color:#d3d3d3;
@@ -36,22 +53,28 @@ background-color:#d3d3d3;
         font-weight: bold;
         font-size:larger;
     }
+    #login{
+        float:left;
+        padding-top: 25px;
+    }
+    .navbar{
+
+    }
 </style>
 </head>
 <body>
 
 
 <div class="navbar navbar-default">
-
 <div class="container">
-
 <div class="navbar-header">
 
-<a href="" class="navbar-brand"><img id="logo" src="chiller/123.bmp"></a>
+
+<a href="" class="navbar-brand"><img id="logo" src="chiller/imageedit_2_6147829167.bmp"></a>
+    <!--</div>-->
     </div>
-    </div>
-<div class="container">
-              <form class="navbar-form navbar-right">
+<!--<div class="container">-->
+              <form id="login" class="navbar-form navbar-right">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
@@ -62,130 +85,131 @@ background-color:#d3d3d3;
           </form>
 
 </div>
-
-<div class="container" id="chillers">
-    <div class="row">
-         <div class="col-md-6 btn">Shiraz Doctors Building</div>
     </div>
-<div class="row">
 
-    <div class="col-md-6 btn">Chiller 1</div>
-    <div class="col-md-6 btn">Chiller 2</div>
-    <div class="col-md-6 btn">Chiller 3</div>
-    <div class="col-md-6 btn">Chiller 4</div>
-    <div class="col-md-6 btn">Chiller 5</div>
+<!--<div class="container" id="chillers">-->
+    <!--<div class="row">-->
+         <!--<div class="col-md-6 btn">Shiraz Doctors Building</div>-->
+    <!--</div>-->
+<!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 1</div>-->
+    <!--<div class="col-md-6 btn">Chiller 2</div>-->
+    <!--<div class="col-md-6 btn">Chiller 3</div>-->
+    <!--<div class="col-md-6 btn">Chiller 4</div>-->
+    <!--<div class="col-md-6 btn">Chiller 5</div>-->
 
-    <div class="col-md-6 btn">Chiller 6</div>
-    <div class="col-md-6 btn">Chiller 7</div>
-    <div class="col-md-6 btn">Chiller 8</div>
-    <div class="col-md-6 btn">Chiller 9</div>
-    <div class="col-md-6 btn">Chiller 10</div>
+<!--</div>-->
+    <!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 6</div>-->
+    <!--<div class="col-md-6 btn">Chiller 7</div>-->
+    <!--<div class="col-md-6 btn">Chiller 8</div>-->
+    <!--<div class="col-md-6 btn">Chiller 9</div>-->
+    <!--<div class="col-md-6 btn">Chiller 10</div>-->
 
-    <div class="col-md-6 btn">Chiller 11</div>
-    <div class="col-md-6 btn">Chiller 12</div>
-    <div class="col-md-6 btn">Chiller 13</div>
-    <div class="col-md-6 btn">Chiller 14</div>
-    <div class="col-md-6 btn">Chiller 15</div>
+<!--</div>-->
+    <!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 11</div>-->
+    <!--<div class="col-md-6 btn">Chiller 12</div>-->
+    <!--<div class="col-md-6 btn">Chiller 13</div>-->
+    <!--<div class="col-md-6 btn">Chiller 14</div>-->
+    <!--<div class="col-md-6 btn">Chiller 15</div>-->
 
-    <div class="col-md-6 btn">Chiller 16</div>
-    <div class="col-md-6 btn">Chiller 17</div>
-    <div class="col-md-6 btn">Chiller 18</div>
-    <div class="col-md-6 btn">Chiller 19</div>
-    <div class="col-md-6 btn">Chiller 20</div>
+<!--</div>-->
+    <!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 16</div>-->
+    <!--<div class="col-md-6 btn">Chiller 17</div>-->
+    <!--<div class="col-md-6 btn">Chiller 18</div>-->
+    <!--<div class="col-md-6 btn">Chiller 19</div>-->
+    <!--<div class="col-md-6 btn">Chiller 20</div>-->
 
-    <div class="col-md-6 btn">Chiller 21</div>
-    <div class="col-md-6 btn">Chiller 22</div>
-    <div class="col-md-6 btn">Chiller 23</div>
-    <div class="col-md-6 btn">Chiller 24</div>
-    <div class="col-md-6 btn">Chiller 25</div>
+<!--</div>-->
+    <!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 21</div>-->
+    <!--<div class="col-md-6 btn">Chiller 22</div>-->
+    <!--<div class="col-md-6 btn">Chiller 23</div>-->
+    <!--<div class="col-md-6 btn">Chiller 24</div>-->
+    <!--<div class="col-md-6 btn">Chiller 25</div>-->
 
-    <div class="col-md-6 btn">Chiller 26</div>
-    <div class="col-md-6 btn">Chiller 27</div>
-    <div class="col-md-6 btn">Chiller 28</div>
-    <div class="col-md-6 btn">Chiller 29</div>
-    <div class="col-md-6 btn">Chiller 30</div>
+<!--</div>-->
+    <!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 26</div>-->
+    <!--<div class="col-md-6 btn">Chiller 27</div>-->
+    <!--<div class="col-md-6 btn">Chiller 28</div>-->
+    <!--<div class="col-md-6 btn">Chiller 29</div>-->
+    <!--<div class="col-md-6 btn">Chiller 30</div>-->
 
-    <div class="col-md-6 btn">Chiller 31</div>
-    <div class="col-md-6 btn">Chiller 32</div>
-    <div class="col-md-6 btn">Chiller 33</div>
-    <div class="col-md-6 btn">Chiller 34</div>
-    <div class="col-md-6 btn">Chiller 35</div>
+<!--</div>-->
+    <!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 31</div>-->
+    <!--<div class="col-md-6 btn">Chiller 32</div>-->
+    <!--<div class="col-md-6 btn">Chiller 33</div>-->
+    <!--<div class="col-md-6 btn">Chiller 34</div>-->
+    <!--<div class="col-md-6 btn">Chiller 35</div>-->
 
-    <div class="col-md-6 btn">Chiller 36</div>
-    <div class="col-md-6 btn">Chiller 37</div>
-    <div class="col-md-6 btn">Chiller 38</div>
-    <div class="col-md-6 btn">Chiller 39</div>
-    <div class="col-md-6 btn">Chiller 40</div>
+<!--</div>-->
+    <!--<div class="row">-->
 
-</div>
-    <div class="row">
+    <!--<div class="col-md-6 btn">Chiller 36</div>-->
+    <!--<div class="col-md-6 btn">Chiller 37</div>-->
+    <!--<div class="col-md-6 btn">Chiller 38</div>-->
+    <!--<div class="col-md-6 btn">Chiller 39</div>-->
+    <!--<div class="col-md-6 btn">Chiller 40</div>-->
 
-
-    <div class="col-md-6 btn">Chiller 41</div>
-    <div class="col-md-6 btn">Chiller 42</div>
-    <div class="col-md-6 btn">Chiller 43</div>
-    <div class="col-md-6 btn">Chiller 44</div>
-        <div class="col-md-6 btn">Chiller 45</div>
-
-</div>
-    <div class="row">
+<!--</div>-->
+    <!--<div class="row">-->
 
 
-    <div class="col-md-6 btn">Chiller 46</div>
-    <div class="col-md-6 btn">Chiller 47</div>
-    <div class="col-md-6 btn">Chiller 48</div>
-    <div class="col-md-6 btn">Chiller 49</div>
-        <div class="col-md-6 btn">Chiller 50</div>
+    <!--<div class="col-md-6 btn">Chiller 41</div>-->
+    <!--<div class="col-md-6 btn">Chiller 42</div>-->
+    <!--<div class="col-md-6 btn">Chiller 43</div>-->
+    <!--<div class="col-md-6 btn">Chiller 44</div>-->
+        <!--<div class="col-md-6 btn">Chiller 45</div>-->
+
+<!--</div>-->
+    <!--<div class="row">-->
 
 
-</div>
-
-</div>
-    </br>
-    </br>
-    <div class="alert alert-danger">
-        <strong>Put Warning Here</strong>
-    </div>
-</div>
+    <!--<div class="col-md-6 btn">Chiller 46</div>-->
+    <!--<div class="col-md-6 btn">Chiller 47</div>-->
+    <!--<div class="col-md-6 btn">Chiller 48</div>-->
+    <!--<div class="col-md-6 btn">Chiller 49</div>-->
+        <!--<div class="col-md-6 btn">Chiller 50</div>-->
 
 
+<!--</div>-->
+
+<!--</div>-->
+    <!--</br>-->
+    <!--</br>-->
+    <!--<div class="alert alert-danger">-->
+        <!--<strong>Put Warning Here</strong>-->
+    <!--</div>-->
+<!--</div>-->
 
 
 
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="jquery-2.1.4.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files
-as needed -->
-<script src="js/bootstrap.min.js"></script>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt;-->
+<!--<script src="jquery-2.1.4.min.js"></script>-->
+<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files-->
+<!--as needed &ndash;&gt;-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+    <!--&lt;!&ndash; Bootstrap core JavaScript-->
+    <!--================================================== &ndash;&gt;-->
+    <!--&lt;!&ndash; Placed at the end of the document so the pages load faster &ndash;&gt;-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!--<script src="js/docs.min.js"></script>-->
+    <!--&lt;!&ndash; IE10 viewport hack for Surface/desktop Windows 8 bug &ndash;&gt;-->
+    <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
 </body>
 </html>
