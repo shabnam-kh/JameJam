@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Sensum.io Demo">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <!--
+    <script src="bower_components/platform/platform.js"></script>
+    <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
+    <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="bower_components/core-menu/core-menu.html">
+    <link rel="import" href="bower_components/core-item/core-item.html">
+    <link rel="import" href="bower_components/paper-toast/paper-toast.html">
+    <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+    -->
+    <!-- /meta -->
+    <title>Klappo App Demo</title>
+    <!-- page level plugin styles -->
+    <link rel="stylesheet" href="sublime-8641124-2014101/plugins/chosen/chosen.min.css">
+    <link rel="stylesheet" href="sublime-8641124-2014101/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="sublime-8641124-2014101/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <!-- /page level plugin styles -->
+    <!-- core styles -->
+    <link rel="stylesheet" href="sublime-8641124-2014101/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sublime-8641124-2014101/css/font-awesome.css">
+    <link rel="stylesheet" href="sublime-8641124-2014101/css/themify-icons.css">
+    <link rel="stylesheet" href="sublime-8641124-2014101/css/animate.min.css">
+    <!-- /core styles -->
+    <!-- template styles -->
+    <link rel="stylesheet" href="sublime-8641124-2014101/css/skins/palette.css">
+    <link rel="stylesheet" href="sublime-8641124-2014101/css/fonts/font.css">
+    <link rel="stylesheet" href="sublime-8641124-2014101/css/main.css">
+    <!-- template styles -->
+    <!-- load modernizer -->
+    <script src="bower_components/modernizer/modernizr.js"></script>
+    <!-- Gestures -->
+    <script src="bower_components/hammerjs/hammer.min.js"></script>
+    <!--<script src="js/"-->
+    <!-- load i18n -->
+    <script src="js/i18next-1.7.7.min.js"></script>
+
+    <!--Libraries-->
+    <script src="js/com/klappo/model/user.js"></script>
+    <script src="js/com/klappo/util/email.js"></script>
+    <script src="js/com/klappo/model/userProfile.js"></script>
+    <script src="js/com/klappo/model/wearable.js"></script>
+    <script src="js/com/klappo/model/userTimeline/UserTimeline.js"></script>
+    <script src="js/com/klappo/model/userTimeline/UserTimeLineEvent.js"></script>
+
+    <!--Libraries-->
+
+    <!-- Polymer -->
+    <!--
+    <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="../bower_components/paper-elements/paper-elements.html">
+    <link rel="import" href="../bower_components/core-icons/image-icons.html">
+    <link rel="import" href="../bower_components/core-icons/maps-icons.html">
+    -->
+</head>
+<body style="background: #F1F4F9">
+<? //this is a comment ?>
+<div id="log-overlay" onClick="javascript:logging();"
+     style="background-color:#000000; opacity: 0.2;width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 10;display: none;"></div>
+<img hidden id="log-button" onClick="javascript:logging();" src="img/logging.png"
+     style="-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));filter: url(#drop-shadow);-ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444');position: fixed;bottom: 3%;right: 5%;text-align:center;z-index:1234;overflow: auto;">
+<img hidden id="log-recipe-button" onClick="javascript:logging();smartSearch();" src="img/logging-recipe.png"
+     style="-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));filter: url(#drop-shadow);-ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444');position: fixed;bottom: 15%;right: 5%;text-align:center;z-index:1234;overflow: auto;">
+<!-- { rzsh -->
+<img hidden id="log-product-button" onClick="javascript:logging();barcodeReader();" src="img/logging-product.png"
+     style="-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));filter: url(#drop-shadow);-ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444');position: fixed;bottom: 25%;right: 5%;text-align:center;z-index:1234;overflow: auto;">
+<img hidden id="log-restaurant-button"
+     onClick="javascript:logging();switchPage('foodAroundMe');initRestaurantsAround(currentlat,currentlong);"
+     src="img/logging-restaurant.png"
+     style="-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));filter: url(#drop-shadow);-ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444');position: fixed;bottom: 35%;right: 5%;text-align:center;z-index:1234;overflow: auto;">
+<img hidden id="log-picture-button" onClick="" src="img/logging-picture.png"
+     style="-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));filter: url(#drop-shadow);-ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444');position: fixed;bottom: 45%;right: 5%;text-align:center;z-index:1234;overflow: auto;">
+
+<div id="loading-gif" class="fa fa-spinner fa-spin"
+     style="position: fixed;top: 50%;left: 50%;margin-top: 100px;text-align:center;z-index:1234;overflow: auto;display:none;"></div>
+<div id="overlay"
+     style="background-color:#000000; opacity: 0.2;width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 10;display: none;"></div>
+<div class="app" id="mainApp" style="display: none;">
+    <!-- top header -->
+    <header class="header header-fixed navbar">
+        <div class="brand">
+            <!-- toggle offscreen menu -->
+            <a id="menuToggleBut" href="javascript:;" class="ti-menu off-left visible-xs" data-toggle="offscreen"
+               data-move="ltr"></a>
+            <!-- /toggle offscreen menu -->
+            <!-- Location service -->
+            <!--<a href="javascript:;" class="fa fa-location-arrow visible-xs left" data-toggle="offscreen" data-move="ltr"></a>-->
+            <!-- logo -->
+            <a href="#"
+               onClick="javascript:switchPage('welcomePage');makeViewFromTemplate('appWrapper','welcomePage', {});"
+               class="navbar-brand">
+                <img src="img/sensumIcon.png" alt="">
+<span class="heading-font">
+Klappo
+</span>
+            </a>
+            <!-- /logo -->
+        </div>
+    </header>
+    <!-- /top header -->
+    <section class="layout" style="padding-top: 50px;">
+        <!-- sidebar menu -->
+        <aside class="sidebar offscreen-left">
+            <!-- main navigation -->
+            <nav class="main-navigation" data-height="auto" data-size="6px" data-distance="0" data-rail-visible="true"
+                 data-wheel-step="10">
+                <div id="sideBarContentLeft"></div>
+            </nav>
+        </aside>
+        <!-- /sidebar menu -->
+        <!-- main content -->
+        <section id="appMain-content" class="main-content">
+            <!-- content wrapper -->
+            <div class="content-wrap">
+                <!-- inner content wrapper -->
+                <div class="wrapper" id="appWrapper">
+
+                </div>
+                <!-- /inner content wrapper -->
+            </div>
+            <!-- /content wrapper -->
+            <a class="exit-offscreen"></a>
+        </section>
+        <!-- /main content -->
+    </section>
+</div>
+<script id="view-tpl" type="text/template">
+    <div id="{{id}}" class="animated fadeInUpBig KlappoRow KlappoRes">
+    </div>
+</script>
+<!-- core scripts -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
+<script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+<script src="bower_components/jquery.appear.js/jquery.appear.js"></script>
+<script src="bower_components/jquery.placeholder/jquery.placeholder.min.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- /core scripts -->
+<!-- page level scripts -->
+<script src="sublime-8641124-2014101/plugins/flot/jquery.flot.js"></script>
+<script src="sublime-8641124-2014101/plugins/flot/jquery.flot.resize.js"></script>
+<script src="sublime-8641124-2014101/plugins/flot/jquery.flot.categories.js"></script>
+<script src="sublime-8641124-2014101/plugins/flot/jquery.flot.stack.js"></script>
+<script src="sublime-8641124-2014101/plugins/flot/jquery.flot.time.js"></script>
+<script src="sublime-8641124-2014101/plugins/flot/jquery.flot.orderBars.js"></script>
+<script src="sublime-8641124-2014101/plugins/flot/jquery.flot.pie.js"></script>
+<script src="sublime-8641124-2014101/plugins/jquery.sparkline.js"></script>
+<script src="sublime-8641124-2014101/plugins/easy-pie-chart/jquery.easypiechart.js"></script>
+<script src="sublime-8641124-2014101/plugins/raphael.min.js"></script>
+<script src="sublime-8641124-2014101/plugins/morris/morris.js"></script>
+<script src="sublime-8641124-2014101/plugins/chartjs/Chart.min.js"></script>
+<script src="sublime-8641124-2014101/plugins/chosen/chosen.jquery.min.js"></script>
+<script src="sublime-8641124-2014101/plugins/count-to/jquery.countTo.js"></script>
+<script src="bower_components/toastr/toastr.min.js"></script>
+<script src="sublime-8641124-2014101/plugins/icheck/icheck.min.js"></script>
+<script src="sublime-8641124-2014101/plugins/switchery/switchery.js"></script>
+<!-- /page level scripts -->
+<!-- template scripts -->
+<script src="sublime-8641124-2014101/js/offscreen.js"></script>
+<script src="sublime-8641124-2014101/js/main.js"></script>
+<!-- /template scripts -->
+
+<!-- html template filling -->
+<script src="bower_components/handlebars/handlebars.js"></script>
+<!-- Format -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/moment-timezone/moment-timezone.js"></script>
+<script src="bower_components/jstimezonedetect/jstz.js"></script>
+
+<!--Libraries-->
+<script src="js/com/klappo/model/user.js"></script>
+<script src="js/com/klappo/model/userProfile.js"></script>
+<script src="js/com/klappo/util/email.js"></script>
+<script src="js/com/klappo/model/wearable.js"></script>
+<script src="js/com/klappo/model/activity.js"></script>
+<script src="js/com/klappo/model/SettingManager/StorageManager.js"></script>
+<script src="js/com/klappo/util/time.js"></script>
+<script src="js/com/klappo/util/jsonUtillity.js"></script>
+<script src="js/com/klappo/util/response.js"></script>
+<script src="js/com/klappo/model/appSetting.js"></script>
+<script src="js/com/klappo/model/foodIntollerance.js"></script>
+<script src="js/com/klappo/util/noftiymanager.js"></script>
+<script src="js/com/klappo/util/msgexception.js"></script>
+<!--/Libraries-->
+
+<script src="js/actions.js"></script>
+<script src="js/coordinator.js"></script>
+<script src="js/mobile.js"></script>
+<script src="js/utils.js"></script>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/mobileStyle.css">
+<!-- Visulise -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyBhdWkQtisDoYxR7gO6isEPysGbHO9K4wU"></script>
+</body>
+<!-- body -->
+<!-- /body -->
+</html>
