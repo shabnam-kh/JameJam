@@ -74,6 +74,7 @@ background-color:#d3d3d3;
         background-color: #2e6da4;
         text-align: center;
     }
+
     .content{
         width: 500px;
         height: 500px;
@@ -94,7 +95,14 @@ background-color:#d3d3d3;
 {
     text-align: center !important;
 }
-
+.statusBtn{
+    border-top-color: gray;
+    width: 100px;
+    height: 50px;
+}
+    textarea{
+        overflow-y: scroll;
+    }
 </style>
 </head>
 <body>
@@ -131,26 +139,21 @@ background-color:#d3d3d3;
 <div class="box">
          <h1 class="panel-heading">CENTURY</h1>
     <div class="box status">
-        <div class="text-center">
-        <div class="row">
-              <div class="col-md-1 btn">Status</div>
-        </div>
-           <div class="row">
-              <div class="col-md-1 btn">Setting</div>
-        </div>
-           <div class="row">
-              <div class="col-md-1 btn">Input/Output</div>
-        </div>
-           <div class="row">
-              <div class="col-md-1 btn">others</div>
-        </div>
+                  <input  type="button" class="btn statusBtn" value="Status" />
+        </br>
+        <input  type="button" class="btn statusBtn" value="Setting " />
+         </br>
+        <input  type="button" class="btn statusBtn" value="Input/Output" />
+         </br>
+        <input  type="button" class="btn statusBtn" value="others" />
+
            <!--<ul>-->
               <!--<li><button class="">Status</button></li>-->
        <!--<li><button>Setting</button></li>-->
               <!--<li><button>Input/Output</button></li>-->
               <!--<li><button>others</button></li>-->
            <!--</ul>-->
-    </div>
+
         </div>
 
          <input  type="button" class="btn" value="start" />
@@ -184,8 +187,9 @@ background-color:#d3d3d3;
         </td>
     </tr>
 </table>
-
-
+ <div class="form-group">
+  <textarea class="form-control" rows="5" id="warning"></textarea>
+</div>
     </div>
 
 
