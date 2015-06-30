@@ -74,7 +74,7 @@ background-color:#d3d3d3;
         background-color: blue;
     }
     .status{
-        background-color: #66afe9;
+        background-color: #8ABBD0;
         text-align: center;
     }
 
@@ -112,11 +112,22 @@ background-color:#d3d3d3;
     }
     #x{
         width: 70px;
-        background-color:#66afe9;
+        background-color:#8ABBD0;
         color: #ffffff;
     }
     progress{
-
+        color: #080808;
+        position: relative;
+        bottom: 10px;
+        z-index: 1;
+        width: 160px;
+    }
+    .progressIndex{
+        font-size: x-small;
+        position: relative;
+        top: 25px;
+        left:5px;
+        z-index: 2;
     }
 </style>
 </head>
@@ -160,59 +171,108 @@ background-color:#d3d3d3;
     <tr>
         <td><label for="ID">CHW OutLet Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+          <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+        <progress value="50" max="100"></progress>
+        </td>
+
+
     </tr>
      <tr>
         <td><label for="ID">Dilution Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress aria-label="123" value="50" max="100"></progress></td>
+        <td>
+         <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress aria-label="123" value="50" max="100"></progress>
+        </td>
     </tr>
       <tr>
         <td><label for="ID">Ref. Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+          <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="50" max="100"></progress>
+        </td>
     </tr>
      <tr>
         <td><label for="ID">HTW OutLet Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="50" max="100"></progress></td>
     </tr>
     <tr>
         <td><label for="ID">Valve Position </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="50" max="100"></progress></td>
     </tr>
         <tr>
         <td><label for="ID">CHW InLet Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="50" max="100"></progress></td>
     </tr>
     </tr>
         <tr>
         <td><label for="ID">HTW InLet Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="50" max="100"></progress></td>
     </tr>
         </tr>
         <tr>
         <td><label for="ID">COW InLet Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="50" max="100"></progress></td>
     </tr>
       <tr>
         <td><label for="ID">COW OutLet Temp </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="50" max="100"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="50" max="100"></progress></td>
     </tr>
       <tr>
         <td><label for="ID">Solution Temp  </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="100" max="400"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="100" max="400"></progress></td>
     </tr>
       <tr>
         <td><label for="ID">Exhaust Temp  </label></td>
         <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
-        <td><progress value="100" max="400"></progress></td>
+        <td>
+             <p class="progressIndex">
+            '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
+        </p>
+            <progress value="100" max="400"></progress></td>
     </tr>
 </table>
 
