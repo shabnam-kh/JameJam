@@ -83,6 +83,12 @@ background-color:#d3d3d3;
         background-color:#8ABBD0;
         color: #ffffff;
     }
+    .field{
+        background-color:#8ABBD0;
+        color: #ffffff;
+        /*border: solid;*/
+        /*border-color: lightslategray;*/
+    }
     progress{
         position: relative;
         bottom: 10px;
@@ -144,7 +150,7 @@ background-color:#d3d3d3;
 <table>
     <tr>
         <td><label for="ID">CHW OutLet Temp </label></td>
-        <td><input  type="email" name="email" placeholder=" @@@@" id="x"/></td>
+        <td><input type="text" class="field" value=""></td>
         <td>
           <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -268,7 +274,8 @@ background-color:#d3d3d3;
 
 </div>
         <div id="footerPart">
-                <input  type="button" class="btn" value="start" />
+            <button id="fake">click</button>
+                <input type="button" class="btn" value="start" />
           <input  type="button" class="btn" value="stop" />
                 <footer class="footer">
         <p id="date"></p>
@@ -334,6 +341,7 @@ background-color:#d3d3d3;
 <!-- Include all compiled plugins (below), or include individual files
 as needed -->
 <script src="../js/bootstrap.min.js"></script>
+         <script src="../js/temp.js"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -342,9 +350,17 @@ as needed -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
 <script>
+
      $(document).ready(function(){
          $("#date").append(showDate());
      });
+     var myVar = setInterval(function () {
+
+         showDigi(function(res){
+
+                $(".field").val(res);
+         })
+     }, 5000);
 
     function showDate(){
         var d = new Date(),
