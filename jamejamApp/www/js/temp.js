@@ -34,8 +34,6 @@ var reqFlag=false;
 
      },2000)
 
-
-    var serverURL="http://192.69.204.34:8001/";
      var baseUrl='http://localhost:3000';
 
      function sendReq(callFail,callSuccess){
@@ -43,7 +41,7 @@ var reqFlag=false;
          $.ajax(
              {
                  url: serverURL,
-                 timeout: 5000,
+                 timeout: 2000,
                  success: function (data, textStatus, jqXHR) {
                      console.log("ajax req " + textStatus);
                      console.log("ajax req data " + data);
@@ -61,17 +59,19 @@ var reqFlag=false;
 
      }
     function divideHex(hexArray){
-            var count=Math.floor(hexArray.length/11);
-            //var count=6;
+        //    var count=Math.floor(hexArray.length/11);
+        //    //var count=6;
+        //for(i=1;i<12;i++){
+        //    var j=(i-1)*count;
+        //    var temp="";
+        //    for(k=1;k<=count;k++){
+        //        var varia=hexArray[j+k]+" ";
+        //        temp=temp+varia;}
+        //    $("#field"+i).val(temp);
+        //}
         for(i=1;i<12;i++){
-            var j=(i-1)*count;
-            var temp="";
-            for(k=1;k<=count;k++){
-                var varia=hexArray[j+k]+" ";
-                temp=temp+varia;}
-            $("#field"+i).val(temp);
+            $("#field"+i).val(hexArray[i]);
         }
-
 
     }
     function showDate(){
