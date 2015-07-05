@@ -16,7 +16,10 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     <script src="../js/angular.min.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/information.js"></script>
+    <script src="../js/handlebars-v3.0.3.js"></script>
+    <script src="../js/chillerInfoHandle.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -179,11 +182,13 @@ background-color:#d3d3d3;
 
          </div>
 
+
         <div class="col-md-5 box infoBox">
             <!--<div ng-app="">-->
   <!--<p>Name : <input type="text" ng-model="name"></p>-->
   <!--<h1>Hello {{name}}</h1>-->
 <!--</div>-->
+            <script class="chillerInfoTemp" type="text/x-handlebars-template">
           <ul>
             <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">مجتمع مسکونی معالی اباد شیراز</span></li>
               </br>
@@ -191,9 +196,10 @@ background-color:#d3d3d3;
                 </br>
                <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">نامجو</span></li>
                 </br>
-              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">0000000000</span></li>
+              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">{{tell}}</span></li>
 
            </ul>
+          </script>
 
 </div>
     </div>
@@ -242,7 +248,12 @@ as needed -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
 <script src="../js/function.js"></script>
+<script src="../js/controller.js"></script>
 <script>
+      var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) {
+            $scope.tell = "0713";
+    var data;
      $(document).ready(function(){
          var activeChiller=sessionStorage.getItem("activeChiller");
          console.log("active chiller is "+activeChiller);
@@ -252,11 +263,13 @@ as needed -->
                 {id:getChillerNumber(activeChiller)},
         function( rawdata, textStatus, jqXHR) {
             console.log("info "+rawdata);
-            var data=JSON.parse(rawdata);
-            $(".infoChiller").text(data.ownerName);
-            $(".infoComplex").text(data.complexName);
-            $(".infoName").text(data.chillerName);
-            $(".infoTell").text(data.tell);
+            data=JSON.parse(rawdata);
+//            $(".infoChiller").text(data.ownerName);
+//            $(".infoComplex").text(data.complexName);
+//            $(".infoName").text(data.chillerName);
+//            $(".infoTell").text(data.tell);
+
+});
             //alert(data);
         }
     );

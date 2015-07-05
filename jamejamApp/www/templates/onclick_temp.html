@@ -15,6 +15,10 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/information.js"></script>
+    <script src="../js/handlebars-v3.0.3.js"></script>
+    <script src="../js/chillerInfoHandle.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -290,6 +294,7 @@ background-color:#d3d3d3;
          </div>
 
         <div class="col-md-5 box infoBox">
+             <script class="chillerInfoTemp" type="text/x-handlebars-template">
 
           <ul>
             <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">مجتمع مسکونی معالی اباد شیراز</span></li>
@@ -298,9 +303,10 @@ background-color:#d3d3d3;
                 </br>
                <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">نامجو</span></li>
                 </br>
-              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">0000000000</span></li>
+              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
 
            </ul>
+           <script class="chillerInfoTemp" type="text/x-handlebars-template">
 
 </div>
     </div>
