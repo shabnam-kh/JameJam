@@ -179,20 +179,19 @@ background-color:#d3d3d3;
 
          </div>
 
-        <div ng-app="" class="col-md-5 box infoBox">
+        <div class="col-md-5 box infoBox">
             <!--<div ng-app="">-->
   <!--<p>Name : <input type="text" ng-model="name"></p>-->
   <!--<h1>Hello {{name}}</h1>-->
 <!--</div>-->
- <p>Name : <input type="text" ng-model="name"></p>
           <ul>
-            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">مجتمع مسکونی معالی اباد شیراز</span></li>
+            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">مجتمع مسکونی معالی اباد شیراز</span></li>
               </br>
-            <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}}</span></li>
+            <li> نام مالک<span>&nbsp : &nbsp</span><span class="infoName">؟؟؟؟؟؟؟؟؟؟؟</span></li>
                 </br>
-               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">نامجو</span></li>
+               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">نامجو</span></li>
                 </br>
-              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">0000000000</span></li>
+              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">0000000000</span></li>
 
            </ul>
 
@@ -242,10 +241,25 @@ as needed -->
     <script src="../js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
+<script src="../js/function.js"></script>
 <script>
      $(document).ready(function(){
-         console.log("active chiller is "+sessionStorage.getItem("activeChiller"));
+         var activeChiller=sessionStorage.getItem("activeChiller");
+         console.log("active chiller is "+activeChiller);
          $("#date").append(showDate());
+                $.get(
+        baseUrl+"/abc",
+                {id:getChillerNumber(activeChiller)},
+        function( rawdata, textStatus, jqXHR) {
+            console.log("info "+rawdata);
+            var data=JSON.parse(rawdata);
+            $(".infoChiller").text(data.ownerName);
+            $(".infoComplex").text(data.complexName);
+            $(".infoName").text(data.chillerName);
+            $(".infoTell").text(data.tell);
+            //alert(data);
+        }
+    );
      });
 
     function showDate(){
@@ -259,4 +273,5 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
     }
 </script>
 </body>
+
 </html>

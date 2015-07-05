@@ -34,8 +34,6 @@ var reqFlag=false;
 
      },2000)
 
-     var baseUrl='http://localhost:3000';
-
      function sendReq(callFail,callSuccess){
 
          $.ajax(
