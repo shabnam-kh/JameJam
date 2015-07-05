@@ -16,6 +16,8 @@
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     <script src="js/information.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/information.js"></script>
+    <script src="js/function.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -233,7 +235,15 @@ background-color:#d3d3d3;
     function getActiveChiller(val){
          sessionStorage.setItem('activeChiller', val);
                        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
-                       location.href='templates/chillerInfo.html';
+                     $.get(
+        baseUrl+"/abc",
+                {id:getChillerNumber(val)},
+        function( rawdata, textStatus, jqXHR) {
+             sessionStorage.setItem('chillerInfo', rawdata);
+            location.href='templates/chillerInfo.html';
+
+});
+
     }
 </script>
 </body>

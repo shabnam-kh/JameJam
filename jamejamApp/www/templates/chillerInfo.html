@@ -190,11 +190,11 @@ background-color:#d3d3d3;
 <!--</div>-->
             <script class="chillerInfoTemp" type="text/x-handlebars-template">
           <ul>
-            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">مجتمع مسکونی معالی اباد شیراز</span></li>
+            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">{{complex}}</span></li>
               </br>
-            <li> نام مالک<span>&nbsp : &nbsp</span><span class="infoName">؟؟؟؟؟؟؟؟؟؟؟</span></li>
+            <li> نام مالک<span>&nbsp : &nbsp</span><span class="infoName">{{name}}</span></li>
                 </br>
-               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">نامجو</span></li>
+               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">{{chiller}}</span></li>
                 </br>
               <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">{{tell}}</span></li>
 
@@ -250,30 +250,11 @@ as needed -->
 <script src="../js/function.js"></script>
 <script src="../js/controller.js"></script>
 <script>
-      var app = angular.module('myApp', []);
-            app.controller('myCtrl', function($scope) {
-            $scope.tell = "0713";
-    var data;
      $(document).ready(function(){
-         var activeChiller=sessionStorage.getItem("activeChiller");
-         console.log("active chiller is "+activeChiller);
+                 var activeChiller=sessionStorage.getItem("activeChiller");
+        console.log("active chiller is "+activeChiller);
          $("#date").append(showDate());
-                $.get(
-        baseUrl+"/abc",
-                {id:getChillerNumber(activeChiller)},
-        function( rawdata, textStatus, jqXHR) {
-            console.log("info "+rawdata);
-            data=JSON.parse(rawdata);
-//            $(".infoChiller").text(data.ownerName);
-//            $(".infoComplex").text(data.complexName);
-//            $(".infoName").text(data.chillerName);
-//            $(".infoTell").text(data.tell);
-
-});
-            //alert(data);
-        }
-    );
-     });
+        });
 
     function showDate(){
         var d = new Date(),
