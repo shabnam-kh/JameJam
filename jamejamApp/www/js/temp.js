@@ -9,6 +9,14 @@ var reqFlag=false;
         //    console.log("call showhex");
         //    showHex(data);
         //})
+        //    $.get(baseUrl+"/chillerInfo",function(a,b,c){
+        //        var aa=JSON.parse(a);
+        //        var t=aa.temp;
+        //        var indx="1";
+        //        console.log("print "+JSON.stringify(t[0]));
+        //        console.log("print "+b);
+        //        console.log("print "+c);
+        //    })
      });
 
 

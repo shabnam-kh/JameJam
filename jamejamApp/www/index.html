@@ -233,15 +233,14 @@ background-color:#d3d3d3;
 </div>
 <script>
     function getActiveChiller(val){
-         sessionStorage.setItem('activeChiller', val);
-                       console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
-                     $.get(
+        sessionStorage.setItem('activeChiller', val);
+        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
+        $.get(
         baseUrl+"/abc",
                 {id:getChillerNumber(val)},
         function( rawdata, textStatus, jqXHR) {
              sessionStorage.setItem('chillerInfo', rawdata);
             location.href='templates/chillerInfo.html';
-
 });
 
     }
