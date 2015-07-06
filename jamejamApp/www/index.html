@@ -236,7 +236,7 @@ background-color:#d3d3d3;
         sessionStorage.setItem('activeChiller', val);
         console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
         $.get(
-        baseUrl+"/abc",
+        baseUrl+"/chillerInfo",
                 {id:getChillerNumber(val)},
         function( rawdata, textStatus, jqXHR) {
              sessionStorage.setItem('chillerInfo', rawdata);
