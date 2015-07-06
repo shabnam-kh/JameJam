@@ -82,15 +82,15 @@ background-color:#d3d3d3;
     <!--</div>-->
     </div>
 <!--<div class="container">-->
-              <form id="login" class="navbar-form navbar-right" accept-charset=utf-8 >
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button onclick="login();" type="submit" class="btn btn-success">Sign in</button>
-          </form>
+              <!--<form id="login" class="navbar-form navbar-right" accept-charset=utf-8 >-->
+            <!--<div class="form-group">-->
+              <!--<input type="text" placeholder="Email" class="form-control">-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+              <!--<input type="password" placeholder="Password" class="form-control">-->
+            <!--</div>-->
+            <!--<button onclick="login();" type="submit" class="btn btn-success">Sign in</button>-->
+          <!--</form>-->
 
 </div>
     </div>
@@ -107,7 +107,7 @@ background-color:#d3d3d3;
        <tr>
 
 
-               <input  type="button" class="btn" value="Shiraz Doctors Building" />
+               <input  type="button" class="btn" value="Shiraz Doctors Building" disabled/>
 
        </tr>
        <tr>
@@ -128,7 +128,7 @@ background-color:#d3d3d3;
            <td><button class="chillerBtn"
                        onclick="getActiveChiller(this.value)" value="chiller 12">chiller 12</button></td>
            <td><button class="chillerBtn"
-                       onclick="getActiveChiller(this.value)" value="chiller 22">chiller 22</button></td>
+                       onclick="getActiveChiller(this.value)" value="chiller 22" >chiller 22</button></td>
            <td><button class="chillerBtn"
                        onclick="getActiveChiller(this.value)" value="chiller 32">chiller 32</button></td>
            <td><button class="chillerBtn"
@@ -239,7 +239,9 @@ background-color:#d3d3d3;
 </div>
 </div>
 <script>
-
+    $(document).ready(function(){
+        $(".chillerBtn").prop('disabled', true);
+    });
     function login(){
             $(".alert-success").hide();
                 $(".alert-danger").hide();
@@ -251,10 +253,9 @@ background-color:#d3d3d3;
             console.log(rawdata);
            if(jqXHR.status===202){
                $(".alert-success").show();
-               console.log("here 1");
+               $(".chillerBtn").prop('disabled', false);
            }else{
                 $(".alert-danger").show();
-               console.log("here 2");
            }
 })
     };
@@ -266,7 +267,7 @@ background-color:#d3d3d3;
                 {id:getChillerNumber(val)},
         function( rawdata, textStatus, jqXHR) {
              sessionStorage.setItem('chillerInfo', rawdata);
-            //location.href='templates/chillerInfo.html';
+            location.href='templates/chillerInfo.html';
 });
 
     }
