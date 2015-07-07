@@ -1,0 +1,21 @@
+{
+  "name": "JameJam",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shabnam-kh/JameJam",
+  "authors": [
+    "shabnam_kh <shabnam.khodadadi@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "handlebars": "~3.0.3"
+  }
+}
