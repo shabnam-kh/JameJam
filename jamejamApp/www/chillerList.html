@@ -91,6 +91,30 @@ background-color:#d3d3d3;
             <!--<button onclick="login();" type="submit" class="btn btn-success">Sign in</button>-->
           <!--</form>-->
 
+               <form class="navbar-form navbar-right login" >
+                   <table>
+                       <tr>
+                           <td><p>welcome userTTF </p></td>
+                           <td> &nbsp &nbsp</td>
+                           <td>
+                              <a href="index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
+                <div class="dropdown">
+  <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+    <!--Dropdown-->
+    <!--<span class="caret"></span>-->
+  <!--</button>-->
+  <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+    <!--<li><a href="#">Action</a></li>-->
+    <!--<li><a href="#">Another action</a></li>-->
+    <!--<li><a href="#">Something else here</a></li>-->
+    <!--<li><a href="#">Separated link</a></li>-->
+  <!--</ul>-->
+<!--</div>-->
+                           </td>
+                       </tr>
+                   </table>
+          </form>
+
 </div>
     </div>
 <!--<div class="alert alert-danger" role="button" style="display: none">fail login</div>-->
@@ -101,6 +125,7 @@ background-color:#d3d3d3;
 
 <div class="container" id="chillers">
      <div class="alert alert-warning" role="button">connect</div>
+    <div class="alert alert-danger" role="alertdialog" style="display: none">You Are Not Log In</div>
     <div class="box">
            <table>
        <tr>
@@ -238,34 +263,31 @@ background-color:#d3d3d3;
 </div>
 </div>
 <script>
-    function login(){
-            $(".alert-success").hide();
-                $(".alert-danger").hide();
-        console.log("login in process");
-        $.get(
-        baseUrl+"/auth",
-                {user:$("#username").val(),pass:$("#password").val()},
-        function( rawdata, textStatus, jqXHR) {
-            console.log(rawdata);
-           if(jqXHR.status===202){
-               $(".alert-success").show();
-               $(".chillerBtn").prop('disabled', false);
-           }else{
-                $(".alert-danger").show();
-           }
-})
-    };
     function getActiveChiller(val){
         sessionStorage.setItem('activeChiller', val);
         console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
-        $.get(
+        getSecureId(function(id){
+                  $.get(
         baseUrl+"/chillerInfo",
-                {id:getChillerNumber(val)},
+                {id:getChillerNumber(val),sID:id},
         function( rawdata, textStatus, jqXHR) {
-             sessionStorage.setItem('chillerInfo', rawdata);
-            location.href='templates/chillerInfo.html';
-});
+               if(jqXHR.status===202){
+                   sessionStorage.setItem('chillerInfo', rawdata);
+                   location.href='templates/chillerInfo.html';
 
+           }else{
+                     $(".alert-danger").show();
+           }
+
+});
+        })
+
+
+    }
+    function getSecureId(callback){
+        var sID=sessionStorage.getItem('secureID');
+        console.log("secureID is "+sID);
+        callback(sID);
     }
 </script>
 </body>

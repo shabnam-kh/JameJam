@@ -93,12 +93,31 @@ background-color:#d3d3d3;
 
 </div>
     </div>
+</br>
  <input id="username" type="text" placeholder="Username" class="col-md-5 form-control">
               <input id="password" type="password" placeholder="Password" class="col-md-5 form-control">
             <button onclick="login();" id="loginConfirm" type="submit" class="btn btn-success">Sign in</button>
+<span>&nbsp</span><a href="">Sign Up</a><span>&nbsp&nbsp&nbsp&nbsp</span><a href="">Forgot password</a>
 
-<div class="alert alert-danger" role="button" style="display: none">fail login</div>
-<div class="alert alert-success" role="button" style="display: none">successful login</div>
+<div class="alert alert-danger" role="alertdialog" style="display: none">fail login</div>
+<div class="alert alert-success" role="alertdialog" style="display: none">successful login</div>
+
+ <!--<ul class="nav navbar-nav">-->
+        <!--<li class="dropdown">-->
+          <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Iasmani Pinazo <span class="glyphicon glyphicon-user pull-right"></span></a>-->
+          <!--<ul class="dropdown-menu">-->
+            <!--<li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+      <!--</ul>-->
 
 <!--<div class="container" id="chillers">-->
      <!--<div class="alert alert-warning" role="button">connect</div>-->
@@ -251,7 +270,7 @@ background-color:#d3d3d3;
                 {user:$("#username").val(),pass:$("#password").val()},
         function( rawdata, textStatus, jqXHR) {
            if(jqXHR.status===202){
-               sessionStorage.setItem('userId',JSON.parse(rawdata)._id);
+               sessionStorage.setItem('secureID',rawdata);
                $(".alert-success").show();
                //$(".chillerBtn").prop('disabled', false);
                location.href="chillerList.html";
