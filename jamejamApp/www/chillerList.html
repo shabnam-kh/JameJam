@@ -67,6 +67,9 @@ background-color:#d3d3d3;
     .box{
         background-color: blue;
     }
+    .row{
+        background-color: blue;
+    }
     .indicator{
         background-color: red;
         width: 10px;
@@ -78,6 +81,12 @@ background-color:#d3d3d3;
     .chillerBtn{
         position: relative;
         z-index: 1;
+    }
+    .guid{
+        background-color: darkgrey;
+    }
+    .G{
+        background-color: dimgray;
     }
 </style>
 </head>
@@ -138,7 +147,8 @@ background-color:#d3d3d3;
 <div class="container" id="chillers">
      <div class="alert alert-warning" role="button">connect</div>
     <div class="alert alert-danger" role="alertdialog" style="display: none">You Are Not Log In</div>
-    <div class="box">
+    <div class="row">
+    <div class="col-md-5 box">
            <table>
        <tr>
 
@@ -320,7 +330,21 @@ background-color:#d3d3d3;
 
    </table>
     </div>
-
+        <div class="col-md-5 box guid">
+            <div class="indicator"></div>
+            <p>&nbsp &nbsp &nbsp danger</p>
+            </br>
+            <div class="indicator btn-success"></div>
+            <p>&nbsp &nbsp &nbsp active</p>
+            </br>
+            <div class="indicator btn-warning"></div>
+            <p>&nbsp &nbsp &nbsp warning</p>
+            </br>
+            <div class="indicator G"></div>
+            <p>&nbsp &nbsp &nbsp disabled</p>
+            </br>
+        </div>
+</div>
      <div class="form-group">
   <textarea class="form-control" rows="5" id="warning"></textarea>
 </div>
