@@ -42,28 +42,42 @@ var reqFlag=false;
 
      },2000)
 
-     function sendReq(callFail,callSuccess){
+     //function sendReq(callFail,callSuccess){
+     //
+     //    $.ajax(
+     //        {
+     //            url: serverURL,
+     //            timeout: 2000,
+     //            success: function (data, textStatus, jqXHR) {
+     //                console.log("ajax req " + textStatus);
+     //                console.log("ajax req data " + data);
+     //                callSuccess(data);
+     //            },
+     //            error: function (jqXHR, textStatus, errorThrown)
+     //            {
+     //                console.log("ajax req fail" + textStatus);
+     //                console.log("ajax req error " + errorThrown);
+     //                callFail();
+     //            }
+     //}
+     //    )
+     //
+     //
+     //}
+ function sendReq(callFail,callSuccess) {
+     getSessionData(function (Sid,activeChill) {
+             $.get(baseUrl + "/chillerData", {sID:Sid,id:activeChill}, function (data, textStatus, jqXHR) {
+         console.log("send request to /chillerData");
+        callSuccess(data)
+     })
+     })
 
-         $.ajax(
-             {
-                 url: serverURL,
-                 timeout: 2000,
-                 success: function (data, textStatus, jqXHR) {
-                     console.log("ajax req " + textStatus);
-                     console.log("ajax req data " + data);
-                     callSuccess(data);
-                 },
-                 error: function (jqXHR, textStatus, errorThrown)
-                 {
-                     console.log("ajax req fail" + textStatus);
-                     console.log("ajax req error " + errorThrown);
-                     callFail();
-                 }
-     }
-         )
-
-
-     }
+ }
+    function getSessionData(callback){
+        var sID=sessionStorage.getItem('secureID');
+        var activeChiller=getChillerNumber(sessionStorage.getItem('activeChiller'));
+        callback(sID,activeChiller);
+    }
     function divideHex(hexArray){
         //    var count=Math.floor(hexArray.length/11);
         //    //var count=6;
@@ -91,8 +105,8 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
     }
 function showHex(str){
     var sth=JSON.parse(str);
-    var temp=sth.RowData;
-    var digi=temp.split(",");
+    var tmp=sth.temp.RowData;
+    var digi=tmp.split(",");
     var result=[];
     for(var i = 0; i <= digi.length-2; i=i+2){
         var tempstr=digi[i]+digi[i+1];
