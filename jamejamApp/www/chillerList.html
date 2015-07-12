@@ -360,6 +360,7 @@ background-color:#d3d3d3;
         function( rawdata, textStatus, jqXHR) {
                if(jqXHR.status===202){
                    sessionStorage.setItem('chillerInfo', rawdata);
+                   console.log(rawdata);
                    location.href='templates/chillerInfo.html';
 
            }else{
