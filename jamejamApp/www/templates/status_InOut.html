@@ -4,11 +4,14 @@
 
      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8" />
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-    <script src="../js/angular.min.js"></script>
-    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>-->
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>-->-->
     <script src="../js/information.js"></script>
     <script src="../../../bower_components/handlebars/handlebars.js"></script>
     <script src="../js/chillerInfoHandle.js"></script>
@@ -19,7 +22,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <title>Jame_Jam</title>
 
-<!-- Bootstrap -->
+<!-- htrap -->
        <!-- Bootstrap core CSS -->
     <link href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap theme -->
@@ -41,17 +44,6 @@
 background-color:#d3d3d3;
 
 }
-
-        .bold{
-        font-weight: bold;
-        font-size:larger;
-    }
-    .jumbotron{
-        text-align:right;
-        width: 500px;
-        height: 500px;
-        border-color: #080808;
-    }
     .large{
      font-size: 200%;
     }
@@ -65,42 +57,31 @@ background-color:#d3d3d3;
       border-collapse: collapse;
       text-align: right;
           margin-top: 10%;
-      padding-top: 5%;
   }
-    #center{
-    }
     .row{
         alignment:center;
         background-color: blue;
     }
     .status{
-        background-color: blue;
+        background-color: #afd9ee;
         text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        color: #ffffff;
+        border-color: #ffffff;
     }
 
-    .content{
-        width: 500px;
-        height: 500px;
-    }
 .footer{
     float:right;
     border-top: 10px;
 }
-.col-md-1{
-        background-color: #ffffff;
-        border-top-color: grey;
-    width:100px;
-}
     h1{
         text-align: center;
     }
-    .text-center
-{
-    text-align: center !important;
-}
+
 .statusBtn{
     border-top-color: gray;
-    width: 100px;
+    width: 70px;
     height: 50px;
 }
     textarea{
@@ -109,6 +90,24 @@ background-color:#d3d3d3;
     .infoBox{
         text-align: right;
         alignment: center;
+    }
+    .disabled{
+        background-color: #f5f5f5;
+    }
+     #footerPart{
+        padding-top: 5px;
+    }
+    .headBtn{
+        width:50px;
+    }
+    table{
+        text-align: left;
+        alignment:center;
+
+    }
+    .tableTitle{
+        float: left;
+        font-size: large;
     }
 </style>
 </head>
@@ -145,31 +144,104 @@ background-color:#d3d3d3;
     <div class="alert alert-warning" role="button">connect</div>
     <div class="row">
          <div class="col-md-5 box">
-                     <h1 class="panel-heading">CENTURY</h1>
+
+             <a href="onclick_status.html"><input  type="button" class="btn headBtn" value="Status" /></a>
+
+        <a href=""> <input  type="button" class="btn headBtn" value="Setting " /></a>
+
+        <a href=""><input  type="button" class="btn headBtn" value="Valve" disabled/></a>
+
+        <a href=""><input  type="button" class="btn headBtn" value="alarm" /></a>
     <div class="box status">
-        <a href="onclick_status.html"><input  type="button" class="btn statusBtn" value="Status" /></a>
-        </br>
-        <a href="setting_mode.html"><input  type="button" class="btn statusBtn" value="Setting " /></a>
-         </br>
-        <a href="status_InOut.html"><input  type="button" class="btn statusBtn" value="Input/Output" /></a>
-         </br>
-        <a href="status_other.html"><input  type="button" class="btn statusBtn" value="others" /></a>
-          </br>
+        <table>
+            <tr class="tableTitle">
+                <td>Input</td>
+                </tr>
+            <tr>
+            <td><input type="radio">Sol.High Temp</td>
+                <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Ref.Pump Overload</td>
+        </tr>
+             <tr>
+            <td><input type="radio">Ex/Gas High Temp</td>
+                 <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Flame Failure</td>
 
-           <!--<ul>-->
-              <!--<li><button class="">Status</button></li>-->
-       <!--<li><button>Setting</button></li>-->
-              <!--<li><button>Input/Output</button></li>-->
-              <!--<li><button>others</button></li>-->
-           <!--</ul>-->
+        </tr>
+            <tr>
+            <td><input type="radio">HG High</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                <td><input type="radio">Burner Run</td>
+        </tr>
+            <tr>
+            <td><input type="radio">Gas Pressure</td>
+                <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Remote Mode</td>
+        </tr>
+            <tr>
+            <td><input type="radio">HG Low Level</td>
+                <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Water Flow</td>
+        </tr>
+        <tr>
+            <td><input type="radio">Sol.Pump Overload</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Pump Interlock</td>
 
+        </tr>
+            </table>
+        </div>
+             <div class="box status">
+        <table>
+            <tr class="tableTitle">
+                <td>Output</td>
+                </tr>
+        <tr>
+            <td><input type="radio">Sol Pump</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">#3Spray Pump</td>
+
+        </tr>
+        <tr>
+            <td><input type="radio">Ref Pump</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Cool/Heat</td>
+
+        </tr>
+        <tr>
+            <td><input type="radio">V/V Close</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Oil/Gas</td>
+
+        </tr>
+        <tr>
+            <td><input type="radio">V/V Open</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">System ram</td>
+
+        </tr>
+        <tr>
+            <td><input type="radio">PR Auto ram</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Total Alarm</td>
+
+        </tr>
+        <tr>
+            <td><input type="radio">#2 Spray Pump</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td><input type="radio">Pump on/off</td>
+
+        </tr>
+            </table>
 </div>
 
-         <input  type="button" class="btn" value="start" />
+       <div id="footerPart">
+                <input  type="button" class="btn" value="start" />
           <input  type="button" class="btn" value="stop" />
                 <footer class="footer">
         <p id="date"></p>
       </footer>
+        </div>
 
 
 
@@ -177,21 +249,17 @@ background-color:#d3d3d3;
 
          </div>
 
-
         <div class="col-md-5 box infoBox">
-            <!--<div ng-app="">-->
-  <!--<p>Name : <input type="text" ng-model="name"></p>-->
-  <!--<h1>Hello {{name}}</h1>-->
-<!--</div>-->
             <script class="chillerInfoTemp" type="text/x-handlebars-template">
+
           <ul>
-            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">{{complex}}</span></li>
+            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">{{complex}}</span></li>
               </br>
-            <li> نام مالک<span>&nbsp : &nbsp</span><span class="infoName">{{name}}</span></li>
+            <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}</span></li>
                 </br>
-               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">{{chiller}}</span></li>
+               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{chiller}}</span></li>
                 </br>
-              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">{{tell}}</span></li>
+              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
 
            </ul>
           </script>
@@ -202,34 +270,6 @@ background-color:#d3d3d3;
   <textarea class="form-control" rows="5" id="warning"></textarea>
 </div>
         </div>
-
-
-
-
-
-
-
-
-
-                   <!-- Jumbotron -->
-
-
-
-
-
-
-
-
-      <!--&lt;!&ndash; Site footer &ndash;&gt;-->
-      <!--<footer class="footer">-->
-        <!--<p>&copy; Company 2014</p>-->
-      <!--</footer>-->
-
-
-
-
-
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!--<script src="../js/jquery-2.1.4.min.js"></script>-->
 <!-- Include all compiled plugins (below), or include individual files
@@ -237,14 +277,10 @@ as needed -->
     <script src="../js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
-<script src="../js/function.js"></script>
-<script src="../js/controller.js"></script>
 <script>
      $(document).ready(function(){
-                 var activeChiller=sessionStorage.getItem("activeChiller");
-        console.log("active chiller is "+activeChiller);
          $("#date").append(showDate());
-        });
+     });
 
     function showDate(){
         var d = new Date(),
@@ -257,5 +293,4 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
     }
 </script>
 </body>
-
 </html>
