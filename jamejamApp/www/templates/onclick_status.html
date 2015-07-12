@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
     <!-- Custom styles for this template -->
-    <link href="theme.css" rel="stylesheet">
+    <link href="onclick_status_files/theme.html" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>-->-->
-    <script src="../js/information.js"></script>
+    <script src="onclick_status_files/ie-emulation-modes-warning.html"></script>
+    <script src="../../../bower_components/jquery/dist/jquery.js"></script></head><body><script src="../js/information.js"></script>
     <script src="../../../bower_components/handlebars/handlebars.js"></script>
     <script src="../js/chillerInfoHandle.js"></script>
 
@@ -99,8 +98,8 @@ background-color:#d3d3d3;
         width:50px;
     }
 </style>
-</head>
-<body>
+
+
 
 
 <div class="navbar navbar-default">
@@ -109,20 +108,20 @@ background-color:#d3d3d3;
 
 <div class="navbar-header">
 
-<a href="../chillerList.html" class="navbar-brand"><img id="logo" src="../img/imageedit_2_6147829167.bmp"></a>
+<a href="http://localhost:63342/JameJam/jamejamApp/www/chillerList.html" class="navbar-brand"><img id="logo" src="../img/imageedit_2_6147829167.bmp"></a>
 
 </div>
 
-               <form class="navbar-form navbar-right login" >
+               <form class="navbar-form navbar-right login">
                    <table>
-                       <tr>
+                       <tbody><tr>
                            <td><p>welcome userTTF </p></td>
-                           <td> &nbsp &nbsp</td>
+                           <td> &nbsp; &nbsp;</td>
                            <td>
-                               <a href="../index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
+                               <a href="http://localhost:63342/JameJam/jamejamApp/www/index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
                            </td>
                        </tr>
-                   </table>
+                   </tbody></table>
           </form>
 </div>
     </div>
@@ -134,26 +133,26 @@ background-color:#d3d3d3;
     <div class="row">
          <div class="col-md-5 box">
 
-             <a href="onclick_status.html"><input  type="button" class="btn headBtn" value="Status" /></a>
+             <a href="http://localhost:63342/JameJam/jamejamApp/www/templates/onclick_status.html"><input class="btn headBtn" value="Status" type="button"></a>
 
-        <a href=""> <input  type="button" class="btn headBtn" value="Setting " /></a>
+        <a href=""> <input class="btn headBtn" value="Setting " type="button"></a>
 
-        <a href=""><input  type="button" class="btn headBtn" value="Valve" disabled/></a>
+        <a href=""><input class="btn headBtn" value="Valve" disabled="disabled" type="button"></a>
 
-        <a href=""><input  type="button" class="btn headBtn" value="alarm" /></a>
+        <a href=""><input class="btn headBtn" value="alarm" type="button"></a>
     <div class="box status">
-        <a href="onclick_temp.html"><input  type="button" class="btn statusBtn" value="Temp" /></a>
-        <a href=""><input  type="button" class="btn statusBtn" value="Other" /></a>
-        <a href=""><input  type="button" class="btn statusBtn" value="Alarm" /></a>
-        </br>
-        <a href=""><input  type="button" class="btn statusBtn" value="Graph " /></a>
-        <a href=""><input  type="button" class="btn statusBtn" value="Trend" /></a>
-        <a href=""><input  type="button" class="btn statusBtn disabled" value="Run Time" /></a>
-         </br>
-        <a href=""><input  type="button" class="btn statusBtn" value="In/Out" /></a>
-        <a href=""><input  type="button" class="btn statusBtn disabled" value="Time Re" /></a>
-        <a href=""><input  type="button" class="btn statusBtn disabled" value="Unit H" /></a>
-         </br>
+        <a href="http://localhost:63342/JameJam/jamejamApp/www/templates/onclick_temp.html"><input class="btn statusBtn" value="Temp" type="button"></a>
+        <a href=""><input class="btn statusBtn" value="Other" type="button"></a>
+        <a href=""><input class="btn statusBtn" value="Alarm" type="button"></a>
+        <br>
+        <a href=""><input class="btn statusBtn" value="Graph " type="button"></a>
+        <a href=""><input class="btn statusBtn" value="Trend" type="button"></a>
+        <a href=""><input class="btn statusBtn disabled" value="Run Time" type="button"></a>
+         <br>
+        <a href=""><input class="btn statusBtn" value="In/Out" type="button"></a>
+        <a href=""><input class="btn statusBtn disabled" value="Time Re" type="button"></a>
+        <a href=""><input class="btn statusBtn disabled" value="Unit H" type="button"></a>
+         <br>
 
            <!--<ul>-->
               <!--<li><button class="">Status</button></li>-->
@@ -165,10 +164,10 @@ background-color:#d3d3d3;
 </div>
 
        <div id="footerPart">
-                <input  type="button" class="btn" value="start" />
-          <input  type="button" class="btn" value="stop" />
+                <input class="btn" value="start" type="button">
+          <input class="btn" value="stop" type="button">
                 <footer class="footer">
-        <p id="date"></p>
+        <p id="date">Sun Jul 12 2015 23:45pm</p>
       </footer>
         </div>
 
@@ -179,21 +178,18 @@ background-color:#d3d3d3;
          </div>
 
         <div class="col-md-5 box infoBox">
-            <script class="chillerInfoTemp" type="text/x-handlebars-template">
 
           <ul>
-            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">{{complex}}</span></li>
-              </br>
-            <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}</span></li>
-                </br>
-               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{chiller}}</span></li>
-                </br>
-              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
+            <li> نام مجموعه<span>&nbsp; : &nbsp;</span><span class="info"> شیراز</span></li>
+              <br>
+            <li> نام مالک<span>&nbsp; : &nbsp;</span><span class="info">؟؟؟؟؟؟</span></li>
+                <br>
+               <li> نام مسئول چیلر<span>&nbsp; : &nbsp;</span><span class="info">کاهانی</span></li>
+                <br>
+              <li> تلفن مسئول چیلر<span>&nbsp; : &nbsp;</span><span class="info">0098</span></li>
 
            </ul>
-          </script>
-
-</div>
+          </div>
     </div>
      <div class="form-group">
   <textarea class="form-control" rows="5" id="warning"></textarea>
@@ -203,9 +199,9 @@ background-color:#d3d3d3;
 <!--<script src="../js/jquery-2.1.4.min.js"></script>-->
 <!-- Include all compiled plugins (below), or include individual files
 as needed -->
-    <script src="../js/docs.min.js"></script>
+    <script src="onclick_status_files/docs.html"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="onclick_status_files/ie10-viewport-bug-workaround.html"></script>
 <script>
      $(document).ready(function(){
          $("#date").append(showDate());
@@ -221,5 +217,5 @@ as needed -->
 return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
     }
 </script>
-</body>
-</html>
+
+</body></html>
