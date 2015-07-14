@@ -8,12 +8,10 @@
 
 
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
     <script src="js/information.js"></script>
     <!--<script src="js/jquery-2.1.4.min.js"></script>-->
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/information.js"></script>
     <script src="js/function.js"></script>
 
@@ -25,9 +23,9 @@
 
 <!-- Bootstrap -->
        <!-- Bootstrap core CSS -->
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap theme -->
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
 <style>
 /*#logo{*/
@@ -132,9 +130,9 @@ background-color:#d3d3d3;
                  data:{user:$("#username").val(),pass:$("#password").val()},
                  success: function (data, textStatus, jqXHR) {
 
-               sessionStorage.setItem('secureID',rawdata);
+               sessionStorage.setItem('secureID',data);
                $(".alert-success").show();
-               //location.href="chillerList.html";
+               location.href="chillerList.html";
                  },
                  error: function (jqXHR, textStatus, errorThrown)
                  {

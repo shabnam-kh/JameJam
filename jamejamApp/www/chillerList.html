@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8" />
     <!-- Custom styles for this template -->
-    <link href="theme.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/information.js"></script>
-    <script src="../../bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
     <script src="js/function.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,9 +19,9 @@
 
 <!-- Bootstrap -->
        <!-- Bootstrap core CSS -->
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap theme -->
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 <style>
 .navbar-brand,
 .navbar-nav li a {
@@ -303,37 +299,37 @@ background-color:#d3d3d3;
         sessionStorage.setItem('activeChiller', val);
         console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
         getSecureId(function(id){
-                  $.get(
-        baseUrl+"/chillerInfo",
-                {id:getChillerNumber(val),sID:id},
-        function( rawdata, textStatus, jqXHR) {
-               if(jqXHR.status===202){
-                   sessionStorage.setItem('chillerInfo', rawdata);
-                   console.log(rawdata);
-                   location.href='templates/chillerInfo.html';
-
-           }else{
-                     $(".alert-danger").show();
-           }
-
-});
-////TODO success and error
-//        $.ajax(
-//             {
-//                 url: serverURL+"/chillerInfo",
-//                 data:{id:getChillerNumber(val),sID:id},
-//                 success: function (data, textStatus, jqXHR) {
-//
+//                  $.get(
+//        baseUrl+"/chillerInfo",
+//                {id:getChillerNumber(val),sID:id},
+//        function( rawdata, textStatus, jqXHR) {
+//               if(jqXHR.status===202){
 //                   sessionStorage.setItem('chillerInfo', rawdata);
 //                   console.log(rawdata);
 //                   location.href='templates/chillerInfo.html';
-//                 },
-//                 error: function (jqXHR, textStatus, errorThrown)
-//                 {
+//
+//           }else{
 //                     $(".alert-danger").show();
-//                 }
-//     }
-//         )
+//           }
+//
+//});
+////TODO success and error
+        $.ajax(
+             {
+                 url: serverURL+"/chillerInfo",
+                 data:{id:getChillerNumber(val),sID:id},
+                 success: function (data, textStatus, jqXHR) {
+
+                   sessionStorage.setItem('chillerInfo', data);
+                   console.log(data);
+                   location.href='templates/chillerInfo.html';
+                 },
+                 error: function (jqXHR, textStatus, errorThrown)
+                 {
+                     $(".alert-danger").show();
+                 }
+     }
+         )
         })
 
 
