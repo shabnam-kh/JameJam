@@ -111,20 +111,37 @@ background-color:#d3d3d3;
             $(".alert-success").hide();
                 $(".alert-danger").hide();
         console.log("login in process");
-        $.get(
-        baseUrl+"/auth",
-                {user:$("#username").val(),pass:$("#password").val()},
-        function( rawdata, textStatus, jqXHR) {
-           if(jqXHR.status===202){
+//        $.get(
+//        baseUrl+"/auth",
+//                {user:$("#username").val(),pass:$("#password").val()},
+//        function( rawdata, textStatus, jqXHR) {
+//           if(jqXHR.status===202){
+//               sessionStorage.setItem('secureID',rawdata);
+//               $(".alert-success").show();
+//               //$(".chillerBtn").prop('disabled', false);
+//               location.href="chillerList.html";
+//
+//           }else{
+//                $(".alert-danger").show();
+//           }
+//})
+        //TODO success and error
+        $.ajax(
+             {
+                 url: serverURL+"/auth",
+                 data:{user:$("#username").val(),pass:$("#password").val()},
+                 success: function (data, textStatus, jqXHR) {
+
                sessionStorage.setItem('secureID',rawdata);
                $(".alert-success").show();
-               //$(".chillerBtn").prop('disabled', false);
-               location.href="chillerList.html";
-
-           }else{
-                $(".alert-danger").show();
-           }
-})
+               //location.href="chillerList.html";
+                 },
+                 error: function (jqXHR, textStatus, errorThrown)
+                 {
+                     $(".alert-danger").show();
+                 }
+     }
+         )
     };
 function warn(){
     alert("you should login first");

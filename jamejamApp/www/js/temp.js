@@ -46,7 +46,8 @@ var reqFlag=false;
      //
      //    $.ajax(
      //        {
-     //            url: serverURL,
+     //            url: serverURL + "/chillerData",
+      //              data: {sID:Sid,id:activeChill},
      //            timeout: 2000,
      //            success: function (data, textStatus, jqXHR) {
      //                console.log("ajax req " + textStatus);
