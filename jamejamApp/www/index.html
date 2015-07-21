@@ -129,10 +129,10 @@ background-color:#d3d3d3;
                  url: serverURL+"/auth",
                  data:{user:$("#username").val(),pass:$("#password").val()},
                  success: function (data, textStatus, jqXHR) {
-
-               sessionStorage.setItem('secureID',data);
-               $(".alert-success").show();
-               location.href="chillerList.html";
+                     setID(data, function () {
+                         $(".alert-success").show();
+                        location.href="chillerList.html";
+                     })
                  },
                  error: function (jqXHR, textStatus, errorThrown)
                  {
@@ -141,6 +141,10 @@ background-color:#d3d3d3;
      }
          )
     };
+function setID(data,callback){
+    sessionStorage.setItem('secureID',data);
+    callback();
+}
 function warn(){
     alert("you should login first");
 }

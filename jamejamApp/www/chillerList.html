@@ -83,7 +83,7 @@ background-color:#d3d3d3;
                            <td><p>welcome userTTF </p></td>
                            <td> &nbsp &nbsp</td>
                            <td>
-                              <a href="index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
+                              <a href="javascript:action()"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
                            </td>
                        </tr>
                    </table>
@@ -301,6 +301,25 @@ background-color:#d3d3d3;
 </div>
 </div>
 <script>
+    function action(){
+        console.log("click logout");
+        getSecureId(function(id){
+                   $.ajax(
+             {
+                 url: serverURL+"/logout",
+                 data:{id:id},
+                 success: function (data, textStatus, jqXHR) {
+                     console.log(data);
+                   location.href='index.html';
+                 },
+                 error: function (jqXHR, textStatus, errorThrown)
+                 {
+                     console.log("logout error "+errorThrown)
+                 }
+     }
+         )
+        })
+    };
     function getActiveChiller(val){
         sessionStorage.setItem('activeChiller', val);
         console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
