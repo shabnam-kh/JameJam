@@ -111,6 +111,7 @@ var reqFlag=false;
         //}
         for(i=1;i<12;i++){
             $("#field"+i).val(hexArray[i]);
+             //$("#prog"+i).val(hexArray[i]);
         }
 
     }
