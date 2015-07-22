@@ -58,9 +58,11 @@ background-color:#d3d3d3;
     .status{
         background-color: #afd9ee;
         text-align: center;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
         color: #ffffff;
+        font-size: large;
+        padding-left: 10%;
     }
 
 .footer{
@@ -99,6 +101,21 @@ background-color:#d3d3d3;
     .radioButton{
         font-size: 200%;
     }
+           .indicator{
+        background-color: red;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        z-index: 2;
+        top:10px;
+            color: #080808;
+    }
+    .indicatorText{
+        float: right;
+               position: relative;
+        z-index: 3;
+
+    }
 </style>
 </head>
 <body>
@@ -122,6 +139,15 @@ background-color:#d3d3d3;
                            <td>
                                <a href="../index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
                            </td>
+                            <td> &nbsp &nbsp</td>
+                           <td>
+                                      <div class="indicator"></div>
+                               <span class="indicatorText">&nbsp &nbsp error</span>
+
+                               </br>
+                               <div class="indicator btn-success"></div>
+                               <span class="indicatorText">&nbsp run</span>
+                           </td>
                        </tr>
                    </table>
           </form>
@@ -131,7 +157,7 @@ background-color:#d3d3d3;
 <!--<table class="table table-bordered centerTable">-->
     <!--<tr>-->
         <!--<td>-->
-    <div class="alert alert-warning" role="button">connect</div>
+    <!--<div class="alert alert-warning" role="button">connect</div>-->
     <div class="row">
          <div class="col-md-5 box">
 
@@ -146,27 +172,38 @@ background-color:#d3d3d3;
         <table>
         <tr>
             <td><input class="radioButton" type="radio">Ref.Low Temp</td>
+            <td>&nbsp</td>
             <td><input type="radio">Sol.Pump Overload</td>
         </tr>
+            <tr><td>&nbsp</td></tr>
         <tr>
             <td><input type="radio">Sol.High Temp</td>
+            <td>&nbsp</td>
             <td><input type="radio">Ref.Pump Overload</td>
         </tr>
+            <tr><td>&nbsp</td></tr>
         <tr>
             <td><input type="radio">Ex/Gas High Temp</td>
+            <td>&nbsp</td>
             <td><input type="radio">Flame Failure</td>
         </tr>
+            <tr><td>&nbsp</td></tr>
         <tr>
             <td><input type="radio">HG High Pressure</td>
+            <td>&nbsp</td>
             <td><input type="radio">CHW Freezing</td>
         </tr>
+            <tr><td>&nbsp</td></tr>
         <tr>
             <td><input type="radio">Gas Pressure</td>
+            <td>&nbsp</td>
             <td><input type="radio">Water Flow</td>
         </tr>
+            <tr><td>&nbsp</td></tr>
         <tr>
             <td><input type="radio">HG Low Level</td>
         </tr>
+            <tr><td>&nbsp</td></tr>
             </table>
 <!--<table>-->
     <!--<tr>-->

@@ -58,15 +58,18 @@ background-color:#d3d3d3;
         background-color: #afd9ee;
     }
     .status{
-        background-color: #8ABBD0;
+        background-color: #afd9ee;
         text-align: center;
+        font-size: large;
     }
 .footer{
     float:right;
     border-top: 10px;
 }
-    h2{
+    header{
         text-align: center;
+        font-weight: bold;
+        font-size: x-large;
     }
     textarea{
         overflow-y: scroll;
@@ -81,11 +84,14 @@ background-color:#d3d3d3;
         color: #ffffff;
     }
     .field{
-        background-color:#8ABBD0;
+        background-color:#afd9ee;
         color: #ffffff;
         /*border: solid;*/
         /*border-color: lightslategray;*/
         width: 60px;
+    }
+        label{
+        color: #ffffff;
     }
     progress{
         position: relative;
@@ -106,6 +112,21 @@ background-color:#d3d3d3;
     }
     #footerPart{
         padding-top: 5px;
+    }
+           .indicator{
+        background-color: red;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        z-index: 2;
+        top:10px;
+            color: #080808;
+    }
+    .indicatorText{
+        float: right;
+               position: relative;
+        z-index: 3;
+
     }
 </style>
 </head>
@@ -130,6 +151,15 @@ background-color:#d3d3d3;
                            <td>
                                <a href="../index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
                            </td>
+                            <td> &nbsp &nbsp</td>
+                           <td>
+                                      <div class="indicator"></div>
+                               <span class="indicatorText">&nbsp &nbsp error</span>
+
+                               </br>
+                               <div class="indicator btn-success"></div>
+                               <span class="indicatorText">&nbsp run</span>
+                           </td>
                        </tr>
                    </table>
           </form>
@@ -139,10 +169,11 @@ background-color:#d3d3d3;
 <!--<table class="table table-bordered centerTable">-->
     <!--<tr>-->
         <!--<td>-->
-    <div class="alert alert-warning" role="button">connect</div>
+<div class="container">
+    <!--<div class="alert alert-warning" role="button">connect</div>-->
     <div class="row">
          <div class="col-md-5 box">
-                     <h2 class="panel-heading">STATUS</h2>
+                     <header class="panel-heading">STATUS</header>
     <div class="box status">
 
 <table>
@@ -306,6 +337,7 @@ background-color:#d3d3d3;
      <div class="form-group">
   <textarea class="form-control" rows="5" id="warning"></textarea>
 </div>
+    </div>
 
 
 

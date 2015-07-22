@@ -70,6 +70,21 @@ background-color:#d3d3d3;
         .B{
         background-color: #000000;
     }
+           .indicator{
+        background-color: red;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        z-index: 2;
+        top:10px;
+            color: #080808;
+    }
+    .indicatorText{
+        float: right;
+               position: relative;
+        z-index: 3;
+
+    }
 </style>
 </head>
 <body>
@@ -89,6 +104,15 @@ background-color:#d3d3d3;
                            <td>
                               <a href="javascript:action()"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
                            </td>
+                            <td> &nbsp &nbsp</td>
+                           <td>
+                                      <div class="indicator"></div>
+                               <span class="indicatorText">&nbsp &nbsp error</span>
+
+                               </br>
+                               <div class="indicator btn-success"></div>
+                               <span class="indicatorText">&nbsp run</span>
+                           </td>
                        </tr>
                    </table>
           </form>
@@ -97,7 +121,7 @@ background-color:#d3d3d3;
     </div>
 
 <div class="container" id="chillers">
-     <div class="alert alert-warning" role="button">connect</div>
+     <!--<div class="alert alert-warning" role="button">connect</div>-->
     <div class="alert alert-danger" role="alertdialog" style="display: none">You Are Not Log In</div>
     <div class="row">
     <div class="col-md-5 box">
