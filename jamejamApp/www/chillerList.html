@@ -53,6 +53,10 @@ background-color:#d3d3d3;
         z-index: 2;
         top:10px;
     }
+    .activeChillerBtn{
+         position: relative;
+        z-index: 1;
+    }
     .chillerBtn{
         position: relative;
         z-index: 1;
@@ -106,7 +110,7 @@ background-color:#d3d3d3;
        </tr>
        <tr>
            <td><div class="indicator"></div>
-               <button class="chillerBtn"
+               <button class="activeChillerBtn"
                        onclick="getActiveChiller(this.value)" value="chiller 01">Shiraz</br>Doctors</br>Building</button>
            </td>
            <td><div class="indicator"></div>
@@ -301,9 +305,13 @@ background-color:#d3d3d3;
 </div>
 </div>
 <script>
-//    $(document).ready(function(){
-//        $(".chillerBtn").style()
-//    })
+    $(document).ready(function(){
+        var indx=$(".chillerBtn");
+        indx.attr('disabled',true);
+//          if() {
+//           $(".chillerBtn").removeAttr('disabled');
+//        }
+    })
     function action(){
         console.log("click logout");
         getSecureId(function(id){
