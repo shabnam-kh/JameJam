@@ -1,2 +1,5 @@
-/bower_components/*
+jamejamApp/bower_components/*
 /node_modules/*
+jamejamApp/platforms/*
+jamejamApp/platforms/android/*
+jamejamApp/plugins/*
