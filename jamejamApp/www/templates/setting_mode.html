@@ -21,6 +21,7 @@
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap theme -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
 <style>
     .navbar-brand,
 .navbar-nav li a {
@@ -28,6 +29,9 @@
     height: 50px;
     padding-top: 0;
 }
+
+
+
 #logo {
     width: 150px;
     height: auto;
@@ -35,6 +39,8 @@
 }
 .box {	border:1px solid grey;
 background-color:#d3d3d3;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
 
 }
 
@@ -58,8 +64,12 @@ background-color:#d3d3d3;
     }
     .status{
         background-color: #afd9ee;
-        text-align: center;
-        font-size: large;
+        /*text-align: center;*/
+        font-size: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        padding-top: 7%;
+        padding-bottom: 7%;
 
     }
 .footer{
@@ -86,6 +96,9 @@ background-color:#d3d3d3;
         color: #ffffff;
         /*border: solid;*/
         /*border-color: lightslategray;*/
+        /*float: right;*/
+        margin-right: 0;
+        /*width: 60px;*/
     }
     progress{
         position: relative;
@@ -109,6 +122,8 @@ background-color:#d3d3d3;
     }
     label{
         color: #ffffff;
+        font-weight: normal;
+        /*font-size: large;*/
     }
            .indicator{
         background-color: red;
@@ -129,6 +144,16 @@ background-color:#d3d3d3;
         text-align: center;
         font-weight: bold;
         font-size: x-large;
+    }
+    /*.contol{*/
+        /*width:10%;*/
+    /*}*/
+    /*.firsttd{*/
+        /*width: 70%;*/
+    /*}*/
+    table{
+        table-layout: auto;
+        white-space: nowrap;
     }
 </style>
 </head>
@@ -176,56 +201,67 @@ background-color:#d3d3d3;
     <div class="row">
          <div class="col-md-5 box">
                      <header class="panel-heading">SETTING MODE</header>
-    <div class="box status">
+    <div class="form-group box status">
 
 <table>
     <tr>
-        <td><label for="ID">Cooling Temp(4-35C) </label></td>
-        <td><input type="text" id="field1" value="" class="field"></td>
+        <td class="firsttd"><label for="ID">Cooling Temp(4-35C) </label></td>
+        <!--<td class="contol">&nbsp</td>-->
+        <td class="fake"><input type="text" id="field1" value="" class="field form-control"></td>
 
 
     </tr>
      <tr>
         <td><label for="ID">Heating Temp(35-39C) </label></td>
-         <td><input type="text" id="field2" value="" class="field"></td>
+              <!--<td>&nbsp</td>-->
+         <td><input type="text" id="field2" value="" class="field form-control"></td>
     </tr>
       <tr>
         <td><label for="ID">Ref.Low Temp(3-20C) </label></td>
-         <td><input type="text" id="field3" value="" class="field"></td>
+              <!--<td>&nbsp</td>-->
+          <td><input type="text" id="field3" value="" class="field form-control"></td>
     </tr>
      <tr>
         <td><label for="ID">Freezing Temp(1-20) </label></td>
-        <td><input type="text" id="field4" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+         <td><input type="text" id="field4" value="" class="field form-control"></td>
     </tr>
     <tr>
         <td><label for="ID">Dilution Temp(1-20C) </label></td>
-         <td><input type="text" id="field5" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+        <td><input type="text" id="field5" value="" class="field form-control"></td>
     </tr>
         <tr>
         <td><label for="ID">Start Gurd Time(2-255S) </label></td>
-        <td><input type="text" id="field6" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+            <td><input type="text" id="field6" value="" class="field form-control"></td>
     </tr>
     </tr>
         <tr>
         <td><label for="ID">#2Spray Pump Time(1-60S)</label></td>
-        <td><input type="text" id="field7" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+            <td><input type="text" id="field7" value="" class="field form-control"></td>
     </tr>
         </tr>
         <tr>
         <td><label for="ID">#3Spray PUmp Time(1-60S) </label></td>
-        <td><input type="text" id="field8" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+            <td><input type="text" id="field8" value="" class="field form-control"></td>
     </tr>
       <tr>
         <td><label for="ID">Ref. Pump Gaurd Time(1-255S) </label></td>
-        <td><input type="text" id="field9" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+          <td><input type="text" id="field9" value="" class="field form-control"></td>
     </tr>
       <tr>
         <td><label for="ID">Ref Pump Stop Temp(30-100C)  </label></td>
-        <td><input type="text" id="field10" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+          <td><input type="text" id="field10" value="" class="field form-control"></td>
     </tr>
       <tr>
         <td><label for="ID">Ref Pump Start Temp(30-100C)  </label></td>
-        <td><input type="text" id="field11" value="" class="field"></td>
+             <!--<td>&nbsp</td>-->
+          <td><input type="text" id="field11" value="" class="field form-control"></td>
     </tr>
 </table>
 

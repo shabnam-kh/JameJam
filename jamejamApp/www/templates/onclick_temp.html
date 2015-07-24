@@ -60,7 +60,7 @@ background-color:#d3d3d3;
     .status{
         background-color: #afd9ee;
         text-align: center;
-        font-size: large;
+        /*font-size: large;*/
     }
 .footer{
     float:right;
@@ -92,6 +92,7 @@ background-color:#d3d3d3;
     }
         label{
         color: #ffffff;
+            font-weight: normal;
     }
     progress{
         position: relative;
@@ -127,6 +128,10 @@ background-color:#d3d3d3;
                position: relative;
         z-index: 3;
 
+    }
+    table{
+        table-layout: auto;
+        white-space: nowrap;
     }
 </style>
 </head>
@@ -179,7 +184,7 @@ background-color:#d3d3d3;
 <table>
     <tr>
         <td><label for="ID">CHW OutLet Temp </label></td>
-        <td><input type="text" id="field1" value="" class="field"></td>
+        <td><input type="text" id="field1" value="" class="field form-control"></td>
         <td>
           <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -191,7 +196,7 @@ background-color:#d3d3d3;
     </tr>
      <tr>
         <td><label for="ID">Dilution Temp </label></td>
-         <td><input type="text" id="field2" value="" class="field"></td>
+         <td><input type="text" id="field2" value="" class="field form-control"></td>
         <td>
          <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -201,7 +206,7 @@ background-color:#d3d3d3;
     </tr>
       <tr>
         <td><label for="ID">Ref. Temp </label></td>
-         <td><input type="text" id="field3" value="" class="field"></td>
+         <td><input type="text" id="field3" value="" class="field form-control"></td>
         <td>
           <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -211,7 +216,7 @@ background-color:#d3d3d3;
     </tr>
      <tr>
         <td><label for="ID">HTW OutLet Temp </label></td>
-        <td><input type="text" id="field4" value="" class="field"></td>
+        <td><input type="text" id="field4" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -220,7 +225,7 @@ background-color:#d3d3d3;
     </tr>
     <tr>
         <td><label for="ID">Valve Position </label></td>
-         <td><input type="text" id="field5" value="" class="field"></td>
+         <td><input type="text" id="field5" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -229,7 +234,7 @@ background-color:#d3d3d3;
     </tr>
         <tr>
         <td><label for="ID">CHW InLet Temp </label></td>
-        <td><input type="text" id="field6" value="" class="field"></td>
+        <td><input type="text" id="field6" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -239,7 +244,7 @@ background-color:#d3d3d3;
     </tr>
         <tr>
         <td><label for="ID">HTW InLet Temp </label></td>
-        <td><input type="text" id="field7" value="" class="field"></td>
+        <td><input type="text" id="field7" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -249,7 +254,7 @@ background-color:#d3d3d3;
         </tr>
         <tr>
         <td><label for="ID">COW InLet Temp </label></td>
-        <td><input type="text" id="field8" value="" class="field"></td>
+        <td><input type="text" id="field8" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -258,7 +263,7 @@ background-color:#d3d3d3;
     </tr>
       <tr>
         <td><label for="ID">COW OutLet Temp </label></td>
-        <td><input type="text" id="field9" value="" class="field"></td>
+        <td><input type="text" id="field9" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'20<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'40<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'60<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'80<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100
@@ -267,7 +272,7 @@ background-color:#d3d3d3;
     </tr>
       <tr>
         <td><label for="ID">Solution Temp  </label></td>
-        <td><input type="text" id="field10" value="" class="field"></td>
+        <td><input type="text" id="field10" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'200<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'300<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'400
@@ -276,7 +281,7 @@ background-color:#d3d3d3;
     </tr>
       <tr>
         <td><label for="ID">Exhaust Temp  </label></td>
-        <td><input type="text" id="field11" value="" class="field"></td>
+        <td><input type="text" id="field11" value="" class="field form-control"></td>
         <td>
              <p class="progressIndex">
             '0<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'100<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'200<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'300<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>'400
