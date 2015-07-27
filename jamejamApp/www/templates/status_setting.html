@@ -109,6 +109,10 @@ padding-bottom: 1.5%;
         z-index: 3;
 
     }
+    table{
+        table-layout: auto;
+        white-space: nowrap;
+    }
 </style>
 
 
@@ -183,14 +187,27 @@ padding-bottom: 1.5%;
            <!--</ul>-->
 
 </div>
-
-       <div id="footerPart">
-                <input class="btn" value="start" type="button">
+<div id="footerPart">
+<table>
+    <tr>
+        <td>
+              <input class="btn" value="start" type="button">
           <input class="btn" value="stop" type="button">
-                <footer class="footer">
-        <p id="date"></p>
-      </footer>
-        </div>
+        </td>
+        <td width="30%"></td>
+        <td>
+                      <footer class="footer form-inline">
+        <p id="date" style="margin-top: 5%"></p>
+
+                          </footer>
+
+        </td>
+        <td>
+            <a href="chillerInfo.html"><img src="../img/home.png" width="60%" height="auto" style="float: right"></a>
+        </td>
+    </tr>
+</table>
+                 </div>
 
 
 

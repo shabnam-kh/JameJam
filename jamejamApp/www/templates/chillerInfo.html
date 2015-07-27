@@ -131,6 +131,10 @@ background-color:#d3d3d3;
         font-weight: bold;
         font-size: x-large;
     }
+    table{
+        table-layout: auto;
+        white-space: nowrap;
+    }
 </style>
 </head>
 <body>
@@ -195,11 +199,27 @@ background-color:#d3d3d3;
 
 </div>
 
-         <input  type="button" class="btn" value="start" />
-          <input  type="button" class="btn" value="stop" />
-                <footer class="footer">
-        <p id="date"></p>
-      </footer>
+                    <div id="footerPart">
+<table>
+    <tr>
+        <td>
+              <input class="btn" value="start" type="button">
+          <input class="btn" value="stop" type="button">
+        </td>
+        <td width="30%"></td>
+        <td>
+                      <footer class="footer form-inline">
+        <p id="date" style="margin-top: 5%"></p>
+
+                          </footer>
+
+        </td>
+        <td>
+            <a href="chillerInfo.html"><img src="../img/home.png" width="60%" height="auto" style="float: right"></a>
+        </td>
+    </tr>
+</table>
+                 </div>
 
 
 
