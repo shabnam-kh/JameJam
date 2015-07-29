@@ -111,7 +111,7 @@ var reqFlag=false;
         //}
         for(i=1;i<12;i++){
             $("#field"+i).val(hexArray[i]);
-             //$("#prog"+i).val(hexArray[i]);
+             $("#prog"+i).val(hexArray[i]);
         }
 
     }
@@ -126,7 +126,7 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
     }
 function showHex(str){
     var sth=JSON.parse(str);
-    var tmp=sth.temp.RowData;
+    var tmp=sth.Temp;
     var digi=tmp.split(",");
     var result=[];
     for(var i = 0; i <= digi.length-2; i=i+2){
