@@ -5,6 +5,8 @@
 //var ttf={"Other":"1,1,1,1,1,1,1,1,1,1,1,1,1,0,0","InOut_Out":"0,0,0,0,0,0,0,0,0,0,0,0","Chiller_no":"1","MainSetting":"7.00,65.50,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0","InOut_Input":"0,0,0,0,0,0,0,0,0,0,0,0","Temp":"13.02,13.03,16.60,60.00,13.14,13.32,24.47,23.23,54.16,8.83,1118.00","Alarm":"0,0,0,0,0,0,0,0,0,0"};
 //var storeData=JSON.stringify(ttf);
 var storeData=sessionStorage.getItem('chillerData');
+//console.log("init data");
+// showHex(storeData);
 //showHex(storeData);
 //showHex(storeData,function(digi){
 //             var app = angular.module('myApp', []);
@@ -14,6 +16,8 @@ var storeData=sessionStorage.getItem('chillerData');
 //});
 
         $(document).ready(function(){
+            console.log("init data");
+         showHex(storeData);
          $("#date").append(showDate());
 
         //    sendReq(function(){},function(data){
@@ -41,6 +45,7 @@ var storeData=sessionStorage.getItem('chillerData');
      }, 5000);
 
      var myVar=setInterval(function(){
+         console.log("update data");
         showHex(storeData);
          //if(storeData===""){
          //    console.log("NO data to show");
