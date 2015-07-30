@@ -9,6 +9,7 @@
     <script src="../bower_components/jquery/dist/jquery.js"></script></head><body><script src="../js/information.js"></script>
     <script src="../bower_components/handlebars/handlebars.js"></script>
     <script src="../js/chillerInfoHandle.js"></script>
+<script src="../js/function.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -255,7 +256,10 @@ as needed -->
      $(document).ready(function(){
          $("#date").append(showDate());
      });
-
+    sendReq(function(){},function(data){
+        console.log("get chiller data "+data);
+        sessionStorage.setItem('chillerData', data);
+    })
     function showDate(){
         var d = new Date(),
     minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),

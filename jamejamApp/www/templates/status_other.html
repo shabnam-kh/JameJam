@@ -6,10 +6,13 @@
     <meta charset="UTF-8" />
     <!-- Custom styles for this template -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
     <script src="../js/information.js"></script>
     <script src="../bower_components/handlebars/handlebars.js"></script>
     <script src="../js/chillerInfoHandle.js"></script>
     <script src="../js/function.js"></script>
+    <script src="../js/other.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -170,46 +173,48 @@ background-color:#d3d3d3;
         <a href=""><input  type="button" class="btn headBtn" value="Valve" disabled/></a>
 
         <a href=""><input  type="button" class="btn headBtn" value="alarm" /></a>
-    <div class="box status">
-        <table>
+
+    <div ng-app="" class="box status">
+<input id="radioData" type="text" ng-model="test" style="color: #000000;visibility: hidden">
+        <table id="radioTable">
         <tr>
-            <td><input type="radio">Loal</td>
+            <td><input id="0" type="radio"  ng-checked="test[0]==1">Loal</td>
             <td>&nbsp</td>
-            <td><input type="radio">Schedule</td>
+            <td><input id="5" type="radio" ng-checked="test[5]==1">Schedule</td>
             <td>&nbsp</td>
-            <td><input type="radio">Remote</td>
+            <td><input id="10" type="radio" ng-checked="test[10]==1">Remote</td>
         </tr>
             <tr><td>&nbsp</td></tr>
         <tr>
-            <td><input type="radio">System Run</td>
+            <td><input id="1" type="radio"  ng-checked="test[1]==1">System Run</td>
             <td>&nbsp</td>
-            <td><input type="radio">Cool</td>
+            <td><input  id="6" type="radio"  ng-checked="test[6]==1">Cool</td>
             <td>&nbsp</td>
-            <td><input type="radio">Heat</td>
+            <td><input id="11" type="radio"  ng-checked="test[11]==1">Heat</td>
         </tr>
             <tr><td>&nbsp</td></tr>
         <tr>
-            <td><input type="radio">Sol.Pump</td>
+            <td><input id="2" type="radio"  ng-checked="test[2]==1">Sol.Pump</td>
             <td>&nbsp</td>
-            <td><input type="radio">Ref.Pump</td>
+            <td><input id="7" type="radio"  ng-checked="test[7]==1">Ref.Pump</td>
             <td>&nbsp</td>
-            <td><input type="radio">V/V Open</td>
+            <td><input id="12" type="radio"  ng-checked="test[12]==1">V/V Open</td>
         </tr>
             <tr><td>&nbsp</td></tr>
         <tr>
-            <td><input type="radio">Spray Pump</td>
+            <td><input id="3" type="radio"  ng-checked="test[3]==1">Spray Pump</td>
             <td>&nbsp</td>
-            <td><input type="radio">Burner</td>
+            <td><input id="8" type="radio"  ng-checked="test[8]==1">Burner</td>
             <td>&nbsp</td>
-            <td><input type="radio">V/V Vlose</td>
+            <td><input id="13" type="radio"  ng-checked="test[13]==1">V/V Vlose</td>
         </tr>
             <tr><td>&nbsp</td></tr>
         <tr>
-            <td><input type="radio">Alarm</td>
+            <td><input id="4" type="radio"  ng-checked="test[4]==1">Alarm</td>
             <td>&nbsp</td>
-            <td><input type="radio">Auto Mode</td>
+            <td><input id="9" type="radio"  ng-checked="test[9]==1">Auto Mode</td>
             <td>&nbsp</td>
-            <td><input type="radio">Oil Used</td>
+            <td><input id="14" type="radio"  ng-checked="test[14]==1">Oil Used</td>
         </tr>
             </table>
 
@@ -265,24 +270,5 @@ background-color:#d3d3d3;
   <textarea class="form-control" rows="5" id="warning"></textarea>
 </div>
         </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--<script src="../js/jquery-2.1.4.min.js"></script>-->
-<!-- Include all compiled plugins (below), or include individual files<div class="box status">
-as needed -->
-<script>
-     $(document).ready(function(){
-         $("#date").append(showDate());
-     });
-
-    function showDate(){
-        var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-    ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
-    }
-</script>
 </body>
 </html>
