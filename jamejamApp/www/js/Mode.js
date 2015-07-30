@@ -1,9 +1,10 @@
 /**
  * Created by klappo on 6/30/15.
  */
-var storeData="";
-var reqFlag=false;
+var storeData=sessionStorage.getItem('chillerData');
         $(document).ready(function(){
+             console.log("init data");
+ showHex(storeData);
          $("#date").append(showDate());
         //    sendReq(function(){},function(data){
         //    console.log("call showhex");
@@ -31,7 +32,7 @@ var reqFlag=false;
 
      var myVar=setInterval(function(){
 
-         if(storeData===""){
+         if(storeData===undefined){
              console.log("empty data");
              $(".field").val("@@@@");
          }
