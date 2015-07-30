@@ -9,6 +9,8 @@
     <script src="../js/information.js"></script>
     <script src="../bower_components/handlebars/handlebars.js"></script>
     <script src="../js/chillerInfoHandle.js"></script>
+    <script src="../js/function.js"></script>
+    <script src="../js/InOut.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -184,35 +186,35 @@ background-color:#d3d3d3;
                 </tr>
             <tr><td>&nbsp</td></tr>
             <tr>
-            <td><input type="radio">Sol.High Temp</td>
+            <td><input id="I0" type="radio">Sol.High Temp</td>
                 <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Ref.Pump Overload</td>
+            <td><input id="I6" type="radio">Ref.Pump Overload</td>
         </tr>
              <tr>
-            <td><input type="radio">Ex/Gas High Temp</td>
+            <td><input id="I1" type="radio">Ex/Gas High Temp</td>
                  <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Flame Failure</td>
+            <td><input id="I7" type="radio">Flame Failure</td>
 
         </tr>
             <tr>
-            <td><input type="radio">HG High</td>
+            <td><input id="I2" type="radio">HG High</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-                <td><input type="radio">Burner Run</td>
+                <td><input id="I8" type="radio">Burner Run</td>
         </tr>
             <tr>
-            <td><input type="radio">Gas Pressure</td>
+            <td><input id="I3" type="radio">Gas Pressure</td>
                 <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Remote Mode</td>
+            <td><input id="I9" type="radio">Remote Mode</td>
         </tr>
             <tr>
-            <td><input type="radio">HG Low Level</td>
+            <td><input id="I4" type="radio">HG Low Level</td>
                 <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Water Flow</td>
+            <td><input id="I10" type="radio">Water Flow</td>
         </tr>
         <tr>
-            <td><input type="radio">Sol.Pump Overload</td>
+            <td><input id="I5" type="radio">Sol.Pump Overload</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Pump Interlock</td>
+            <td><input id="I11" type="radio">Pump Interlock</td>
 
         </tr>
             </table>
@@ -224,39 +226,39 @@ background-color:#d3d3d3;
                 </tr>
             <tr><td>&nbsp</td></tr>
         <tr>
-            <td><input type="radio">Sol Pump</td>
+            <td><input id="O0" type="radio">Sol Pump</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">#3Spray Pump</td>
+            <td><input id="O6" type="radio">#3Spray Pump</td>
 
         </tr>
         <tr>
-            <td><input type="radio">Ref Pump</td>
+            <td><input id="O1" type="radio">Ref Pump</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Cool/Heat</td>
+            <td><input id="O7" type="radio">Cool/Heat</td>
 
         </tr>
         <tr>
-            <td><input type="radio">V/V Close</td>
+            <td><input id="O2" type="radio">V/V Close</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Oil/Gas</td>
+            <td><input id="O8" type="radio">Oil/Gas</td>
 
         </tr>
         <tr>
-            <td><input type="radio">V/V Open</td>
+            <td><input id="O3" type="radio">V/V Open</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">System ram</td>
+            <td><input id="O9" type="radio">System ram</td>
 
         </tr>
         <tr>
-            <td><input type="radio">PR Auto ram</td>
+            <td><input id="O4" type="radio">PR Auto ram</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Total Alarm</td>
+            <td><input id="O10" type="radio">Total Alarm</td>
 
         </tr>
         <tr>
-            <td><input type="radio">#2 Spray Pump</td>
+            <td><input id="O5" type="radio">#2 Spray Pump</td>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input type="radio">Pump on/off</td>
+            <td><input id="O11" type="radio">Pump on/off</td>
 
         </tr>
             </table>
@@ -312,24 +314,6 @@ background-color:#d3d3d3;
   <textarea class="form-control" rows="5" id="warning"></textarea>
 </div>
         </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--<script src="../js/jquery-2.1.4.min.js"></script>-->
-<!-- Include all compiled plugins (below), or include individual files
-as needed -->
-<script>
-     $(document).ready(function(){
-         $("#date").append(showDate());
-     });
 
-    function showDate(){
-        var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-    ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
-    }
-</script>
 </body>
 </html>
