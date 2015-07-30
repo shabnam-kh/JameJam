@@ -304,24 +304,5 @@ background-color:#d3d3d3;
   <textarea class="form-control" rows="5" id="warning"></textarea>
 </div>
         </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--<script src="../js/jquery-2.1.4.min.js"></script>-->
-<!-- Include all compiled plugins (below), or include individual files<div class="box status">
-as needed -->
-<script>
-     $(document).ready(function(){
-         $("#date").append(showDate());
-     });
-
-    function showDate(){
-        var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-    ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
-    }
-</script>
 </body>
 </html>

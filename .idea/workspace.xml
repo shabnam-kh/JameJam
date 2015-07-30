@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f4c5cd-3ea6-46d0-be38-4296ddf55ba6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jamejamApp/www/js/alarm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,8 +65,8 @@
       <file leaf-file-name="status_alarm.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27887323" vertical-offset="0" max-vertical-offset="5976">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.7971831" vertical-offset="4924" max-vertical-offset="5634">
+              <caret line="305" column="14" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#footer#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#td#3;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -602,7 +601,13 @@
       <option name="project" value="LOCAL" />
       <updated>1438251954192</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update radio buttons status by data/alarm page">
+      <created>1438252605621</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1438252605621</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -686,7 +691,8 @@
     <MESSAGE value="compatible temp page to new data format" />
     <MESSAGE value="setting_mode new data+Mode.js" />
     <MESSAGE value="update radio buttons status by data" />
-    <option name="LAST_COMMIT_MESSAGE" value="update radio buttons status by data" />
+    <MESSAGE value="update radio buttons status by data/alarm page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update radio buttons status by data/alarm page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1148,8 +1154,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27887323" vertical-offset="0" max-vertical-offset="5976">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.7971831" vertical-offset="4924" max-vertical-offset="5634">
+          <caret line="305" column="14" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#p#0;n#footer#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#td#3;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
