@@ -73,9 +73,10 @@ function divideHex(hexArray) {
     //        temp=temp+varia;}
     //    $("#field"+i).val(temp);
     //}
-    for (i = 1; i < 12; i++) {
-        $("#field" + i).val(hexArray[i]);
-        $("#prog" + i).val(hexArray[i]);
+    for (var i = 0; i < 12; i++) {
+        var j=i+1;
+        $("#field" + j).val(hexArray[i]);
+        $("#prog" + j).val(hexArray[i]);
     }
 
 }
