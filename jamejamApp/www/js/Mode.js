@@ -129,13 +129,14 @@ function showHex(str){
     var sth=JSON.parse(str);
     var tmp=sth.MainSetting;
     var digi=tmp.split(",");
-    var result=[];
-    for(var i = 0; i <= digi.length-2; i=i+2){
-        var tempstr=digi[i]+digi[i+1];
-        result.push(parseInt(tempstr,16));
-    }
-    console.log("call divideHex");
-    divideHex(result);
+    //var result=[];
+    //for(var i = 0; i <= digi.length-2; i=i+2){
+    //    var tempstr=digi[i]+digi[i+1];
+    //    result.push(parseInt(tempstr,16));
+    //}
+    //console.log("call divideHex");
+    //divideHex(result);
+    divideHex(digi);
 }
 function get_query(url){
     var qs = url.substring(url.indexOf('?') + 1).split('&');
