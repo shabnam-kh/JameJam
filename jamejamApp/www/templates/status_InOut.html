@@ -3,7 +3,7 @@
 <head>
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <!-- Custom styles for this template -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/information.js"></script>
@@ -19,301 +19,326 @@
 <title>Jame_Jam</title>
 
 <!-- Bootstrap -->
-       <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme -->
+    <!-- Bootstrap theme -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-<style>
-    .navbar-brand,
-.navbar-nav li a {
-    line-height: 50px;
-    height: 50px;
-    padding-top: 0;
-}
-#logo {
-    width: 150px;
-    height: auto;
-    border-top: none;
-}
-.box {	border:1px solid grey;
-background-color:#d3d3d3;
-    padding-bottom: 2%;
-    padding-top: 2%;
+    <style>
+        .navbar-brand,
+        .navbar-nav li a {
+            line-height: 50px;
+            height: 50px;
+            padding-top: 0;
+        }
 
-}
-    .large{
-     font-size: 200%;
-    }
-    .login{
-        padding-top: 25px;
-    }
-    ul{
-        list-style-type: none;
-    }
-  .info{
-      border-collapse: collapse;
-      text-align: right;
-          margin-top: 10%;
-  }
-    .row{
-        alignment:center;
-        background-color: #afd9ee;
-    }
-    .status{
-        background-color: #afd9ee;
-        text-align: center;
-        padding-top: 8%;
-        padding-bottom: 5%;
-        color: #ffffff;
-        border-color: #ffffff;
-        /*font-size: large;*/
-    }
+        #logo {
+            width: 150px;
+            height: auto;
+            border-top: none;
+        }
 
-.footer{
-    float:right;
-    border-top: 10px;
-}
-    h1{
-        text-align: center;
-    }
+        .box {
+            border: 1px solid grey;
+            background-color: #d3d3d3;
+            padding-bottom: 2%;
+            padding-top: 2%;
 
-.statusBtn{
-    border-top-color: gray;
-    width: 70px;
-    height: 50px;
-}
-    textarea{
-        overflow-y: scroll;
-    }
-    .infoBox{
-        text-align: right;
-        alignment: center;
-    }
-    .disabled{
-        background-color: #f5f5f5;
-    }
-     #footerPart{
-        padding-top: 5px;
-    }
-    .headBtn{
-        width:60px;
-    }
-    table{
-        text-align: left;
-        alignment:center;
+        }
 
-    }
-    .tableTitle{
-        float: left;
-        font-size: larger;
-        font-weight: bold;
-    }
-        .indicator{
-        background-color: red;
-        width: 10px;
-        height: 10px;
-        position: relative;
-        z-index: 2;
-        top:10px;
+        .large {
+            font-size: 200%;
+        }
+
+        .login {
+            padding-top: 25px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .info {
+            border-collapse: collapse;
+            text-align: right;
+            margin-top: 10%;
+        }
+
+        .row {
+            alignment: center;
+            background-color: #afd9ee;
+        }
+
+        .status {
+            background-color: #afd9ee;
+            text-align: center;
+            padding-top: 8%;
+            padding-bottom: 5%;
+            color: #ffffff;
+            border-color: #ffffff;
+            /*font-size: large;*/
+        }
+
+        .footer {
+            float: right;
+            border-top: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .statusBtn {
+            border-top-color: gray;
+            width: 70px;
+            height: 50px;
+        }
+
+        textarea {
+            overflow-y: scroll;
+        }
+
+        .infoBox {
+            text-align: right;
+            alignment: center;
+        }
+
+        .disabled {
+            background-color: #f5f5f5;
+        }
+
+        #footerPart {
+            padding-top: 5px;
+        }
+
+        .headBtn {
+            width: 60px;
+        }
+
+        table {
+            text-align: left;
+            alignment: center;
+
+        }
+
+        .tableTitle {
+            float: left;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .indicator {
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            z-index: 2;
+            top: 10px;
             color: #080808;
-    }
-    .indicatorText{
-        float: right;
-               position: relative;
-        z-index: 3;
+        }
 
-    }
-    table{
-        table-layout: auto;
-        white-space: nowrap;
-    }
-</style>
+        .indicatorText {
+            float: right;
+            position: relative;
+            z-index: 3;
+
+        }
+
+        table {
+            table-layout: auto;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
 
 
 <div class="navbar navbar-default">
 
-<div class="container">
+    <div class="container">
 
-<div class="navbar-header">
+        <div class="navbar-header">
 
-<a href="../chillerList.html" class="navbar-brand"><img id="logo" src="../img/imageedit_2_6147829167.bmp"></a>
+            <a href="../chillerList.html" class="navbar-brand"><img id="logo"
+                                                                    src="../img/imageedit_2_6147829167.bmp"></a>
 
-</div>
+        </div>
 
-               <form class="navbar-form navbar-right login" >
-                   <table>
-                       <tr>
-                           <td><p>welcome userTTF </p></td>
-                           <td> &nbsp &nbsp</td>
-                           <td>
-                               <a href="../index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
-                           </td>
-                           <td> &nbsp &nbsp</td>
-                           <td>
-                                      <div class="indicator"></div>
-                               <span class="indicatorText">&nbsp &nbsp error</span>
+        <form class="navbar-form navbar-right login">
+            <table>
+                <tr>
+                    <td><p>welcome userTTF </p></td>
+                    <td> &nbsp &nbsp</td>
+                    <td>
+                        <a href="../index.html"><span id="icon" class="glyphicon glyphicon-cog large"
+                                                      aria-hidden="true"></span></a>
+                    </td>
+                    <td> &nbsp &nbsp</td>
+                    <td>
+                        <div class="indicator"></div>
+                        <span class="indicatorText">&nbsp &nbsp error</span>
 
-                               </br>
-                               <div class="indicator btn-success"></div>
-                               <span class="indicatorText">&nbsp run</span>
-                           </td>
-                       </tr>
-                   </table>
-          </form>
-</div>
+                        </br>
+                        <div class="indicator btn-success"></div>
+                        <span class="indicatorText">&nbsp run</span>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
+</div>
 <div class="container">
-<!--<table class="table table-bordered centerTable">-->
+    <!--<table class="table table-bordered centerTable">-->
     <!--<tr>-->
-        <!--<td>-->
+    <!--<td>-->
     <!--<div class="alert alert-warning" role="button">connect</div>-->
     <div class="row">
-         <div class="col-md-5 box">
+        <div class="col-md-5 box">
 
-             <a href="onclick_status.html"><input  type="button" class="btn headBtn" value="Status" /></a>
+            <a href="onclick_status.html"><input type="button" class="btn headBtn" value="Status"/></a>
 
-        <a href="status_setting.html"> <input  type="button" class="btn headBtn" value="Setting " /></a>
+            <a href="status_setting.html"> <input type="button" class="btn headBtn" value="Setting "/></a>
 
-        <a href=""><input  type="button" class="btn headBtn" value="Valve" disabled/></a>
+            <a href=""><input type="button" class="btn headBtn" value="Valve" disabled/></a>
 
-        <a href=""><input  type="button" class="btn headBtn" value="alarm" /></a>
-    <div class="box status">
-        <table>
-            <tr class="tableTitle">
-                <td>Input</td>
-                </tr>
-            <tr><td>&nbsp</td></tr>
-            <tr>
-            <td><input id="I0" type="radio">Sol.High Temp</td>
-                <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="I6" type="radio">Ref.Pump Overload</td>
-        </tr>
-             <tr>
-            <td><input id="I1" type="radio">Ex/Gas High Temp</td>
-                 <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="I7" type="radio">Flame Failure</td>
+            <a href=""><input type="button" class="btn headBtn" value="alarm"/></a>
 
-        </tr>
-            <tr>
-            <td><input id="I2" type="radio">HG High</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-                <td><input id="I8" type="radio">Burner Run</td>
-        </tr>
-            <tr>
-            <td><input id="I3" type="radio">Gas Pressure</td>
-                <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="I9" type="radio">Remote Mode</td>
-        </tr>
-            <tr>
-            <td><input id="I4" type="radio">HG Low Level</td>
-                <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="I10" type="radio">Water Flow</td>
-        </tr>
-        <tr>
-            <td><input id="I5" type="radio">Sol.Pump Overload</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="I11" type="radio">Pump Interlock</td>
+            <div class="box status">
+                <table>
+                    <tr class="tableTitle">
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td><input id="I0" type="radio">Sol.High Temp</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="I6" type="radio">Ref.Pump Overload</td>
+                    </tr>
+                    <tr>
+                        <td><input id="I1" type="radio">Ex/Gas High Temp</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="I7" type="radio">Flame Failure</td>
 
-        </tr>
-            </table>
+                    </tr>
+                    <tr>
+                        <td><input id="I2" type="radio">HG High</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="I8" type="radio">Burner Run</td>
+                    </tr>
+                    <tr>
+                        <td><input id="I3" type="radio">Gas Pressure</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="I9" type="radio">Remote Mode</td>
+                    </tr>
+                    <tr>
+                        <td><input id="I4" type="radio">HG Low Level</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="I10" type="radio">Water Flow</td>
+                    </tr>
+                    <tr>
+                        <td><input id="I5" type="radio">Sol.Pump Overload</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="I11" type="radio">Pump Interlock</td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="box status">
+                <table>
+                    <tr class="tableTitle">
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td><input id="O0" type="radio">Sol Pump</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="O6" type="radio">#3Spray Pump</td>
+
+                    </tr>
+                    <tr>
+                        <td><input id="O1" type="radio">Ref Pump</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="O7" type="radio">Cool/Heat</td>
+
+                    </tr>
+                    <tr>
+                        <td><input id="O2" type="radio">V/V Close</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="O8" type="radio">Oil/Gas</td>
+
+                    </tr>
+                    <tr>
+                        <td><input id="O3" type="radio">V/V Open</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="O9" type="radio">System ram</td>
+
+                    </tr>
+                    <tr>
+                        <td><input id="O4" type="radio">PR Auto ram</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="O10" type="radio">Total Alarm</td>
+
+                    </tr>
+                    <tr>
+                        <td><input id="O5" type="radio">#2 Spray Pump</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><input id="O11" type="radio">Pump on/off</td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <div id="footerPart">
+                <table>
+                    <tr>
+                        <td>
+                            <input class="btn" value="start" type="button">
+                            <input class="btn" value="stop" type="button">
+                        </td>
+                        <td width="50%"></td>
+                        <td>
+                            <footer class="footer form-inline">
+                                <p id="date" style="margin-top: 5%"></p>
+
+                            </footer>
+
+                        </td>
+                        <td>
+                            <a href="onclick_status.html"><img src="../img/home.png" width="40px" height="auto"
+                                                               style="float: right"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
         </div>
-             <div class="box status">
-        <table>
-            <tr class="tableTitle">
-                <td>Output</td>
-                </tr>
-            <tr><td>&nbsp</td></tr>
-        <tr>
-            <td><input id="O0" type="radio">Sol Pump</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="O6" type="radio">#3Spray Pump</td>
-
-        </tr>
-        <tr>
-            <td><input id="O1" type="radio">Ref Pump</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="O7" type="radio">Cool/Heat</td>
-
-        </tr>
-        <tr>
-            <td><input id="O2" type="radio">V/V Close</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="O8" type="radio">Oil/Gas</td>
-
-        </tr>
-        <tr>
-            <td><input id="O3" type="radio">V/V Open</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="O9" type="radio">System ram</td>
-
-        </tr>
-        <tr>
-            <td><input id="O4" type="radio">PR Auto ram</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="O10" type="radio">Total Alarm</td>
-
-        </tr>
-        <tr>
-            <td><input id="O5" type="radio">#2 Spray Pump</td>
-            <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input id="O11" type="radio">Pump on/off</td>
-
-        </tr>
-            </table>
-</div>
-
-                    <div id="footerPart">
-<table>
-    <tr>
-        <td>
-              <input class="btn" value="start" type="button">
-          <input class="btn" value="stop" type="button">
-        </td>
-        <td width="50%"></td>
-        <td>
-                      <footer class="footer form-inline">
-        <p id="date" style="margin-top: 5%"></p>
-
-                          </footer>
-
-        </td>
-        <td>
-            <a href="onclick_status.html"><img src="../img/home.png" width="40px" height="auto" style="float: right"></a>
-        </td>
-    </tr>
-</table>
-                 </div>
-
-
-
-
-
-         </div>
 
         <div class="col-md-5 box infoBox">
             <script class="chillerInfoTemp" type="text/x-handlebars-template">
 
-          <ul>
-            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">{{complex}}</span></li>
-              </br>
-            <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}</span></li>
-                </br>
-               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{chiller}}</span></li>
-                </br>
-              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
+                <ul>
+                    <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">{{complex}}</span></li>
+                    </br>
+                    <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}</span></li>
+                    </br>
+                    <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{chiller}}</span></li>
+                    </br>
+                    <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
 
-           </ul>
-          </script>
+                </ul>
+            </script>
 
-</div>
+        </div>
         <!--<div class="alert alert-success" role="button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsprun</div>-->
     </div>
-     <div class="form-group">
-  <textarea class="form-control" rows="5" id="warning"></textarea>
+    <div class="form-group">
+        <textarea class="form-control" rows="5" id="warning"></textarea>
+    </div>
 </div>
-        </div>
 
 </body>
 </html>

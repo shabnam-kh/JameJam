@@ -3,7 +3,7 @@
 <head>
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <!-- Custom styles for this template -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/information.js"></script>
@@ -17,382 +17,363 @@
 <title>Jame_Jam</title>
 
 <!-- Bootstrap -->
-       <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme -->
+    <!-- Bootstrap theme -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
-<style>
-    .navbar-brand,
-.navbar-nav li a {
-    line-height: 50px;
-    height: 50px;
-    padding-top: 0;
-}
+    <style>
+        .navbar-brand,
+        .navbar-nav li a {
+            line-height: 50px;
+            height: 50px;
+            padding-top: 0;
+        }
 
+        #logo {
+            width: 150px;
+            height: auto;
+            border-top: none;
+        }
 
+        .box {
+            border: 1px solid grey;
+            background-color: #d3d3d3;
+            padding-bottom: 1.5%;
+            padding-top: 1.5%;
 
-#logo {
-    width: 150px;
-    height: auto;
-    border-top: none;
-}
-.box {	border:1px solid grey;
-background-color:#d3d3d3;
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
+        }
 
-}
+        .large {
+            font-size: 200%;
+        }
 
-    .large{
-     font-size: 200%;
-    }
-    .login{
-        padding-top: 25px;
-    }
-    ul{
-        list-style-type: none;
-    }
-  .info{
-      border-collapse: collapse;
-      text-align: right;
-          margin-top: 10%;
-  }
-    .row{
-        alignment:center;
-        background-color: #afd9ee;
-    }
-    .status{
-        background-color: #afd9ee;
-        /*text-align: center;*/
-        font-size: 100%;
-        padding-right: 0;
-        margin-right: 0;
-        padding-top: 7%;
-        padding-bottom: 7%;
+        .login {
+            padding-top: 25px;
+        }
 
-    }
-.footer{
-    float:right;
-    border-top: 10px;
-}
-    h2{
-        text-align: center;
-    }
-    textarea{
-        overflow-y: scroll;
-    }
-    .infoBox{
-        text-align: right;
-        alignment: center;
-    }
-    #x{
-        width: 70px;
-        background-color:#8ABBD0;
-        color: #ffffff;
-    }
-    .field{
-        background-color:#afd9ee;
-        color: #ffffff;
-        /*border: solid;*/
-        /*border-color: lightslategray;*/
-        /*float: right;*/
-        margin-right: 0;
-        /*width: 60px;*/
-    }
-    progress{
-        position: relative;
-        bottom: 10px;
-        z-index: 1;
-        width: 160px;
-    }
-    progress::-moz-progress-bar { background: #418B7E; }
-    progress::-webkit-progress-bar { background: #418B7E; }
-    progress::-webkit-progress-value { background: #418B7E; }
+        ul {
+            list-style-type: none;
+        }
 
-    .progressIndex{
-        font-size: x-small;
-        position: relative;
-        top: 25px;
-        left:5px;
-        z-index: 2;
-    }
-    #footerPart{
-        padding-top: 5px;
-    }
-    label{
-        color: #ffffff;
-        font-weight: normal;
-        /*font-size: large;*/
-    }
-           .indicator{
-        background-color: red;
-        width: 10px;
-        height: 10px;
-        position: relative;
-        z-index: 2;
-        top:10px;
+        .info {
+            border-collapse: collapse;
+            text-align: right;
+            margin-top: 10%;
+        }
+
+        .row {
+            alignment: center;
+            background-color: #afd9ee;
+        }
+
+        .status {
+            background-color: #afd9ee;
+            /*text-align: center;*/
+            font-size: 100%;
+            padding-right: 0;
+            margin-right: 0;
+            padding-top: 7%;
+            padding-bottom: 7%;
+
+        }
+
+        .footer {
+            float: right;
+            border-top: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        textarea {
+            overflow-y: scroll;
+        }
+
+        .infoBox {
+            text-align: right;
+            alignment: center;
+        }
+
+        #x {
+            width: 70px;
+            background-color: #8ABBD0;
+            color: #ffffff;
+        }
+
+        .field {
+            background-color: #afd9ee;
+            color: #ffffff;
+            /*border: solid;*/
+            /*border-color: lightslategray;*/
+            /*float: right;*/
+            margin-right: 0;
+            /*width: 60px;*/
+        }
+
+        progress {
+            position: relative;
+            bottom: 10px;
+            z-index: 1;
+            width: 160px;
+        }
+
+        progress::-moz-progress-bar {
+            background: #418B7E;
+        }
+
+        progress::-webkit-progress-bar {
+            background: #418B7E;
+        }
+
+        progress::-webkit-progress-value {
+            background: #418B7E;
+        }
+
+        .progressIndex {
+            font-size: x-small;
+            position: relative;
+            top: 25px;
+            left: 5px;
+            z-index: 2;
+        }
+
+        #footerPart {
+            padding-top: 5px;
+        }
+
+        label {
+            color: #ffffff;
+            font-weight: normal;
+            /*font-size: large;*/
+        }
+
+        .indicator {
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            z-index: 2;
+            top: 10px;
             color: #080808;
-    }
-    .indicatorText{
-        float: right;
-               position: relative;
-        z-index: 3;
+        }
 
-    }
-     header{
-        text-align: center;
-        font-weight: bold;
-        font-size: x-large;
-    }
-    /*.contol{*/
+        .indicatorText {
+            float: right;
+            position: relative;
+            z-index: 3;
+
+        }
+
+        header {
+            text-align: center;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        /*.contol{*/
         /*width:10%;*/
-    /*}*/
-    /*.firsttd{*/
+        /*}*/
+        /*.firsttd{*/
         /*width: 70%;*/
-    /*}*/
-    table{
-        table-layout: auto;
-        white-space: nowrap;
-    }
-</style>
+        /*}*/
+        table {
+            table-layout: auto;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
 
 
 <div class="navbar navbar-default">
 
-<div class="container">
+    <div class="container">
 
-<div class="navbar-header">
+        <div class="navbar-header">
 
-<a href="../chillerList.html" class="navbar-brand"><img id="logo" src="../img/imageedit_2_6147829167.bmp"></a>
+            <a href="../chillerList.html" class="navbar-brand"><img id="logo"
+                                                                    src="../img/imageedit_2_6147829167.bmp"></a>
 
-</div>
+        </div>
 
-               <form class="navbar-form navbar-right login" >
-                   <table>
-                       <tr>
-                           <td><p>welcome userTTF </p></td>
-                           <td> &nbsp &nbsp</td>
-                           <td>
-                               <a href="../index.html"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
-                           </td>
-                            <td> &nbsp &nbsp</td>
-                           <td>
-                                      <div class="indicator"></div>
-                               <span class="indicatorText">&nbsp &nbsp error</span>
+        <form class="navbar-form navbar-right login">
+            <table>
+                <tr>
+                    <td><p>welcome userTTF </p></td>
+                    <td> &nbsp &nbsp</td>
+                    <td>
+                        <a href="../index.html"><span id="icon" class="glyphicon glyphicon-cog large"
+                                                      aria-hidden="true"></span></a>
+                    </td>
+                    <td> &nbsp &nbsp</td>
+                    <td>
+                        <div class="indicator"></div>
+                        <span class="indicatorText">&nbsp &nbsp error</span>
 
-                               </br>
-                               <div class="indicator btn-success"></div>
-                               <span class="indicatorText">&nbsp run</span>
-                           </td>
-                       </tr>
-                   </table>
-          </form>
-</div>
+                        </br>
+                        <div class="indicator btn-success"></div>
+                        <span class="indicatorText">&nbsp run</span>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
+</div>
 <!--<div class="container">-->
 <!--<table class="table table-bordered centerTable">-->
-    <!--<tr>-->
-        <!--<td>-->
+<!--<tr>-->
+<!--<td>-->
 <div class="container">
     <!--<div class="alert alert-warning" role="button">connect</div>-->
     <div class="row">
-         <div class="col-md-5 box">
-                     <header class="panel-heading">SETTING MODE</header>
-    <div class="form-group box status">
+        <div class="col-md-5 box">
+            <header class="panel-heading">SETTING MODE</header>
+            <div class="form-group box status">
 
-<table>
-    <tr>
-        <td class="firsttd"><label for="ID">Cooling Temp(4-35C) </label></td>
-        <!--<td class="contol">&nbsp</td>-->
-        <td class="fake"><input type="text" id="field1" value="" class="field form-control"></td>
-
-
-    </tr>
-     <tr>
-        <td><label for="ID">Heating Temp(35-39C) </label></td>
-              <!--<td>&nbsp</td>-->
-         <td><input type="text" id="field2" value="" class="field form-control"></td>
-    </tr>
-      <tr>
-        <td><label for="ID">Ref.Low Temp(3-20C) </label></td>
-              <!--<td>&nbsp</td>-->
-          <td><input type="text" id="field3" value="" class="field form-control"></td>
-    </tr>
-     <tr>
-        <td><label for="ID">Freezing Temp(1-20) </label></td>
-             <!--<td>&nbsp</td>-->
-         <td><input type="text" id="field4" value="" class="field form-control"></td>
-    </tr>
-    <tr>
-        <td><label for="ID">Dilution Temp(1-20C) </label></td>
-             <!--<td>&nbsp</td>-->
-        <td><input type="text" id="field5" value="" class="field form-control"></td>
-    </tr>
-        <tr>
-        <td><label for="ID">Start Gurd Time(2-255S) </label></td>
-             <!--<td>&nbsp</td>-->
-            <td><input type="text" id="field6" value="" class="field form-control"></td>
-    </tr>
-    </tr>
-        <tr>
-        <td><label for="ID">#2Spray Pump Time(1-60S)</label></td>
-             <!--<td>&nbsp</td>-->
-            <td><input type="text" id="field7" value="" class="field form-control"></td>
-    </tr>
-        </tr>
-        <tr>
-        <td><label for="ID">#3Spray PUmp Time(1-60S) </label></td>
-             <!--<td>&nbsp</td>-->
-            <td><input type="text" id="field8" value="" class="field form-control"></td>
-    </tr>
-      <tr>
-        <td><label for="ID">Ref. Pump Gaurd Time(1-255S) </label></td>
-             <!--<td>&nbsp</td>-->
-          <td><input type="text" id="field9" value="" class="field form-control"></td>
-    </tr>
-      <tr>
-        <td><label for="ID">Ref Pump Stop Temp(30-100C)  </label></td>
-             <!--<td>&nbsp</td>-->
-          <td><input type="text" id="field10" value="" class="field form-control"></td>
-    </tr>
-      <tr>
-        <td><label for="ID">Ref Pump Start Temp(30-100C)  </label></td>
-             <!--<td>&nbsp</td>-->
-          <td><input type="text" id="field11" value="" class="field form-control"></td>
-    </tr>
-</table>
-
-          <!--<form class="form-inline" role="form">-->
-
-<!--<label for="ID">Exhaust Temp </label>-->
-<!--<input class="form-control" type="text" name="email" placeholder=" @@@@" />-->
-    <!--<div class="progress">-->
-        <!--<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="400" style="width: 25%;"><span class="sr-only">60% Complete</span></div>-->
-      <!--</div>-->
-
-<!--</form>-->
-           <!--<ul>-->
-              <!--<li><button class="">Status</button></li>-->
-       <!--<li><button>Setting</button></li>-->
-              <!--<li><button>Input/Output</button></li>-->
-              <!--<li><button>others</button></li>-->
-           <!--</ul>-->
-
-</div>
-                    <div id="footerPart">
-<table>
-    <tr>
-        <td>
-              <input class="btn" value="start" type="button">
-          <input class="btn" value="stop" type="button">
-        </td>
-        <td width="50%"></td>
-        <td>
-                      <footer class="footer form-inline">
-        <p id="date" style="margin-top: 5%"></p>
-
-                          </footer>
-
-        </td>
-        <td>
-            <a href="onclick_status.html"><img src="../img/home.png" width="40px" height="auto" style="float: right"></a>
-        </td>
-    </tr>
-</table>
-                 </div>
+                <table>
+                    <tr>
+                        <td class="firsttd"><label for="ID">Cooling Temp(4-35C) </label></td>
+                        <!--<td class="contol">&nbsp</td>-->
+                        <td class="fake"><input type="text" id="field1" value="" class="field form-control"></td>
 
 
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Heating Temp(35-39C) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field2" value="" class="field form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Ref.Low Temp(3-20C) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field3" value="" class="field form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Freezing Temp(1-20) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field4" value="" class="field form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Dilution Temp(1-20C) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field5" value="" class="field form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Start Gurd Time(2-255S) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field6" value="" class="field form-control"></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">#2Spray Pump Time(1-60S)</label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field7" value="" class="field form-control"></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">#3Spray PUmp Time(1-60S) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field8" value="" class="field form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Ref. Pump Gaurd Time(1-255S) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field9" value="" class="field form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Ref Pump Stop Temp(30-100C) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field10" value="" class="field form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ID">Ref Pump Start Temp(30-100C) </label></td>
+                        <!--<td>&nbsp</td>-->
+                        <td><input type="text" id="field11" value="" class="field form-control"></td>
+                    </tr>
+                </table>
+
+                <!--<form class="form-inline" role="form">-->
+
+                <!--<label for="ID">Exhaust Temp </label>-->
+                <!--<input class="form-control" type="text" name="email" placeholder=" @@@@" />-->
+                <!--<div class="progress">-->
+                <!--<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="400" style="width: 25%;"><span class="sr-only">60% Complete</span></div>-->
+                <!--</div>-->
+
+                <!--</form>-->
+                <!--<ul>-->
+                <!--<li><button class="">Status</button></li>-->
+                <!--<li><button>Setting</button></li>-->
+                <!--<li><button>Input/Output</button></li>-->
+                <!--<li><button>others</button></li>-->
+                <!--</ul>-->
+
+            </div>
+            <div id="footerPart">
+                <table>
+                    <tr>
+                        <td>
+                            <input class="btn" value="start" type="button">
+                            <input class="btn" value="stop" type="button">
+                        </td>
+                        <td width="50%"></td>
+                        <td>
+                            <footer class="footer form-inline">
+                                <p id="date" style="margin-top: 5%"></p>
+
+                            </footer>
+
+                        </td>
+                        <td>
+                            <a href="onclick_status.html"><img src="../img/home.png" width="40px" height="auto"
+                                                               style="float: right"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
 
-
-
-         </div>
+        </div>
 
         <div class="col-md-5 box infoBox">
-             <script class="chillerInfoTemp" type="text/x-handlebars-template">
+            <script class="chillerInfoTemp" type="text/x-handlebars-template">
 
-          <ul>
-            <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">{{complex}}</span></li>
-              </br>
-            <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}</span></li>
-                </br>
-               <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{chiller}}</span></li>
-                </br>
-              <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
+                <ul>
+                    <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">{{complex}}</span></li>
+                    </br>
+                    <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}</span></li>
+                    </br>
+                    <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{chiller}}</span></li>
+                    </br>
+                    <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
 
-           </ul>
-           </script>
+                </ul>
+            </script>
 
-</div>
+        </div>
     </div>
-     <div class="form-group">
-  <textarea class="form-control" rows="5" id="warning"></textarea>
-</div>
+    <div class="form-group">
+        <textarea class="form-control" rows="5" id="warning"></textarea>
     </div>
+</div>
 
 
+<!-- Jumbotron -->
 
 
-
-
-
-
-
-
-                   <!-- Jumbotron -->
-
-
-
-
-
-
-
-
-      <!--&lt;!&ndash; Site footer &ndash;&gt;-->
-      <!--<footer class="footer">-->
-        <!--<p>&copy; Company 2014</p>-->
-      <!--</footer>-->
-
-
-
-
+<!--&lt;!&ndash; Site footer &ndash;&gt;-->
+<!--<footer class="footer">-->
+<!--<p>&copy; Company 2014</p>-->
+<!--</footer>-->
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Include all compiled plugins (below), or include individual files
 as needed -->
 <script src="../js/function.js"></script>
-         <script src="../js/Mode.js"></script>
+<script src="../js/Mode.js"></script>
 
-
-<!--<script>-->
-
-     <!--$(document).ready(function(){-->
-         <!--$("#date").append(showDate());-->
-     <!--});-->
-     <!--var myVar = setInterval(function () {-->
-          <!--//$(".field").val("hello");-->
-<!--//-->
-         <!--showDigi(function(){console.log("html success")},function(){console.log("html fail")})-->
-     <!--}, 5000);-->
-    <!--function divideHex(hexArray){-->
-            <!--var temp = hexArray[0]+" "+hexArray[1]+" "+hexArray[2]+" "+hexArray[3];-->
-            <!--console.log("html hex "+temp);-->
-            <!--$("#field1").val(temp);-->
-
-    <!--}-->
-    <!--function showDate(){-->
-        <!--var d = new Date(),-->
-    <!--minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),-->
-    <!--hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),-->
-    <!--ampm = d.getHours() >= 12 ? 'pm' : 'am',-->
-    <!--months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],-->
-    <!--days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];-->
-<!--return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;-->
-    <!--}-->
-<!--</script>-->
 </body>
 </html>
