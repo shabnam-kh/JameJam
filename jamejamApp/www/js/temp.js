@@ -111,11 +111,16 @@ var storeData=sessionStorage.getItem('chillerData');
         //        temp=temp+varia;}
         //    $("#field"+i).val(temp);
         //}
-        for(i=1;i<12;i++){
-            $("#field"+i).val(hexArray[i]);
-            //$("#field"+i).text(hexArray[i]);
-             $("#prog"+i).val(hexArray[i]);
+                 for(var i=0;i<12;i++){
+                       var j=i+1;
+            $("#field"+j).val(hexArray[i]);
+            //$("#field"+i).attr("value",hexArray[i]);
+
+            //$("#field"+j).text(hexArray[i]);
+             $("#prog"+j).val(hexArray[i]);
         }
+
+
 
     }
     function showDate(){
@@ -139,6 +144,7 @@ function showHex(str){
     //console.log("call divideHex");
     //divideHex(result);
     divideHex(digi);
+   //$("#invisData").val(digi);
 }
 function get_query(url){
     var qs = url.substring(url.indexOf('?') + 1).split('&');
