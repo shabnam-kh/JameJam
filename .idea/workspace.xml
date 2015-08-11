@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1f4c5cd-3ea6-46d0-be38-4296ddf55ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="f1f4c5cd-3ea6-46d0-be38-4296ddf55ba6" name="Default" comment="delete info">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/temp.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JameJam.iws" />
@@ -28,31 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InOut.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/InOut.js">
+      <file leaf-file-name="onclick_temp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="4032">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state vertical-scroll-proportion="-21.896551" vertical-offset="332" max-vertical-offset="7704">
+              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/function.js">
+      <file leaf-file-name="Mode.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/Mode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="846">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14040561" vertical-offset="0" max-vertical-offset="641">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2736">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,56 +51,9 @@
       <file leaf-file-name="temp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/temp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2754">
-              <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-              <folding>
-                <marker date="1438254664026" expanded="true" signature="208:698" placeholder="{...}" />
-                <marker date="1438254664026" expanded="true" signature="1004:1101" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chillerInfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4698" max-vertical-offset="5616">
-              <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-              <folding>
-                <marker date="1437994430491" expanded="true" signature="1296:1345" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1399:1439" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1474:1559" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1586:1599" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1631:1640" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1672:1686" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1721:1815" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1833:1853" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="1891:1942" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="2350:2402" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="2450:2487" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="2495:2557" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="2571:2660" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="2693:2730" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="2759:2970" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="2990:3053" placeholder="{...}" />
-                <marker date="1437994430491" expanded="true" signature="3081:3135" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chillerList.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/chillerList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7272" max-vertical-offset="7380">
-              <caret line="404" column="7" selection-start-line="404" selection-start-column="7" selection-end-line="404" selection-end-column="7" />
-              <folding>
-                <marker date="1438158941974" expanded="true" signature="31:18764" placeholder="..." />
-                <marker date="1438158941974" expanded="true" signature="38:1567" placeholder="..." />
-                <marker date="1438158941974" expanded="true" signature="1038:1567" placeholder="..." />
-                <marker date="1438158941974" expanded="true" signature="17294:18756" placeholder="..." />
-                <marker date="1438158941974" expanded="true" signature="17294:18748" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2790">
+              <caret line="114" column="12" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,7 +72,6 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_setting.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/chillerList.html" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/statusOther.js" />
@@ -139,12 +81,13 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_InOut.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/other.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/alarm.js" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/InOut.js" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/js/information.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/function.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/js/information.js" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
       </list>
     </option>
   </component>
@@ -153,9 +96,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="52" />
-    <option name="width" value="1533" />
-    <option name="height" value="820" />
+    <option name="y" value="-4" />
+    <option name="width" value="1543" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -180,6 +123,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,13 +192,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JameJam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JameJam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jamejamApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,15 +227,15 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chamran_Hosp" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jamejamApp/www/js" />
       <recent name="$PROJECT_DIR$/jamejamApp/www" />
       <recent name="$PROJECT_DIR$/jamejamApp/www/bower_components" />
-      <recent name="$PROJECT_DIR$/jamejamApp/www/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jamejamApp/www/js" />
@@ -659,34 +624,40 @@
       <option name="project" value="LOCAL" />
       <updated>1438680909084</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="delete info">
+      <created>1438680998339</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1438680998339</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="52" width="1533" height="820" extended-state="0" />
+    <frame x="57" y="-4" width="1543" height="904" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26319304" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29657027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3046092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26319304" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -758,6 +729,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/chillerList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7272" max-vertical-offset="7380">
+          <caret line="404" column="7" selection-start-line="404" selection-start-column="7" selection-end-line="404" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/InOut.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="4032">
@@ -778,10 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2700">
           <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-          <folding>
-            <marker date="1438254664026" expanded="true" signature="208:698" placeholder="{...}" />
-            <marker date="1438254664026" expanded="true" signature="1004:1101" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -789,25 +765,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3726" max-vertical-offset="4644">
           <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-          <folding>
-            <marker date="1437994430491" expanded="true" signature="1296:1345" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1399:1439" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1474:1559" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1586:1599" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1631:1640" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1672:1686" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1721:1815" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1833:1853" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1891:1942" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2350:2402" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2450:2487" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2495:2557" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2571:2660" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2693:2730" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2759:2970" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2990:3053" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="3081:3135" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -815,13 +773,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6174" max-vertical-offset="6282">
           <caret line="343" column="7" selection-start-line="343" selection-start-column="7" selection-end-line="343" selection-end-column="7" />
-          <folding>
-            <marker date="1438158941974" expanded="true" signature="31:18764" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="38:1567" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="1038:1567" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="17294:18756" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="17294:18748" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -864,25 +816,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="5256">
           <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="104" selection-end-column="23" />
-          <folding>
-            <marker date="1437994430491" expanded="true" signature="1296:1345" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1399:1439" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1474:1559" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1586:1599" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1631:1640" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1672:1686" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1721:1815" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1833:1853" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1891:1942" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2350:2402" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2450:2487" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2495:2557" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2571:2660" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2693:2730" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2759:2970" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2990:3053" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="3081:3135" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,25 +880,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="5256">
           <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="104" selection-end-column="23" />
-          <folding>
-            <marker date="1437994430491" expanded="true" signature="1296:1345" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1399:1439" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1474:1559" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1586:1599" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1631:1640" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1672:1686" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1721:1815" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1833:1853" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1891:1942" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2350:2402" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2450:2487" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2495:2557" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2571:2660" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2693:2730" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2759:2970" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2990:3053" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="3081:3135" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,25 +923,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="4644">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <marker date="1437994430491" expanded="true" signature="1296:1345" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1399:1439" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1474:1559" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1586:1599" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1631:1640" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1672:1686" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1721:1815" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1833:1853" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1891:1942" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2350:2402" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2450:2487" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2495:2557" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2571:2660" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2693:2730" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2759:2970" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2990:3053" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="3081:3135" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,24 +990,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.962963" vertical-offset="3214" max-vertical-offset="7704">
-          <caret line="198" column="85" selection-start-line="198" selection-start-column="85" selection-end-line="198" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.6296296" vertical-offset="6544" max-vertical-offset="7254">
           <caret line="375" column="49" selection-start-line="375" selection-start-column="49" selection-end-line="375" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8788733" vertical-offset="2260" max-vertical-offset="5022">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1153,65 +1037,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4698" max-vertical-offset="5616">
           <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-          <folding>
-            <marker date="1437994430491" expanded="true" signature="1296:1345" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1399:1439" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1474:1559" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1586:1599" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1631:1640" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1672:1686" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1721:1815" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1833:1853" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="1891:1942" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2350:2402" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2450:2487" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2495:2557" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2571:2660" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2693:2730" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2759:2970" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="2990:3053" placeholder="{...}" />
-            <marker date="1437994430491" expanded="true" signature="3081:3135" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/chillerList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7272" max-vertical-offset="7380">
+        <state vertical-scroll-proportion="0.84788734" vertical-offset="6670" max-vertical-offset="7380">
           <caret line="404" column="7" selection-start-line="404" selection-start-column="7" selection-end-line="404" selection-end-column="7" />
-          <folding>
-            <marker date="1438158941974" expanded="true" signature="31:18764" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="38:1567" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="1038:1567" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="17294:18756" placeholder="..." />
-            <marker date="1438158941974" expanded="true" signature="17294:18748" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/temp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2754">
-          <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding>
-            <marker date="1438254664026" expanded="true" signature="208:698" placeholder="{...}" />
-            <marker date="1438254664026" expanded="true" signature="1004:1101" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="846">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14040561" vertical-offset="0" max-vertical-offset="641">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="198">
           <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54366195" vertical-offset="4312" max-vertical-offset="5022">
+          <caret line="261" column="6" selection-start-line="261" selection-start-column="6" selection-end-line="261" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="846">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.168" vertical-offset="0" max-vertical-offset="750">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/temp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2790">
+          <caret line="114" column="12" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.896551" vertical-offset="332" max-vertical-offset="7704">
+          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/Mode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2736">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
