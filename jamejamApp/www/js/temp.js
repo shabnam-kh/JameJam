@@ -6,6 +6,7 @@ var storeData = sessionStorage.getItem('chillerData');
 $(document).ready(function () {
     console.log("init data");
     showHex(storeData);
+    imageTemp();
     $("#date").append(showDate());
 });
 
@@ -28,6 +29,7 @@ var myVar = setInterval(function () {
     else {
         console.log("call showHex");
         showHex(storeData);
+        imageTemp();
     }
 
 }, 2000)
@@ -105,4 +107,15 @@ function get_query(url) {
         result[qs[i][0]] = qs[i][1];
     }
     return result;
+}
+
+function imageTemp(){
+    console.log("call imageTemp function");
+$(".cowO").text($("#field9").val());
+    $(".chwO").text($("#field1").val());
+    $(".chwI").text($("#field6").val());
+    $(".cowI").text($("#field8").val());
+    $(".ref").text($("#field3").val());
+    $(".solu").text($("#field10").val());
+    $(".ex").text($("#field11").val());
 }
