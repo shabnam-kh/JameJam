@@ -162,6 +162,9 @@
             table-layout: auto;
             white-space: nowrap;
         }
+        .imgTemp{
+            color: #000000;
+        }
     </style>
 </head>
 <body>
@@ -372,20 +375,25 @@
 
         </div>
 
-        <div class="col-md-5 box infoBox">
+        <div class="col-md-5 box">
+         <div class="box infoBox">
             <script class="chillerInfoTemp" type="text/x-handlebars-template">
-
                 <ul>
-                    <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="info">{{complex}}</span></li>
+                    <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">{{complex}}</span></li>
                     </br>
-                    <li> نام مالک<span>&nbsp : &nbsp</span><span class="info">{{name}}</span></li>
+                    <li> نام مالک<span>&nbsp : &nbsp</span><span class="infoName">{{name}}</span></li>
                     </br>
-                    <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{chiller}}</span></li>
+                    <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">{{chiller}}</span></li>
                     </br>
-                    <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="info">{{tell}}</span></li>
+                    <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">{{tell}}</span></li>
 
                 </ul>
             </script>
+                </div>
+            <div class="box imgBox">
+                <img id="chillerImg" src="../img/chiller(2).png" width="100%" height="auto">
+                <label class="imgTemp" style="position: absolute;top:42%;left: 11%;z-index: 3">22.9</label>
+            </div>
 
         </div>
     </div>
@@ -409,6 +417,21 @@
 as needed -->
 <script src="../js/function.js"></script>
 <script src="../js/temp.js"></script>
+<script>
+    $(document).ready(function(){
+  setSize(function(){
+                console.log("div size "+$(".imgBox").width()+" * "+$(".imgBox").height());
+                console.log("image size "+$("#chillerImg").width()+" * "+$("#chillerImg").height());
+            })
+    })
+
+    function setSize(callback){
+    console.log("setSize function");
+    $(".imgBox").width($("#chillerImg").width());
+    $(".imgBox").height($("#chillerImg").height());
+    callback();
+};
+</script>
 
 </body>
 </html>

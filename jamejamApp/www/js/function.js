@@ -48,3 +48,36 @@ function showDate() {
         days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
 }
+
+    function action() {
+
+        var r = confirm("Do you want to LogOut ??!!");
+        if (r == true) {
+            console.log("user logout");
+            getSecureId(function (id) {
+                $.ajax(
+                        {
+                            url: serverURL + "/logout",
+                            data: {id: id},
+                            success: function (data, textStatus, jqXHR) {
+                                console.log(data);
+                                location.href = 'index.html';
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log("logout error " + errorThrown)
+                            }
+                        }
+                )
+            })
+        } else {
+            console.log("user not logout");
+        }
+
+    };
+
+function setSize(callback){
+    console.log("setSize function");
+   $("#chillerImg").width($(window).width());
+    //$("#chillerImg").height($(window).height());
+    callback();
+};
