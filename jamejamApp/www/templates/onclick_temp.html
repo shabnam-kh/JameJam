@@ -164,6 +164,7 @@
         }
         .imgTemp{
             color: #000000;
+            background-color: #f5f5f5;
         }
     </style>
 </head>
@@ -398,34 +399,35 @@
                 <!--4left label, from top to down-->
                 <label class="imgTemp num1 cowO" style="position: absolute;top:175px;left: 50px;z-index: 3;"></label>
                 <label class="imgTemp num2 cowO" style="position: absolute;top:165px;left: 40px;z-index: 3;"></label>
-                <label class="imgTemp num3 cowO" style="position: absolute;top:185px;left: 60px;z-index: 3;"></label>
+                <label class="imgTemp num3 cowO" style="position: absolute;top:180px;left: 60px;z-index: 3;"></label>
 
-                 <label class="imgTemp num1 chwO" style="position: absolute;top:235px;left: 50px;z-index: 3;">22.9</label>
-                <label class="imgTemp num2 chwO" style="position: absolute;top:205px;left: 35px;z-index: 3;">22.9</label>
-                <label class="imgTemp num3 chwO" style="position: absolute;top:260px;left: 60px;z-index: 3;">22.9</label>
+                 <label class="imgTemp num1 chwO" style="position: absolute;top:235px;left: 50px;z-index: 3;"></label>
+                <label class="imgTemp num2 chwO" style="position: absolute;top:205px;left: 35px;z-index: 3;"></label>
+                <label class="imgTemp num3 chwO" style="position: absolute;top:255px;left: 60px;z-index: 3;"></label>
 
-                 <label class="imgTemp num1 chwI" style="position: absolute;top:275px;left: 40px;z-index: 3;">22.9</label>
-                <label class="imgTemp num2 chwI" style="position: absolute;top:235px;left: 30px;z-index: 3;">22.9</label>
-                <label class="imgTemp num3 chwI" style="position: absolute;top:310px;left: 50px;z-index: 3;">22.9</label>
+                 <label class="imgTemp num1 chwI" style="position: absolute;top:275px;left: 40px;z-index: 3;"></label>
+                <label class="imgTemp num2 chwI" style="position: absolute;top:235px;left: 30px;z-index: 3;"></label>
+                <label class="imgTemp num3 chwI" style="position: absolute;top:305px;left: 50px;z-index: 3;"></label>
 
-                <label class="imgTemp num1 cowI" style="position: absolute;top:310px;left: 30px;z-index: 3;">22.9</label>
-                <label class="imgTemp num2 cowI" style="position: absolute;top:260px;left: 25px;z-index: 3;">22.9</label>
-                <label class="imgTemp num3 cowI" style="position: absolute;top:355px;left: 40px;z-index: 3;">22.9</label>
+                <label class="imgTemp num1 cowI" style="position: absolute;top:310px;left: 30px;z-index: 3;"></label>
+                <label class="imgTemp num2 cowI" style="position: absolute;top:260px;left: 25px;z-index: 3;"></label>
+                <label class="imgTemp num3 cowI" style="position: absolute;top:350px;left: 40px;z-index: 3;"></label>
 
                 <!--2label on center, from top to down-->
-                   <label class="imgTemp num1 ref" style="position: absolute;top:330px;left: 280px;z-index: 3;">22.9</label>
-                <label class="imgTemp num2 ref" style="position: absolute;top:275px;left: 200px;z-index: 3;">22.9</label>
-                <label class="imgTemp num3 ref" style="position: absolute;top:390px;left: 365px;z-index: 3;">22.9</label>
+                   <label class="imgTemp num1 ref" style="position: absolute;top:330px;left: 280px;z-index: 3;"></label>
+                <label class="imgTemp num2 ref" style="position: absolute;top:275px;left: 200px;z-index: 3;"></label>
+                <label class="imgTemp num3 ref" style="position: absolute;top:380px;left: 365px;z-index: 3;"></label>
 
-                  <label class="imgTemp num1 solu" style="position: absolute;top:375px;left: 240px;z-index: 3;">22.9</label>
-                <label class="imgTemp num2 solu" style="position: absolute;top:310px;left: 170px;z-index: 3;">22.9</label>
-                <label class="imgTemp num3 solu" style="position: absolute;top:455px;left: 305px;z-index: 3;">22.9</label>
+                  <label class="imgTemp num1 solu" style="position: absolute;top:375px;left: 240px;z-index: 3;"></label>
+                <label class="imgTemp num2 solu" style="position: absolute;top:310px;left: 170px;z-index: 3;"></label>
+                <label class="imgTemp num3 solu" style="position: absolute;top:445px;left: 305px;z-index: 3;"></label>
 
                 <!--1 right label-->
 
-                 <label class="imgTemp num1 ex" style="position: absolute;top:270px;left: 430px;z-index: 3;">22.9</label>
-                <label class="imgTemp num2 ex" style="position: absolute;top:230px;left: 300px;z-index: 3;">22.9</label>
-                <label class="imgTemp num3 ex" style="position: absolute;top:310px;left: 550px;z-index: 3;">22.9</label>
+                 <label class="imgTemp num1 ex" style="position: absolute;top:270px;left: 430px;z-index: 3;"></label>
+                <label class="imgTemp num2 ex" style="position: absolute;top:230px;left: 300px;z-index: 3;"></label>
+                <label class="imgTemp num3 ex" style="position: absolute;top:300px;left: 550px;z-index: 3;"></label>
+
             </div>
 
         </div>
@@ -459,6 +461,11 @@ as needed -->
 //                console.log("image size "+$("#chillerImg").width()+" * "+$("#chillerImg").height());
 //                $("label").show();
 //            })
+    })
+
+    $(window).resize(function(){
+         $(".imgTemp").hide();
+        changeSize();
     })
 
     function setSize(callback){
