@@ -12,16 +12,10 @@
 //var storeData=JSON.stringify(ttf);
 var storeData = sessionStorage.getItem('chillerData');
 
-//showHex(storeData);
-//showHex(storeData,function(digi){
-//             var app = angular.module('myApp', []);
-//app.controller('myCtrl', function($scope) {
-//    $scope.test=digi;
-//});
-//});
-
 $(document).ready(function () {
     console.log("init data");
+        var jData=JSON.parse(storeData);
+    $("#updateTime").text(" last updated on "+jData.recievedTime);
     showIn(storeData);
     showOut(storeData);
     $("#date").append(showDate());
@@ -39,6 +33,8 @@ var sendReqToServer = setInterval(function () {
 
 var myVar = setInterval(function () {
     console.log("update data");
+        var jData=JSON.parse(storeData);
+    $("#updateTime").text(" last updated on "+jData.recievedTime);
     showIn(storeData);
     showOut(storeData);
 
