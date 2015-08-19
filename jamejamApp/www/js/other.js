@@ -19,6 +19,9 @@ $(document).ready(function () {
     console.log("init data");
         var jData=JSON.parse(storeData);
     $("#updateTime").text(" last updated on "+jData.recievedTime);
+     storelastTime($("#updateTime").text(),function(lastT,T){
+        sessionStorage.setItem("lastTime",T);
+    })
     showHex(storeData);
     $("#date").text(showDate());
 
@@ -27,22 +30,40 @@ $(document).ready(function () {
 var timeVar=setInterval(function(){
     $("#date").text(showDate());
 },1000);
-var sendReqToServer = setInterval(function () {
-    //$(".field").val("hello");
-    console.log("call sendReq");
-    sendReq(function () {
-    }, function (data) {
-        storeData = data;
-    });
-}, 5000);
 
-var myVar = setInterval(function () {
-    console.log("update data");
-        var jData=JSON.parse(storeData);
-    $("#updateTime").text(" last updated on "+jData.recievedTime);
-    showHex(storeData);
+var checkTime=setInterval(function(){
+    console.log("check for out of date data");
+    storelastTime($("#updateTime").text(),function(lastT,T){
+        console.log("last time is "+lastT);
+        console.log("current time is "+T);
+        if(lastT===T){
+            console.log("data is out of date !!!");
+            $("#updateTime").hide();
+            $("#outDate").text("data is out of date, "+T);
+            $("#outDate").show();
+        }
+        else{
+            console.log("data is up to date.");
+    }
+    })
+},180000);
 
-}, 2000)
+//var sendReqToServer = setInterval(function () {
+//    //$(".field").val("hello");
+//    console.log("call sendReq");
+//    sendReq(function () {
+//    }, function (data) {
+//        storeData = data;
+//    });
+//}, 5000);
+//
+//var myVar = setInterval(function () {
+//    console.log("update data");
+//        var jData=JSON.parse(storeData);
+//    $("#updateTime").text(" last updated on "+jData.recievedTime);
+//    showHex(storeData);
+//
+//}, 2000)
 
 function sendReq(callFail, callSuccess) {
     getSessionData(function (Sid, activeChill) {
@@ -112,11 +133,11 @@ function showHex(str) {
 //});
     for (var i = 0; i < digi.length; i++) {
         if (digi[i] == 1) {
-            console.log("number " + i + " is on");
+            //console.log("number " + i + " is on");
             $("#" + i).attr("checked", "true");
 
         } else {
-            console.log("number " + i + " is off");
+            //console.log("number " + i + " is off");
             $("#" + i).removeAttr("checked");
         }
     }
@@ -131,4 +152,9 @@ function get_query(url) {
         result[qs[i][0]] = qs[i][1];
     }
     return result;
+}
+
+function storelastTime(T,callback){
+    var lastT=sessionStorage.getItem("lastTime");
+    callback(lastT,T);
 }
