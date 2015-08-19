@@ -82,3 +82,13 @@ function setSize(callback){
     //$("#chillerImg").height($(window).height());
     callback();
 };
+
+function storelastTime(T,callback){
+    var lastT=sessionStorage.getItem("lastTime");
+    callback(lastT,T);
+}
+
+function updateTime(T,callback){
+    $("#updateTime").text(" last updated on "+T);
+    callback();
+}

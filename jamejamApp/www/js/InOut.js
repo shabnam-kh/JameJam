@@ -13,17 +13,45 @@
 var storeData = sessionStorage.getItem('chillerData');
 
 $(document).ready(function () {
-    console.log("init data");
-        var jData=JSON.parse(storeData);
+            console.log("call sendReq");
+    sendReq(function () {
+    }, function (data) {
+        storeData = data;
+          var jData=JSON.parse(data);
     $("#updateTime").text(" last updated on "+jData.recievedTime);
-    showIn(storeData);
+     storelastTime($("#updateTime").text(),function(lastT,T){
+        sessionStorage.setItem("lastTime",T);
+    })
+     showIn(storeData);
     showOut(storeData);
+    });
     $("#date").text(showDate());
 });
 
 var timeVar=setInterval(function(){
     $("#date").text(showDate());
 },1000);
+
+var checkTime=setInterval(function(){
+    console.log("check for out of date data");
+    storelastTime($("#updateTime").text(),function(lastT,T){
+        sessionStorage.setItem("lastTime",T);
+        console.log("last time is "+lastT);
+        console.log("current time is "+T);
+        if(lastT===T){
+            console.log("data is out of date !!!");
+            //$("#updateTime").hide();
+            $("#outDate").text("data is out of date");
+            $("#outDate").show();
+        }
+        else{
+            console.log("data is up to date.");
+             $("#outDate").hide();
+            //$("#updateTime").text(T);
+            // $("#updateTime").show();
+    }
+    })
+},180000);
 
 var sendReqToServer = setInterval(function () {
     //$(".field").val("hello");
@@ -35,40 +63,22 @@ var sendReqToServer = setInterval(function () {
 }, 5000);
 
 var myVar = setInterval(function () {
-    console.log("update data");
+   console.log("update data");
         var jData=JSON.parse(storeData);
-    $("#updateTime").text(" last updated on "+jData.recievedTime);
+    updateTime(jData.recievedTime,function(){
+        storelastTime($("#updateTime").text(),function(lastT,T){
+            if(lastT===T){
+                //console.log("still out of date");
+            }else{
+                $("#outDate").hide();
+            }
+        })
+    });
     showIn(storeData);
     showOut(storeData);
 
 }, 2000)
 
-function sendReq(callFail, callSuccess) {
-    getSessionData(function (Sid, activeChill) {
-        //        $.get(baseUrl + "/chillerData", {sID:Sid,id:activeChill}, function (data, textStatus, jqXHR) {
-        //    console.log("send request to /chillerData");
-        //   callSuccess(data)
-        //})
-        $.ajax(
-            {
-                url: serverURL + "/chillerData",
-                data: {sID: Sid, id: activeChill},
-                timeout: 2000,
-                success: function (data, textStatus, jqXHR) {
-                    console.log("ajax req " + textStatus);
-                    console.log("ajax req data " + data);
-                    callSuccess(data);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.log("ajax req fail" + textStatus);
-                    console.log("ajax req error " + errorThrown);
-                    callFail();
-                }
-            }
-        )
-    })
-
-}
 function getSessionData(callback) {
     var sID = sessionStorage.getItem('secureID')
     console.log("temp active chiller " + sessionStorage.getItem('activeChiller'));

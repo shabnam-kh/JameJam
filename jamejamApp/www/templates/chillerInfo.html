@@ -298,14 +298,14 @@ as needed -->
     var timeVar=setInterval(function(){
     $("#date").text(showDate());
 },1000);
-    sendReq(function () {
-    }, function (data) {
-        console.log("get chiller data " + data);
-        var jData=JSON.parse(data);
-        console.log(" last updated "+jData.recievedTime);
-        $("#updateTime").text(" last updated on "+jData.recievedTime);
-        sessionStorage.setItem('chillerData', data);
-    })
+//    sendReq(function () {
+//    }, function (data) {
+//        console.log("get chiller data " + data);
+//        var jData=JSON.parse(data);
+//        console.log(" last updated "+jData.recievedTime);
+//        $("#updateTime").text(" last updated on "+jData.recievedTime);
+//        sessionStorage.setItem('chillerData', data);
+//    })
 </script>
 </body>
 

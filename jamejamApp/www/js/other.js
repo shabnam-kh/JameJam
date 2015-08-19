@@ -4,7 +4,7 @@
 
 //var ttf={"Other":"1,1,1,1,1,1,1,1,1,1,1,1,1,0,0","InOut_Out":"0,0,0,0,0,0,0,0,0,0,0,0","Chiller_no":"1","MainSetting":"7.00,65.50,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0","InOut_Input":"0,0,0,0,0,0,0,0,0,0,0,0","Temp":"13.02,13.03,16.60,60.00,13.14,13.32,24.47,23.23,54.16,8.83,1118.00","Alarm":"0,0,0,0,0,0,0,0,0,0"};
 //var storeData=JSON.stringify(ttf);
-var storeData = sessionStorage.getItem('chillerData');
+//var storeData = sessionStorage.getItem('chillerData');
 //console.log("init data");
 // showHex(storeData);
 //showHex(storeData);
@@ -17,12 +17,18 @@ var storeData = sessionStorage.getItem('chillerData');
 
 $(document).ready(function () {
     console.log("init data");
-        var jData=JSON.parse(storeData);
+     console.log("call sendReq");
+    sendReq(function () {
+    }, function (data) {
+        storeData = data;
+          var jData=JSON.parse(data);
     $("#updateTime").text(" last updated on "+jData.recievedTime);
      storelastTime($("#updateTime").text(),function(lastT,T){
         sessionStorage.setItem("lastTime",T);
     })
-    showHex(storeData);
+    showHex(data);
+    });
+
     $("#date").text(showDate());
 
 });
@@ -67,7 +73,7 @@ var myVar = setInterval(function () {
     updateTime(jData.recievedTime,function(){
         storelastTime($("#updateTime").text(),function(lastT,T){
             if(lastT===T){
-                console.log("still out of date");
+                //console.log("still out of date");
             }else{
                 $("#outDate").hide();
             }
