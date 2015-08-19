@@ -34,36 +34,50 @@ var timeVar=setInterval(function(){
 var checkTime=setInterval(function(){
     console.log("check for out of date data");
     storelastTime($("#updateTime").text(),function(lastT,T){
+        sessionStorage.setItem("lastTime",T);
         console.log("last time is "+lastT);
         console.log("current time is "+T);
         if(lastT===T){
             console.log("data is out of date !!!");
-            $("#updateTime").hide();
-            $("#outDate").text("data is out of date, "+T);
+            //$("#updateTime").hide();
+            $("#outDate").text("data is out of date");
             $("#outDate").show();
         }
         else{
             console.log("data is up to date.");
+             $("#outDate").hide();
+            //$("#updateTime").text(T);
+            // $("#updateTime").show();
     }
     })
 },180000);
 
-//var sendReqToServer = setInterval(function () {
-//    //$(".field").val("hello");
-//    console.log("call sendReq");
-//    sendReq(function () {
-//    }, function (data) {
-//        storeData = data;
-//    });
-//}, 5000);
-//
-//var myVar = setInterval(function () {
-//    console.log("update data");
-//        var jData=JSON.parse(storeData);
-//    $("#updateTime").text(" last updated on "+jData.recievedTime);
-//    showHex(storeData);
-//
-//}, 2000)
+var sendReqToServer = setInterval(function () {
+    //$(".field").val("hello");
+    console.log("call sendReq");
+    sendReq(function () {
+    }, function (data) {
+        storeData = data;
+    });
+}, 5000);
+
+var myVar = setInterval(function () {
+    console.log("update data");
+        var jData=JSON.parse(storeData);
+    updateTime(jData.recievedTime,function(){
+        storelastTime($("#updateTime").text(),function(lastT,T){
+            if(lastT===T){
+                console.log("still out of date");
+            }else{
+                $("#outDate").hide();
+            }
+        })
+    });
+    //$("#updateTime").text(" last updated on "+jData.recievedTime);
+    //$("#outDate").text("data is out of date, "+jData.recievedTime);
+    showHex(storeData);
+
+}, 2000)
 
 function sendReq(callFail, callSuccess) {
     getSessionData(function (Sid, activeChill) {
@@ -157,4 +171,9 @@ function get_query(url) {
 function storelastTime(T,callback){
     var lastT=sessionStorage.getItem("lastTime");
     callback(lastT,T);
+}
+
+function updateTime(T,callback){
+    $("#updateTime").text(" last updated on "+T);
+    callback();
 }
