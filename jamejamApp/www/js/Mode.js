@@ -4,6 +4,8 @@
 var storeData = sessionStorage.getItem('chillerData');
 $(document).ready(function () {
     console.log("init data");
+        var jData=JSON.parse(storeData);
+    $("#updateTime").text(" last updated on "+jData.recievedTime);
     showHex(storeData);
     $("#date").append(showDate());
 });
@@ -26,6 +28,8 @@ var myVar = setInterval(function () {
     }
     else {
         console.log("call showHex");
+            var jData=JSON.parse(storeData);
+    $("#updateTime").text(" last updated on "+jData.recievedTime);
         showHex(storeData);
     }
 
