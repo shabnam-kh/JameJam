@@ -180,10 +180,7 @@
     </div>
 </div>
 <div class="container">
-    <!--<table class="table table-bordered centerTable">-->
-    <!--<tr>-->
-    <!--<td>-->
-    <!--<div class="alert alert-warning" role="button">connect</div>-->
+    <div id="updateTime" class="alert alert-warning" role="alertdialog"></div>
     <div class="row">
         <div class="col-md-5 box">
 
@@ -278,6 +275,10 @@ as needed -->
 <script>
     $(document).ready(function () {
         $("#date").append(showDate());
+        var chillerData = sessionStorage.getItem('chillerData');
+        var jData=JSON.parse(chillerData);
+          console.log(" last updated "+jData.recievedTime);
+        $("#updateTime").text(" last updated on "+jData.recievedTime);
     });
 //    sendReq(function () {
 //    }, function (data) {

@@ -298,7 +298,7 @@ as needed -->
     sendReq(function () {
     }, function (data) {
         console.log("get chiller data " + data);
-        jData=JSON.parse(data);
+        var jData=JSON.parse(data);
         console.log(" last updated "+jData.recievedTime);
         $("#updateTime").text(" last updated on "+jData.recievedTime);
         sessionStorage.setItem('chillerData', data);
