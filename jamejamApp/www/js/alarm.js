@@ -19,6 +19,8 @@ var storeData = sessionStorage.getItem('chillerData');
 
 $(document).ready(function () {
     console.log("init data");
+        var jData=JSON.parse(storeData);
+    $("#updateTime").text(" last updated on "+jData.recievedTime);
     showHex(storeData);
     $("#date").append(showDate());
 });
@@ -35,6 +37,8 @@ var sendReqToServer = setInterval(function () {
 
 var myVar = setInterval(function () {
     console.log("update data");
+        var jData=JSON.parse(storeData);
+    $("#updateTime").text(" last updated on "+jData.recievedTime);
     showHex(storeData);
 }, 2000)
 
