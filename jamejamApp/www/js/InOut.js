@@ -18,9 +18,12 @@ $(document).ready(function () {
     $("#updateTime").text(" last updated on "+jData.recievedTime);
     showIn(storeData);
     showOut(storeData);
-    $("#date").append(showDate());
+    $("#date").text(showDate());
 });
 
+var timeVar=setInterval(function(){
+    $("#date").text(showDate());
+},1000);
 
 var sendReqToServer = setInterval(function () {
     //$(".field").val("hello");
@@ -88,15 +91,6 @@ function divideHex(hexArray) {
         $("#prog" + i).val(hexArray[i]);
     }
 
-}
-function showDate() {
-    var d = new Date(),
-        minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
-        hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
-        ampm = d.getHours() >= 12 ? 'pm' : 'am',
-        months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
 }
 function showIn(str) {
     console.log("showHex function");
