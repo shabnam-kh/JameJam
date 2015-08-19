@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f4c5cd-3ea6-46d0-be38-4296ddf55ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/InOut.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/InOut.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/alarm.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/alarm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/function.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/other.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/other.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/status_InOut.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/status_InOut.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/temp.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,99 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="setting_mode.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html">
+      <file leaf-file-name="onclick_temp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.703704" vertical-offset="3860" max-vertical-offset="6930">
-              <caret line="229" column="3" selection-start-line="229" selection-start-column="3" selection-end-line="229" selection-end-column="98" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-11.62963" vertical-offset="7894" max-vertical-offset="9000">
+              <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mode.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="temp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/temp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="2574">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mode.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/Mode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2268">
-              <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status_alarm.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.666667" vertical-offset="3024" max-vertical-offset="6192">
-              <caret line="187" column="5" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="99" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alarm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/alarm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="2448">
-              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="68" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status_InOut.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_InOut.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5925927" vertical-offset="3197" max-vertical-offset="6246">
-              <caret line="189" column="44" selection-start-line="189" selection-start-column="44" selection-end-line="189" selection-end-column="44" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InOut.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/InOut.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3690637" vertical-offset="2413" max-vertical-offset="3150">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status_other.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_other.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333" vertical-offset="3024" max-vertical-offset="5454">
-              <caret line="182" column="4" selection-start-line="182" selection-start-column="4" selection-end-line="182" selection-end-column="97" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="other.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/other.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="3420">
-              <caret line="70" column="2" selection-start-line="70" selection-start-column="2" selection-end-line="80" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/function.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="973" max-vertical-offset="1782">
-              <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.496" vertical-offset="330" max-vertical-offset="2322">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -166,14 +89,14 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/other.js" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/alarm.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_InOut.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/InOut.js" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" />
       </list>
     </option>
   </component>
@@ -850,7 +773,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439991068169</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="set timer to 3 minutes for out of date data/all page">
+      <created>1440001453810</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1440001453810</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -918,7 +847,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="add temp + Mode init data" />
     <MESSAGE value="fix in/out init data" />
     <MESSAGE value="server url" />
     <MESSAGE value="delete info" />
@@ -943,7 +871,8 @@
     <MESSAGE value="add seconds to date" />
     <MESSAGE value="out of date data" />
     <MESSAGE value="set timer to 3 minutes for out of date data" />
-    <option name="LAST_COMMIT_MESSAGE" value="set timer to 3 minutes for out of date data" />
+    <MESSAGE value="set timer to 3 minutes for out of date data/all page" />
+    <option name="LAST_COMMIT_MESSAGE" value="set timer to 3 minutes for out of date data/all page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1226,7 +1155,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/function.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="973" max-vertical-offset="1782">
+        <state vertical-scroll-proportion="0.95115334" vertical-offset="973" max-vertical-offset="1782">
           <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
           <folding />
         </state>
@@ -1250,32 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/temp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.824" vertical-offset="0" max-vertical-offset="2484">
-          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6957747" vertical-offset="3340" max-vertical-offset="8982">
-          <caret line="213" column="3" selection-start-line="213" selection-start-column="3" selection-end-line="213" selection-end-column="97" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/Mode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2268">
-          <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.703704" vertical-offset="3860" max-vertical-offset="6930">
@@ -1288,7 +1191,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/other.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="3420">
+        <state vertical-scroll-proportion="0.17096336" vertical-offset="1134" max-vertical-offset="3420">
           <caret line="70" column="2" selection-start-line="70" selection-start-column="2" selection-end-line="80" selection-end-column="7" />
           <folding />
         </state>
@@ -1314,7 +1217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_other.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333" vertical-offset="3024" max-vertical-offset="5454">
+        <state vertical-scroll-proportion="0.34854773" vertical-offset="3024" max-vertical-offset="5454">
           <caret line="182" column="4" selection-start-line="182" selection-start-column="4" selection-end-line="182" selection-end-column="97" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1344,6 +1247,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3690637" vertical-offset="2413" max-vertical-offset="3150">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.62963" vertical-offset="7894" max-vertical-offset="9000">
+          <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/temp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="2574">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/Mode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.496" vertical-offset="330" max-vertical-offset="2322">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding />
         </state>
       </provider>

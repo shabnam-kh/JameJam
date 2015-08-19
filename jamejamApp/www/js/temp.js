@@ -34,10 +34,13 @@ var checkTime=setInterval(function(){
             console.log("data is out of date !!!");
             //$("#updateTime").hide();
             $("#outDate").text("data is out of date");
+              $(".field").css("color","gray");
             $("#outDate").show();
+
         }
         else{
             console.log("data is up to date.");
+             $(".field").css("color","white");
              $("#outDate").hide();
             //$("#updateTime").text(T);
             // $("#updateTime").show();
@@ -68,7 +71,9 @@ var myVar = setInterval(function () {
             if(lastT===T){
                 //console.log("still out of date");
             }else{
+                $(".field").css("color","white");
                 $("#outDate").hide();
+
             }
         })
     });
