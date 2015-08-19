@@ -199,7 +199,7 @@
     <!--<table class="table table-bordered centerTable">-->
     <!--<tr>-->
     <!--<td>-->
-    <div id="updateTime" class="alert alert-warning" role="alertdialog"></div>
+    <div id="updateTime" class="alert alert-warning" role="alertdialog" style="display: none"></div>
     <div class="row">
         <div class="col-md-5 box">
             <header class="panel-heading">CENTURY</header>
@@ -293,8 +293,11 @@ as needed -->
     $(document).ready(function () {
         var activeChiller = sessionStorage.getItem("activeChiller");
         console.log("active chiller is " + activeChiller);
-        $("#date").append(showDate());
+        $("#date").text(showDate());
     });
+    var timeVar=setInterval(function(){
+    $("#date").text(showDate());
+},1000);
     sendReq(function () {
     }, function (data) {
         console.log("get chiller data " + data);
@@ -303,15 +306,6 @@ as needed -->
         $("#updateTime").text(" last updated on "+jData.recievedTime);
         sessionStorage.setItem('chillerData', data);
     })
-    function showDate() {
-        var d = new Date(),
-                minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
-                hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
-                ampm = d.getHours() >= 12 ? 'pm' : 'am',
-                months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
-    }
 </script>
 </body>
 

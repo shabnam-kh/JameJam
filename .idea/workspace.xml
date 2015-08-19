@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f4c5cd-3ea6-46d0-be38-4296ddf55ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/function.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JameJam.iws" />
@@ -73,12 +72,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mode.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Mode.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/Mode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3175034" vertical-offset="0" max-vertical-offset="2034">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2034">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chillerInfo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49295774" vertical-offset="3268" max-vertical-offset="5706">
+              <caret line="201" column="92" selection-start-line="201" selection-start-column="92" selection-end-line="201" selection-end-column="92" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,7 +138,6 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/js/chillerInfoHandle.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/chillerList.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/information.js" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
@@ -140,6 +150,7 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/function.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
       </list>
     </option>
   </component>
@@ -786,7 +797,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439971504088</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add seconds to date/mode page">
+      <created>1439972535686</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1439972535686</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -854,7 +871,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="update radio buttons status by data" />
     <MESSAGE value="update radio buttons status by data/alarm page" />
     <MESSAGE value="remove extra date" />
     <MESSAGE value="In/Out page radio buttons update with data" />
@@ -879,7 +895,8 @@
     <MESSAGE value="add updated time to InOut page" />
     <MESSAGE value="add updated time to other page" />
     <MESSAGE value="add updated time to setting/mode page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updated time to setting/mode page" />
+    <MESSAGE value="add seconds to date/mode page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add seconds to date/mode page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -933,7 +950,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="5256">
           <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="104" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -997,7 +1016,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="5256">
           <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="104" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1040,7 +1061,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="4644">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,14 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.62963" vertical-offset="5104" max-vertical-offset="5814">
-          <caret line="301" column="6" selection-start-line="301" selection-start-column="6" selection-end-line="302" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.62963" vertical-offset="4780" max-vertical-offset="5490">
@@ -1283,9 +1298,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/Mode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3175034" vertical-offset="0" max-vertical-offset="2034">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2034">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49295774" vertical-offset="3268" max-vertical-offset="5706">
+          <caret line="201" column="92" selection-start-line="201" selection-start-column="92" selection-end-line="201" selection-end-column="92" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
