@@ -279,11 +279,11 @@ as needed -->
     $(document).ready(function () {
         $("#date").append(showDate());
     });
-    sendReq(function () {
-    }, function (data) {
-        console.log("get chiller data " + data);
-        sessionStorage.setItem('chillerData', data);
-    })
+//    sendReq(function () {
+//    }, function (data) {
+//        console.log("get chiller data " + data);
+//        sessionStorage.setItem('chillerData', data);
+//    })
     function showDate() {
         var d = new Date(),
                 minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
