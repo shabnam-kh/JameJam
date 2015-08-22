@@ -339,7 +339,10 @@ background-color:#d3d3d3;
     })
     function action(){
         console.log("click logout");
-        getSecureId(function(id){
+        var r = confirm("Are you sure to Log Out ?!!");
+if (r == true) {
+    console.log("user log out");
+            getSecureId(function(id){
                    $.ajax(
              {
                  url: serverURL+"/logout",
@@ -355,6 +358,10 @@ background-color:#d3d3d3;
      }
          )
         })
+} else {
+    console.log("user not log out");
+}
+
     };
     function getActiveChiller(val){
         sessionStorage.setItem('activeChiller', val);
