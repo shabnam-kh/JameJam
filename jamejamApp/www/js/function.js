@@ -50,7 +50,7 @@ function showDate() {
     return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ":" + seconds + ampm;
 }
 
-    function action() {
+    function logOutAction() {
 
         var r = confirm("Do you want to LogOut ??!!");
         if (r == true) {
@@ -62,7 +62,7 @@ function showDate() {
                             data: {id: id},
                             success: function (data, textStatus, jqXHR) {
                                 console.log(data);
-                                location.href = 'index.html';
+                                location.href = '../index.html';
                             },
                             error: function (jqXHR, textStatus, errorThrown) {
                                 console.log("logout error " + errorThrown)
@@ -92,3 +92,9 @@ function updateTime(T,callback){
     $("#updateTime").text(" last updated on "+T);
     callback();
 }
+
+    function getSecureId(callback){
+        var sID=sessionStorage.getItem('secureID');
+        console.log("secureID is "+sID);
+        callback(sID);
+    }

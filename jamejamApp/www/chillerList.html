@@ -337,32 +337,7 @@ background-color:#d3d3d3;
 //           $(".chillerBtn").removeAttr('disabled');
 //        }
     })
-    function action(){
-        console.log("click logout");
-        var r = confirm("Are you sure to Log Out ?!!");
-if (r == true) {
-    console.log("user log out");
-            getSecureId(function(id){
-                   $.ajax(
-             {
-                 url: serverURL+"/logout",
-                 data:{id:id},
-                 success: function (data, textStatus, jqXHR) {
-                     console.log(data);
-                   location.href='index.html';
-                 },
-                 error: function (jqXHR, textStatus, errorThrown)
-                 {
-                     console.log("logout error "+errorThrown)
-                 }
-     }
-         )
-        })
-} else {
-    console.log("user not log out");
-}
 
-    };
     function getActiveChiller(val){
         sessionStorage.setItem('activeChiller', val);
         console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
@@ -402,6 +377,32 @@ if (r == true) {
 
 
     }
+
+    function action() {
+
+        var r = confirm("Do you want to LogOut ??!!");
+        if (r == true) {
+            console.log("user logout");
+            getSecureId(function (id) {
+                $.ajax(
+                        {
+                            url: serverURL + "/logout",
+                            data: {id: id},
+                            success: function (data, textStatus, jqXHR) {
+                                console.log(data);
+                                location.href = 'index.html';
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log("logout error " + errorThrown)
+                            }
+                        }
+                )
+            })
+        } else {
+            console.log("user not logout");
+        }
+
+    };
     function getSecureId(callback){
         var sID=sessionStorage.getItem('secureID');
         console.log("secureID is "+sID);
