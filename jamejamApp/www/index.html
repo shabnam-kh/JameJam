@@ -99,11 +99,26 @@ $("#global").click(function(){
     $("#local").click(function(){
     console.log("user choose local network");
         $(".alert").show();
+        findDeviceIP(function(){
+            var DeviceIP=sessionStorage.getItem("DeviceIP");
+            console.log("Device IP is "+DeviceIP);
+            if(DeviceIP==null){
+                console.log("cannot find divice IP,try again");
+            }else{
+                var ServerIP=findServerIP(DeviceIP);
+                console.log("local server IP is "+ServerIP);
+                //sessionStorage.setItem("ServerURL",ServerIP);
+            }
+        })
     //location.href="login.html";
 })
 
     function warn(){
         alert("you should first choose your network");
+    }
+    function findServerIP(DeviceIP){
+        var serverIP;
+        return serverIP;
     }
 
 

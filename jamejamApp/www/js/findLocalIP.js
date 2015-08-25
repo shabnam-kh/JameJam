@@ -1,7 +1,7 @@
 /**
  * Created by klappo on 8/25/15.
  */
-function findIP(){
+function findDeviceIP(callback){
     // NOTE: window.RTCPeerConnection is "not a constructor" in FF22/23
 var RTCPeerConnection = /*window.RTCPeerConnection ||*/ window.webkitRTCPeerConnection || window.mozRTCPeerConnection;
 
@@ -29,9 +29,9 @@ if (RTCPeerConnection) (function () {
         else addrs[newAddr] = true;
         var displayAddrs = Object.keys(addrs).filter(function (k) { return addrs[k]; });
         //document.getElementById('list').textContent = displayAddrs.join(" or perhaps ") || "n/a";
-        var localIP=displayAddrs.join(" or perhaps ") || "n/a";
-        console.log("Device IP is "+localIP);
-        sessionStorage.setItem('localIP',localIP);
+        var DeviceIP=displayAddrs.join(" or perhaps ") || "n/a";
+        //console.log("Device IP "+DeviceIP);
+        sessionStorage.setItem('DeviceIP',DeviceIP);
     }
 
     function grepSDP(sdp) {
@@ -55,5 +55,5 @@ if (RTCPeerConnection) (function () {
     //document.getElementById('list').nextSibling.textContent = "In Chrome and Firefox your IP should display automatically, by the power of WebRTCskull.";
 }
 
-
+callback();
 };
