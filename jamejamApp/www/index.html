@@ -79,17 +79,6 @@ background-color:#d3d3d3;
 <a href="javascript:warn();" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
     <!--</div>-->
     </div>
-<!--<div class="container">-->
-              <!--<form id="login" class="navbar-form navbar-right" accept-charset=utf-8 >-->
-            <!--<div class="form-group">-->
-              <!--<input type="text" placeholder="Email" class="form-control">-->
-            <!--</div>-->
-            <!--<div class="form-group">-->
-              <!--<input type="password" placeholder="Password" class="form-control">-->
-            <!--</div>-->
-            <!--<button onclick="login();" type="submit" class="btn btn-success">Sign in</button>-->
-          <!--</form>-->
-
 </div>
     </div>
 <div class="container">
@@ -99,6 +88,7 @@ background-color:#d3d3d3;
     </br>
     <button id="local" class="btn-info">local network (offline)</button>
     <button id="global" class="btn-info">global network (online)</button>
+    <div class="alert alert-info" role="alertdialog" style="display: none">you are choosing local network, please wait to find server IP</br>waiting ...</div>
 </div>
 </div>
 <script>
@@ -106,7 +96,15 @@ $("#global").click(function(){
     console.log("user choose global network");
     location.href="login.html";
 })
+    $("#local").click(function(){
+    console.log("user choose local network");
+        $(".alert").show();
+    //location.href="login.html";
+})
 
+    function warn(){
+        alert("you should first choose your network");
+    }
 
 
 </script>
