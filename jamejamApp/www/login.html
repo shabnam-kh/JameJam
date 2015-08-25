@@ -14,7 +14,6 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/information.js"></script>
     <script src="js/function.js"></script>
-    <script src="js/findLocalIP.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -94,21 +93,74 @@ background-color:#d3d3d3;
     </div>
 <div class="container">
 </br>
-<div class="form-inline">
-    <p class="h1">please choose your network type</p>
-    </br>
-    <button id="local" class="btn-info">local network (offline)</button>
-    <button id="global" class="btn-info">global network (online)</button>
-</div>
+ <input id="username" type="text" placeholder="Username" class="col-md-5 form-control">
+              <input id="password" type="password" placeholder="Password" class="col-md-5 form-control">
+            <button onclick="login();" id="loginConfirm" type="submit" class="btn btn-success">Sign in</button>
+<!--<span>&nbsp</span><a href="">Sign Up</a><span>&nbsp&nbsp&nbsp&nbsp</span><a href="">Forgot password</a>-->
+
+<div class="alert alert-danger" role="alertdialog" style="display: none">fail login</div>
+<div class="alert alert-success" role="alertdialog" style="display: none">successful login</div>
 </div>
 <script>
-$("#global").click(function(){
-    console.log("user choose global network");
-    location.href="login.html";
-})
+//    $(document).ready(function(){
+//        $(".chillerBtn").prop('disabled', true);
+//    });
 
-
-
+    function login(){
+            $(".alert-success").hide();
+                $(".alert-danger").hide();
+        console.log("login in process");
+//        $.get(
+//        baseUrl+"/auth",
+//                {user:$("#username").val(),pass:$("#password").val()},
+//        function( rawdata, textStatus, jqXHR) {
+//           if(jqXHR.status===202){
+//               sessionStorage.setItem('secureID',rawdata);
+//               $(".alert-success").show();
+//               //$(".chillerBtn").prop('disabled', false);
+//               location.href="chillerList.html";
+//
+//           }else{
+//                $(".alert-danger").show();
+//           }
+//})
+        //TODO success and error
+        $.ajax(
+             {
+                 url: serverURL+"/auth",
+                 data:{user:$("#username").val(),pass:$("#password").val()},
+                 success: function (data, textStatus, jqXHR) {
+                     setID(data, function () {
+                         $(".alert-success").show();
+                        location.href="chillerList.html";
+                     })
+                 },
+                 error: function (jqXHR, textStatus, errorThrown)
+                 {
+                     $(".alert-danger").show();
+                 }
+     }
+         )
+    };
+function setID(data,callback){
+    sessionStorage.setItem('secureID',data);
+    callback();
+}
+function warn(){
+    alert("you should login first");
+}
+//    function getActiveChiller(val){
+//        sessionStorage.setItem('activeChiller', val);
+//        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
+//        $.get(
+//        baseUrl+"/chillerInfo",
+//                {id:getChillerNumber(val)},
+//        function( rawdata, textStatus, jqXHR) {
+//             sessionStorage.setItem('chillerInfo', rawdata);
+//            location.href='templates/chillerInfo.html';
+//});
+//
+//    }
 </script>
 </body>
 </html>
