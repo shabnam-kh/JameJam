@@ -8,10 +8,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
 
-    <script src="js/information.js"></script>
+    <!--<script src="js/information.js"></script>-->
     <!--<script src="js/jquery-2.1.4.min.js"></script>-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="js/information.js"></script>
     <script src="js/function.js"></script>
     <script src="js/findLocalIP.js"></script>
 
@@ -90,7 +89,7 @@
         <button id="local" class="btn-info">local network (offline)</button>
         <button id="global" class="btn-info">global network (online)</button>
         <div class="alert alert-info" role="alertdialog" style="display: none">you are choosing local network, please
-            wait to find server IP</br>waiting ...
+            wait to find server IP</br>waiting ...</br>
         </div>
     </div>
 </div>
@@ -98,7 +97,7 @@
     $("#global").click(function () {
         console.log("user choose global network");
         location.href = "login.html";
-        //sessionStorage.setItem("ServerURL",);
+        sessionStorage.setItem("network","global");
     })
     $("#local").click(function () {
         console.log("user choose local network");
@@ -108,10 +107,17 @@
             console.log("Device IP is " + DeviceIP);
             if (DeviceIP == null) {
                 console.log("cannot find device IP,try again");
+                $(".alert").append("cannot find device IP,try again");
+
             } else {
-                var ServerIP = findServerIP(DeviceIP);
-                console.log("local server IP is " + ServerIP);
-                //sessionStorage.setItem("ServerURL",ServerIP);
+                findServerIP(DeviceIP,function(ip){
+                    console.log("local server IP is " + ip);
+                    sessionStorage.setItem("network","local");
+                    sessionStorage.setItem("serverIP",ip);
+                    location.href = "login.html";
+                });
+
+
             }
         })
         //location.href="login.html";
@@ -120,24 +126,24 @@
     function warn() {
         alert("you should first choose your network");
     }
-    function findServerIP(DeviceIP) {
+    function findServerIP(DeviceIP,callback) {
         var tmp = DeviceIP.split(".");
         console.log("split device ip "+tmp);
         var flag=false;
-        var serverIP;
-        for(var i=1;i<256;i++){
+        //var serverIP;
+       for(var i=1;i<256;i++){
             // if(flag==true){
             //     console.log("server IP found");
             //     break;}
-            var URL="http://"+tmp[0]+"."+tmp[1]+"."+tmp[2]+"."+i+":8002";
+           var URL="http://"+tmp[0]+"."+tmp[1]+"."+tmp[2]+"."+i+":8002";
             if(i==tmp[3]){
                 console.log("condition is true");
                 continue;}
-        var fake="http://192.168.1.104:8002";
+        var fake="http://192.168.1.105:8002";
           //console.log("send request to "+URL);
               $.ajax(
             {
-                url: URL + "/Auth",
+                url: URL + "/local",
                 //data: {sID: Sid, id: activeChill},
                 //timeout: 2000,
                 method:"POST",
@@ -145,8 +151,10 @@
                     console.log("ajax req " + textStatus);
                     console.log("ajax req data " + data);
                     //callSuccess(data);
-                    serverIP=URL;
+                    var serverIP=data;
+                    console.log("server IP found "+serverIP);
                     //flag=true;
+                    callback(serverIP);
 
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
@@ -159,32 +167,7 @@
 
         }
 
-        return serverIP;
-    }
 
-    function sendRequest(URL,callSuccess,callFail){
-           console.log("send request to "+URL);
-              $.ajax(
-            {
-                url: URL + "/Auth",
-                //data: {sID: Sid, id: activeChill},
-                //timeout: 2000,
-                method:"POST",
-                success: function (data, textStatus, jqXHR) {
-                    console.log("ajax req " + textStatus);
-                    console.log("ajax req data " + data);
-                    //callSuccess(data);
-                    serverIP=URL;
-                    //flag=true;
-
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.log("ajax req fail" + textStatus);
-                    console.log("ajax req error " + errorThrown);
-                    //callFail();
-                }
-            }
-        )
     }
 
 
