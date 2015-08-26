@@ -4,9 +4,8 @@
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-
-
+    <meta charset="UTF-8" name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
 
     <script src="js/information.js"></script>
@@ -23,102 +22,169 @@
 <title>Jame_Jam</title>
 
 <!-- Bootstrap -->
-       <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme -->
+    <!-- Bootstrap theme -->
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
-<style>
-/*#logo{*/
-    /*width: 200%;*/
-    /*height: 200%;*/
-/*}*/
-.navbar-inner {
-    min-height: 0px;
-}
+    <style>
+        /*#logo{*/
+        /*width: 200%;*/
+        /*height: 200%;*/
+        /*}*/
+        .navbar-inner {
+            min-height: 0px;
+        }
 
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 50px;
-    height: 50px;
-    padding-top: 0;
-}
-#logo {
-    width: 150px;
-    height: auto;
-    border-top: none;
-}
+        .navbar-brand,
+        .navbar-nav li a {
+            line-height: 50px;
+            height: 50px;
+            padding-top: 0;
+        }
 
+        #logo {
+            width: 150px;
+            height: auto;
+            border-top: none;
+        }
 
+        .btn {
+            border: 1px solid grey;
+            background-color: #d3d3d3;
+        }
 
-.btn {	border:1px solid grey;
-background-color:#d3d3d3;
-}
+        .bold {
+            font-weight: bold;
+            font-size: larger;
+        }
 
-        .bold{
-        font-weight: bold;
-        font-size:larger;
-    }
-    #login{
-        float:left;
-        padding-top: 25px;
-    }
-    .box{
-        background-color: #afd9ee;
-    }
-</style>
+        #login {
+            float: left;
+            padding-top: 25px;
+        }
+
+        .box {
+            background-color: #afd9ee;
+        }
+    </style>
 </head>
 <body>
 
 
 <div class="navbar navbar-default">
-<div class="container">
-<div class="navbar-header">
+    <div class="container">
+        <div class="navbar-header">
 
 
-<a href="javascript:warn();" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
-    <!--</div>-->
+            <a href="javascript:warn();" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
+            <!--</div>-->
+        </div>
     </div>
 </div>
-    </div>
 <div class="container">
-</br>
-<div class="form-inline">
-    <p class="h1">please choose your network type</p>
     </br>
-    <button id="local" class="btn-info">local network (offline)</button>
-    <button id="global" class="btn-info">global network (online)</button>
-    <div class="alert alert-info" role="alertdialog" style="display: none">you are choosing local network, please wait to find server IP</br>waiting ...</div>
-</div>
+    <div class="form-inline">
+        <p class="h1">please choose your network type</p>
+        </br>
+        <button id="local" class="btn-info">local network (offline)</button>
+        <button id="global" class="btn-info">global network (online)</button>
+        <div class="alert alert-info" role="alertdialog" style="display: none">you are choosing local network, please
+            wait to find server IP</br>waiting ...
+        </div>
+    </div>
 </div>
 <script>
-$("#global").click(function(){
-    console.log("user choose global network");
-    location.href="login.html";
-})
-    $("#local").click(function(){
-    console.log("user choose local network");
+    $("#global").click(function () {
+        console.log("user choose global network");
+        location.href = "login.html";
+        //sessionStorage.setItem("ServerURL",);
+    })
+    $("#local").click(function () {
+        console.log("user choose local network");
         $(".alert").show();
-        findDeviceIP(function(){
-            var DeviceIP=sessionStorage.getItem("DeviceIP");
-            console.log("Device IP is "+DeviceIP);
-            if(DeviceIP==null){
-                console.log("cannot find divice IP,try again");
-            }else{
-                var ServerIP=findServerIP(DeviceIP);
-                console.log("local server IP is "+ServerIP);
+        findDeviceIP(function () {
+            var DeviceIP = sessionStorage.getItem("DeviceIP");
+            console.log("Device IP is " + DeviceIP);
+            if (DeviceIP == null) {
+                console.log("cannot find device IP,try again");
+            } else {
+                var ServerIP = findServerIP(DeviceIP);
+                console.log("local server IP is " + ServerIP);
                 //sessionStorage.setItem("ServerURL",ServerIP);
             }
         })
-    //location.href="login.html";
-})
+        //location.href="login.html";
+    })
 
-    function warn(){
+    function warn() {
         alert("you should first choose your network");
     }
-    function findServerIP(DeviceIP){
+    function findServerIP(DeviceIP) {
+        var tmp = DeviceIP.split(".");
+        console.log("split device ip "+tmp);
+        var flag=false;
         var serverIP;
+        for(var i=1;i<256;i++){
+            // if(flag==true){
+            //     console.log("server IP found");
+            //     break;}
+            var URL="http://"+tmp[0]+"."+tmp[1]+"."+tmp[2]+"."+i+":8002";
+            if(i==tmp[3]){
+                console.log("condition is true");
+                continue;}
+        var fake="http://192.168.1.104:8002";
+          //console.log("send request to "+URL);
+              $.ajax(
+            {
+                url: URL + "/Auth",
+                //data: {sID: Sid, id: activeChill},
+                //timeout: 2000,
+                method:"POST",
+                success: function (data, textStatus, jqXHR) {
+                    console.log("ajax req " + textStatus);
+                    console.log("ajax req data " + data);
+                    //callSuccess(data);
+                    serverIP=URL;
+                    //flag=true;
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    // console.log("ajax req fail" + textStatus);
+                    // console.log("ajax req error " + errorThrown);
+                    //callFail();
+                }
+            }
+        )
+
+        }
+
         return serverIP;
+    }
+
+    function sendRequest(URL,callSuccess,callFail){
+           console.log("send request to "+URL);
+              $.ajax(
+            {
+                url: URL + "/Auth",
+                //data: {sID: Sid, id: activeChill},
+                //timeout: 2000,
+                method:"POST",
+                success: function (data, textStatus, jqXHR) {
+                    console.log("ajax req " + textStatus);
+                    console.log("ajax req data " + data);
+                    //callSuccess(data);
+                    serverIP=URL;
+                    //flag=true;
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("ajax req fail" + textStatus);
+                    console.log("ajax req error " + errorThrown);
+                    //callFail();
+                }
+            }
+        )
     }
 
 
