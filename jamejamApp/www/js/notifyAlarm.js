@@ -25,6 +25,9 @@ document.addEventListener('deviceready', function () {
     });
 }, 5000);
 
+cordova.plugins.notification.local.on("click", function (notification, state) {
+}, this)
+
 function notifyAlarm(){
     console.log("call notification plugin");
     // Schedule notification for tomorrow to remember about the meeting
@@ -35,5 +38,6 @@ function notifyAlarm(){
     });
 
 }
+
 }, false);
 
