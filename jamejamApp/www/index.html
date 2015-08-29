@@ -13,6 +13,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/function.js"></script>
     <script src="js/findLocalIP.js"></script>
+    <script src="cordova.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -94,14 +95,14 @@
     </div>
 </div>
 <script>
-//       document.addEventListener('deviceready', function () {
-//    // Schedule notification for tomorrow to remember about the meeting
-//    cordova.plugins.notification.local.schedule({
-//        id: 10,
-//        title: "Meeting in 15 minutes!",
-//        text: "Jour fixe Produktionsbesprechung"
-//    });
-//}, false);
+       document.addEventListener('deviceready', function () {
+    // Schedule notification for tomorrow to remember about the meeting
+    cordova.plugins.notification.local.schedule({
+        id: 10,
+        title: "Meeting in 15 minutes!",
+        text: "Jour fixe Produktionsbesprechung"
+    });
+}, false);
     $("#global").click(function () {
         console.log("user choose global network");
         location.href = "login.html";
