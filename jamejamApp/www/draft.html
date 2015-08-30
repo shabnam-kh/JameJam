@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test dropdown toggle</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="dropdown">
+<a class="dropdown-toggle" id="dropdownMenu1" href="#">Dropdown trigger</a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+<li role="presentation"><a role="menuitem" tabindex="-1" href="setting.html">Action</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+<li role="presentation" class="divider"></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+</ul>
+</div>
+<p>just for test</p>
+   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+$("a.dropdown-toggle").click(function(ev) {
+$("a.dropdown-toggle").dropdown("toggle");
+return false;
+});
+$("ul.dropdown-menu a").click(function(ev) {
+$("a.dropdown-toggle").dropdown("toggle");
+return false;
+});
+});
+</script>
+</body>
+</html>
