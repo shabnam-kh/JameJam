@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8" />
     <!-- Custom styles for this template -->
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
     <script src="js/information.js"></script>
     <script src="bower_components/handlebars/handlebars.js"></script>
     <script src="js/function.js"></script>
+<!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -17,11 +20,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <title>Jame_Jam</title>
 
-<!-- Bootstrap -->
-       <!-- Bootstrap core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
+       <!--&lt;!&ndash; Bootstrap core CSS &ndash;&gt;-->
+    <!--<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+        <!--&lt;!&ndash; Bootstrap theme &ndash;&gt;-->
+    <!--<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">-->
 <style>
 .navbar-brand,
 .navbar-nav li a {
@@ -103,7 +106,16 @@ background-color:#d3d3d3;
                            <td><p>welcome userTTF </p></td>
                            <td> &nbsp &nbsp</td>
                            <td>
-                              <a href="javascript:action()"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
+                              <!--<a href="javascript:action()"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>-->
+                             <ul class="nav nav-pills nav-stacked">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="icon" class="glyphicon glyphicon-cog large" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="setting.html">setting</a></li>
+            <li><a href="javascript:action()">logout</a></li>
+          </ul>
+        </li>
+      </ul>
                            </td>
                             <td> &nbsp &nbsp</td>
                            <td>
