@@ -2,215 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f4c5cd-3ea6-46d0-be38-4296ddf55ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/.jscsrc" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/.jscsrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/.jshintrc" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/.jshintrc" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/Gruntfile.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/InOut.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/InOut.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/Mode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/effects/Tween.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation/_evalUrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/data/accepts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/access.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/addGetHookIf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/affix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/alarm.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/alarm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/alert.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/alerts.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event/alias.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/exports/amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular-csp.css" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular-csp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/effects/animatedSelector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/badges.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/badges.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap-theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap.css" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/border-radius.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/breadcrumbs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-commonjs-generator.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-commonjs-generator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-lessdoc-parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-raw-files-generator.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/grunt/bs-raw-files-generator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/button.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/carousel.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/carousel.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/chillerList.html" afterPath="$PROJECT_DIR$/jamejamApp/www/chillerList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/class2type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/classes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/close.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/collapse.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/collapse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/component-animations.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/component-animations.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/composer.json" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/concat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/config.xml" afterPath="$PROJECT_DIR$/jamejamApp/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/cordova.js" afterPath="$PROJECT_DIR$/jamejamApp/www/cordova.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/cssExpand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/curCSS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/defaultDisplay.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/defaultDisplay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/deferred.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/queue/delay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/draft/draft.html" afterPath="$PROJECT_DIR$/jamejamApp/www/draft/draft.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/draft/draft_chillerInfo.html" afterPath="$PROJECT_DIR$/jamejamApp/www/draft/draft_chillerInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/draft/draft_index.html" afterPath="$PROJECT_DIR$/jamejamApp/www/draft/draft_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/dropdown.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/traversing/findFilter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/findLocalIP.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/findLocalIP.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/forms.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/function.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/draft/get.html" afterPath="$PROJECT_DIR$/jamejamApp/www/draft/get.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/exports/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/glyphicons.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/glyphicons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/gradients.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/grid-framework.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/grid.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.amd.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.amd.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.amd.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.amd.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.amd.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.amd.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/handlebars.runtime.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/hasOwn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/spec/helper.js" afterPath="$PROJECT_DIR$/jamejamApp/www/spec/helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/image.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/image.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/css/index.css" afterPath="$PROJECT_DIR$/jamejamApp/www/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/index.html" afterPath="$PROJECT_DIR$/jamejamApp/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/spec/index.js" afterPath="$PROJECT_DIR$/jamejamApp/www/spec/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/indexOf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/input-groups.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/input-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/isHidden.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/isHidden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/spec/lib/jasmine-1.2.0/jasmine-html.js" afterPath="$PROJECT_DIR$/jamejamApp/www/spec/lib/jasmine-1.2.0/jasmine-html.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/spec/lib/jasmine-1.2.0/jasmine.css" afterPath="$PROJECT_DIR$/jamejamApp/www/spec/lib/jasmine-1.2.0/jasmine.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/spec/lib/jasmine-1.2.0/jasmine.js" afterPath="$PROJECT_DIR$/jamejamApp/www/spec/lib/jasmine-1.2.0/jasmine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/dist/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/dist/jquery.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/jsonp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/jumbotron.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/jumbotron.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/list-group.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/list-group.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/login.html" afterPath="$PROJECT_DIR$/jamejamApp/www/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/modal.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/modals.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/navs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/var/nonce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/notifyAlarm.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/notifyAlarm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/other.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/other.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/outro.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/outro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/package.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/package.json" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/handlebars/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/panels.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/panels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/parseHTML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/parseJSON.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/parseJSON.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/parseXML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/pnum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/popover.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/popover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/popovers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/print.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/print.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/progress-bars.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/prop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/push.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/ready.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/responsive-utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/responsive-visibility.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/rmargin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/rnotwhite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/var/rnumnonpx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/var/rquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/core/var/rsingleTag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/scrollspy.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/scrollspy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/selector-sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/selector.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/serialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/sizzle/dist/sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/sizzle/dist/sizzle.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/sizzle/dist/sizzle.min.map" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/sizzle/dist/sizzle.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/slice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/spec.html" afterPath="$PROJECT_DIR$/jamejamApp/www/spec.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/status_InOut.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/status_InOut.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/status_other.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/status_other.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/templates/status_setting.html" afterPath="$PROJECT_DIR$/jamejamApp/www/templates/status_setting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/strundefined.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/strundefined.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/event/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/manipulation/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/swap.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/css/swap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/tab.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/tables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/js/temp.js" afterPath="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/theme.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/var/toString.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/transition.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/js/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/traversing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/utilities.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/attributes/val.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/mixins/vendor-prefixes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-switch.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jamejamApp/www/js/bootstrap-switch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jamejamApp/www/css/bootstrap-switch.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jamejamApp/www/js/bootstrap-switch.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/setting.html" afterPath="$PROJECT_DIR$/jamejamApp/www/setting.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/wrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/jamejamApp/www/bower_components/jquery/src/ajax/xhr.js" />
     </list>
     <ignored path="JameJam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -235,41 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="onclick_status.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3333335" vertical-offset="2376" max-vertical-offset="5634">
-              <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+            <state vertical-scroll-proportion="-17.444445" vertical-offset="2661" max-vertical-offset="3384">
+              <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chillerInfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html">
+      <file leaf-file-name="setting.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/setting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.0" vertical-offset="2592" max-vertical-offset="5958">
-              <caret line="195" column="29" selection-start-line="195" selection-start-column="29" selection-end-line="195" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="504">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status_setting.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_setting.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40140846" vertical-offset="2631" max-vertical-offset="5436">
-              <caret line="162" column="21" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.6514523" vertical-offset="1365" max-vertical-offset="2088">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -308,7 +85,6 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/notify.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/notifyAlarm.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/temp.js" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/setting.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/draft.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/test.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/bower.json" />
@@ -322,6 +98,7 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_other.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_setting.html" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/setting.html" />
       </list>
     </option>
   </component>
@@ -425,29 +202,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JameJam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JameJam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jamejamApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,7 +216,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/KlappoApp" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesJavaScript 1.5" value="false" />
@@ -471,6 +226,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jamejamApp/www/css" />
       <recent name="$PROJECT_DIR$/jamejamApp/www/js" />
       <recent name="$PROJECT_DIR$/jamejamApp/www" />
       <recent name="$PROJECT_DIR$/jamejamApp/www/bower_components" />
@@ -479,13 +235,8 @@
       <recent name="$PROJECT_DIR$/jamejamApp/www/js" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.setting.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JameJam/jamejamApp/www/index.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JameJam/jamejamApp/www/login.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -501,6 +252,11 @@
       <method />
     </configuration>
     <configuration default="false" name="draft.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JameJam/jamejamApp/www/draft.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="setting.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JameJam/jamejamApp/www/setting.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -695,18 +451,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.notify.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.draft.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.notify.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.draft.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.setting.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.draft.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.notify.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.setting.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.draft.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.notify.html" />
       </list>
     </recent_temporary>
   </component>
@@ -717,12 +473,6 @@
       <created>1437473249263</created>
       <option name="number" value="Default" />
       <updated>1437473249263</updated>
-    </task>
-    <task id="LOCAL-00015" summary="setting_mode new data+Mode.js">
-      <created>1438160032464</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1438160032464</updated>
     </task>
     <task id="LOCAL-00016" summary="update radio buttons status by data">
       <created>1438251954192</created>
@@ -1012,7 +762,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440922516008</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add setting dropdown to all pages">
+      <created>1440924538171</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1440924538171</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1080,7 +836,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="add updated time to alarm page" />
     <MESSAGE value="add updated time to InOut page" />
     <MESSAGE value="add updated time to other page" />
     <MESSAGE value="add updated time to setting/mode page" />
@@ -1105,21 +860,14 @@
     <MESSAGE value="correct chiller image labels value" />
     <MESSAGE value="delete cordova.js from index" />
     <MESSAGE value="delete notify alaram from chiller list+correct setting dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete notify alaram from chiller list+correct setting dropdown" />
+    <MESSAGE value="add setting dropdown to all pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add setting dropdown to all pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="270">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="504">
@@ -1388,22 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="270">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="3384">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/chillerList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.3333335" vertical-offset="54" max-vertical-offset="7740">
@@ -1480,8 +1212,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/status_setting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40140846" vertical-offset="2631" max-vertical-offset="5436">
-          <caret line="162" column="21" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.73098594" vertical-offset="2631" max-vertical-offset="5436">
+          <caret line="175" column="41" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/bower_components/bootstrap/dist/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="42966">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.444445" vertical-offset="2661" max-vertical-offset="3384">
+          <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6514523" vertical-offset="1365" max-vertical-offset="2088">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta charset="UTF-8" name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+
+    <!--<script src="js/information.js"></script>-->
+    <!--<script src="js/jquery-2.1.4.min.js"></script>-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/findLocalIP.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<title>Jame_Jam</title>
+
+<!-- Bootstrap -->
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-switch.css" rel="stylesheet">
+
+    <style>
+        /*#logo{*/
+        /*width: 200%;*/
+        /*height: 200%;*/
+        /*}*/
+        .navbar-inner {
+            min-height: 0px;
+        }
+
+        .navbar-brand,
+        .navbar-nav li a {
+            line-height: 50px;
+            height: 50px;
+            padding-top: 0;
+        }
+
+        #logo {
+            width: 150px;
+            height: auto;
+            border-top: none;
+        }
+
+        .btn {
+            border: 1px solid grey;
+            background-color: #d3d3d3;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #login {
+            float: left;
+            padding-top: 25px;
+        }
+
+        .box {
+            background-color: #afd9ee;
+        }
+        .modal-title{
+            color: royalblue;
+        }
+        .general{
+            background-color: #d3d3d3;
+        }
+    </style>
 </head>
 <body>
-<p>setting page</p>
+
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+
+
+            <a href="javascript:warn();" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    </br>
+        <div class="row">
+            <b>alarm notification</b>
+            <input type="checkbox" name="my-checkbox" checked></div>
+
+    </div>
+
+<script>
+    $(document).ready(function(){
+         $("[name='my-checkbox']").bootstrapSwitch();
+    })
+
+</script>
 </body>
 </html>
