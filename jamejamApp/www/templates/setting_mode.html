@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8"/>
     <!-- Custom styles for this template -->
-        <script src="../cordova.js"></script>
+    <script src="../cordova.js"></script>
     <script src="../js/notifyAlarm.js"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/information.js"></script>
     <script src="../bower_components/handlebars/handlebars.js"></script>
     <script src="../js/chillerInfoHandle.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -206,8 +207,19 @@
                     <td><p>welcome userTTF </p></td>
                     <td> &nbsp &nbsp</td>
                     <td>
-                        <a href="javascript:logOutAction()"><span id="icon" class="glyphicon glyphicon-cog large"
-                                                      aria-hidden="true"></span></a>
+                        <!--<a href="javascript:logOutAction()"><span id="icon" class="glyphicon glyphicon-cog large"-->
+                        <!--aria-hidden="true"></span></a>-->
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="icon"
+                                                                                                 class="glyphicon glyphicon-cog large"
+                                                                                                 aria-hidden="true"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="setting.html">setting</a></li>
+                                    <li><a href="javascript:logOutAction()">logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </td>
                     <td> &nbsp &nbsp</td>
                     <td>
@@ -228,8 +240,8 @@
 <!--<tr>-->
 <!--<td>-->
 <div class="container">
-  <div id="updateTime" class="alert alert-link" role="alertdialog"></div>
-     <div id="outDate" class="alert alert-warning" role="alertdialog" style="display: none"></div>
+    <div id="updateTime" class="alert alert-link" role="alertdialog"></div>
+    <div id="outDate" class="alert alert-warning" role="alertdialog" style="display: none"></div>
     <div class="row">
         <div class="col-md-5 box">
             <header class="panel-heading">SETTING MODE</header>

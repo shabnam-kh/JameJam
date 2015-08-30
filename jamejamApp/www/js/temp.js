@@ -5,48 +5,48 @@
 
 $(document).ready(function () {
     console.log("init data");
-        console.log("call sendReq");
+    console.log("call sendReq");
     sendReq(function () {
     }, function (data) {
         storeData = data;
-          var jData=JSON.parse(data);
-    $("#updateTime").text(" last updated on "+jData.recievedTime);
-     storelastTime($("#updateTime").text(),function(lastT,T){
-        sessionStorage.setItem("lastTime",T);
-    })
-    showHex(data);
+        var jData = JSON.parse(data);
+        $("#updateTime").text(" last updated on " + jData.recievedTime);
+        storelastTime($("#updateTime").text(), function (lastT, T) {
+            sessionStorage.setItem("lastTime", T);
+        })
+        showHex(data);
     });
     imageTemp();
     $("#date").text(showDate());
 });
 
-var timeVar=setInterval(function(){
+var timeVar = setInterval(function () {
     $("#date").text(showDate());
-},1000);
+}, 1000);
 
-var checkTime=setInterval(function(){
+var checkTime = setInterval(function () {
     console.log("check for out of date data");
-    storelastTime($("#updateTime").text(),function(lastT,T){
-        sessionStorage.setItem("lastTime",T);
-        console.log("last time is "+lastT);
-        console.log("current time is "+T);
-        if(lastT===T){
+    storelastTime($("#updateTime").text(), function (lastT, T) {
+        sessionStorage.setItem("lastTime", T);
+        console.log("last time is " + lastT);
+        console.log("current time is " + T);
+        if (lastT === T) {
             console.log("data is out of date !!!");
             //$("#updateTime").hide();
             $("#outDate").text("data is out of date");
-              $(".field").css("color","gray");
+            $(".field").css("color", "gray");
             $("#outDate").show();
 
         }
-        else{
+        else {
             console.log("data is up to date.");
-             $(".field").css("color","white");
-             $("#outDate").hide();
+            $(".field").css("color", "white");
+            $("#outDate").hide();
             //$("#updateTime").text(T);
             // $("#updateTime").show();
-    }
+        }
     })
-},180000);
+}, 180000);
 
 var sendReqToServer = setInterval(function () {
     //$(".field").val("hello");
@@ -64,22 +64,22 @@ var myVar = setInterval(function () {
         $(".field").val("@@@@");
     }
     else {
-           console.log("update data");
-        var jData=JSON.parse(storeData);
-    updateTime(jData.recievedTime,function(){
-        storelastTime($("#updateTime").text(),function(lastT,T){
-            if(lastT===T){
-                //console.log("still out of date");
-            }else{
-                $(".field").css("color","white");
-                $("#outDate").hide();
+        console.log("update data");
+        var jData = JSON.parse(storeData);
+        updateTime(jData.recievedTime, function () {
+            storelastTime($("#updateTime").text(), function (lastT, T) {
+                if (lastT === T) {
+                    //console.log("still out of date");
+                } else {
+                    $(".field").css("color", "white");
+                    $("#outDate").hide();
 
-            }
-        })
-    });
-    //$("#updateTime").text(" last updated on "+jData.recievedTime);
-    //$("#outDate").text("data is out of date, "+jData.recievedTime);
-    showHex(storeData);
+                }
+            })
+        });
+        //$("#updateTime").text(" last updated on "+jData.recievedTime);
+        //$("#outDate").text("data is out of date, "+jData.recievedTime);
+        showHex(storeData);
         imageTemp();
     }
 
@@ -126,9 +126,9 @@ function get_query(url) {
     return result;
 }
 
-function imageTemp(){
+function imageTemp() {
     console.log("call imageTemp function");
-$(".cowO").text($("#field9").val());
+    $(".cowO").text($("#field9").val());
     $(".chwO").text($("#field1").val());
     $(".chwI").text($("#field6").val());
     $(".cowI").text($("#field8").val());

@@ -1,8 +1,8 @@
 {
   "jspm": {
     "main": "handlebars",
-    "shim": { "handlebars": { "exports": "Handlebars" } },
+    "shim": {"handlebars": {"exports": "Handlebars"}},
     "files": ["handlebars.js"],
-    "buildConfig": { "minify": true }
+    "buildConfig": {"minify": true}
   }
 }

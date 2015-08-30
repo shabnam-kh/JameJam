@@ -94,17 +94,17 @@
     </div>
 </div>
 <script>
-//       document.addEventListener('deviceready', function () {
-//    // Schedule notification for tomorrow to remember about the meeting
-//    cordova.plugins.notification.local.schedule({
-//        id: 10,
-//        title: "Alarm Notification Activated"
-//    });
-//}, false);
+    //       document.addEventListener('deviceready', function () {
+    //    // Schedule notification for tomorrow to remember about the meeting
+    //    cordova.plugins.notification.local.schedule({
+    //        id: 10,
+    //        title: "Alarm Notification Activated"
+    //    });
+    //}, false);
     $("#global").click(function () {
         console.log("user choose global network");
         location.href = "login.html";
-        sessionStorage.setItem("network","global");
+        sessionStorage.setItem("network", "global");
     })
     $("#local").click(function () {
         console.log("user choose local network");
@@ -117,10 +117,10 @@
                 $(".alert").append("cannot find device IP,try again");
 
             } else {
-                findServerIP(DeviceIP,function(ip){
+                findServerIP(DeviceIP, function (ip) {
                     console.log("local server IP is " + ip);
-                    sessionStorage.setItem("network","local");
-                    sessionStorage.setItem("serverIP",ip);
+                    sessionStorage.setItem("network", "local");
+                    sessionStorage.setItem("serverIP", ip);
                     location.href = "login.html";
                 });
 
@@ -133,44 +133,44 @@
     function warn() {
         alert("you should first choose your network");
     }
-    function findServerIP(DeviceIP,callback) {
+    function findServerIP(DeviceIP, callback) {
         var tmp = DeviceIP.split(".");
-        console.log("split device ip "+tmp);
-        var flag=false;
+        console.log("split device ip " + tmp);
+        var flag = false;
         //var serverIP;
-       for(var i=1;i<256;i++){
+        for (var i = 1; i < 256; i++) {
             // if(flag==true){
             //     console.log("server IP found");
             //     break;}
-           var URL="http://"+tmp[0]+"."+tmp[1]+"."+tmp[2]+"."+i+":8002";
+            var URL = "http://" + tmp[0] + "." + tmp[1] + "." + tmp[2] + "." + i + ":8002";
 //            if(i==tmp[3]){
 //                console.log("condition is true");
 //                continue;}
-        var fake="http://192.168.1.105:8002";
-          //console.log("send request to "+URL);
-              $.ajax(
-            {
-                url: URL + "/local",
-                //data: {sID: Sid, id: activeChill},
-                //timeout: 2000,
-                method:"POST",
-                success: function (data, textStatus, jqXHR) {
-                    console.log("ajax req " + textStatus);
-                    console.log("ajax req data " + data);
-                    //callSuccess(data);
-                    var serverIP=data;
-                    console.log("server IP found "+serverIP);
-                    //flag=true;
-                    callback(serverIP);
+            var fake = "http://192.168.1.105:8002";
+            //console.log("send request to "+URL);
+            $.ajax(
+                    {
+                        url: URL + "/local",
+                        //data: {sID: Sid, id: activeChill},
+                        //timeout: 2000,
+                        method: "POST",
+                        success: function (data, textStatus, jqXHR) {
+                            console.log("ajax req " + textStatus);
+                            console.log("ajax req data " + data);
+                            //callSuccess(data);
+                            var serverIP = data;
+                            console.log("server IP found " + serverIP);
+                            //flag=true;
+                            callback(serverIP);
 
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    // console.log("ajax req fail" + textStatus);
-                    // console.log("ajax req error " + errorThrown);
-                    //callFail();
-                }
-            }
-        )
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            // console.log("ajax req fail" + textStatus);
+                            // console.log("ajax req error " + errorThrown);
+                            //callFail();
+                        }
+                    }
+            )
 
         }
 

@@ -13,45 +13,45 @@
 var storeData = sessionStorage.getItem('chillerData');
 
 $(document).ready(function () {
-            console.log("call sendReq");
+    console.log("call sendReq");
     sendReq(function () {
     }, function (data) {
         storeData = data;
-          var jData=JSON.parse(data);
-    $("#updateTime").text(" last updated on "+jData.recievedTime);
-     storelastTime($("#updateTime").text(),function(lastT,T){
-        sessionStorage.setItem("lastTime",T);
-    })
-     showIn(storeData);
-    showOut(storeData);
+        var jData = JSON.parse(data);
+        $("#updateTime").text(" last updated on " + jData.recievedTime);
+        storelastTime($("#updateTime").text(), function (lastT, T) {
+            sessionStorage.setItem("lastTime", T);
+        })
+        showIn(storeData);
+        showOut(storeData);
     });
     $("#date").text(showDate());
 });
 
-var timeVar=setInterval(function(){
+var timeVar = setInterval(function () {
     $("#date").text(showDate());
-},1000);
+}, 1000);
 
-var checkTime=setInterval(function(){
+var checkTime = setInterval(function () {
     console.log("check for out of date data");
-    storelastTime($("#updateTime").text(),function(lastT,T){
-        sessionStorage.setItem("lastTime",T);
-        console.log("last time is "+lastT);
-        console.log("current time is "+T);
-        if(lastT===T){
+    storelastTime($("#updateTime").text(), function (lastT, T) {
+        sessionStorage.setItem("lastTime", T);
+        console.log("last time is " + lastT);
+        console.log("current time is " + T);
+        if (lastT === T) {
             console.log("data is out of date !!!");
             //$("#updateTime").hide();
             $("#outDate").text("data is out of date");
             $("#outDate").show();
         }
-        else{
+        else {
             console.log("data is up to date.");
-             $("#outDate").hide();
+            $("#outDate").hide();
             //$("#updateTime").text(T);
             // $("#updateTime").show();
-    }
+        }
     })
-},180000);
+}, 180000);
 
 var sendReqToServer = setInterval(function () {
     //$(".field").val("hello");
@@ -63,13 +63,13 @@ var sendReqToServer = setInterval(function () {
 }, 5000);
 
 var myVar = setInterval(function () {
-   console.log("update data");
-        var jData=JSON.parse(storeData);
-    updateTime(jData.recievedTime,function(){
-        storelastTime($("#updateTime").text(),function(lastT,T){
-            if(lastT===T){
+    console.log("update data");
+    var jData = JSON.parse(storeData);
+    updateTime(jData.recievedTime, function () {
+        storelastTime($("#updateTime").text(), function (lastT, T) {
+            if (lastT === T) {
                 //console.log("still out of date");
-            }else{
+            } else {
                 $("#outDate").hide();
             }
         })

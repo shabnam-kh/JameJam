@@ -4,8 +4,9 @@
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-        <!-- Bootstrap core CSS -->
+    <meta charset="UTF-8" name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -14,7 +15,8 @@
     <link href="theme.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     <script src="js/information.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -28,248 +30,251 @@
 <title>Jame_Jam</title>
 
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-/*#logo{*/
-    /*width: 200%;*/
-    /*height: 200%;*/
-/*}*/
-.navbar-inner {
-    min-height: 0px;
-}
+    <style>
+        /*#logo{*/
+        /*width: 200%;*/
+        /*height: 200%;*/
+        /*}*/
+        .navbar-inner {
+            min-height: 0px;
+        }
 
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 50px;
-    height: 50px;
-    padding-top: 0;
-}
-#logo {
-    width: 150px;
-    height: auto;
-    border-top: none;
-}
+        .navbar-brand,
+        .navbar-nav li a {
+            line-height: 50px;
+            height: 50px;
+            padding-top: 0;
+        }
 
+        #logo {
+            width: 150px;
+            height: auto;
+            border-top: none;
+        }
 
+        .btn {
+            border: 1px solid grey;
+            background-color: #d3d3d3;
+        }
 
-.btn {	border:1px solid grey;
-background-color:#d3d3d3;
-}
+        .bold {
+            font-weight: bold;
+            font-size: larger;
+        }
 
-        .bold{
-        font-weight: bold;
-        font-size:larger;
-    }
-    #login{
-        float:left;
-        padding-top: 25px;
-    }
-    .box{
-        background-color: blue;
-    }
-</style>
+        #login {
+            float: left;
+            padding-top: 25px;
+        }
+
+        .box {
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
 
 
 <div class="navbar navbar-default">
-<div class="container">
-<div class="navbar-header">
+    <div class="container">
+        <div class="navbar-header">
 
 
-<a href="index.html" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
-    <!--</div>-->
+            <a href="index.html" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
+            <!--</div>-->
+        </div>
+        <!--<div class="container">-->
+        <!--<form id="login" class="navbar-form navbar-right" accept-charset=utf-8 >-->
+        <!--<div class="form-group">-->
+        <!--<input type="text" placeholder="Email" class="form-control">-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--<input type="password" placeholder="Password" class="form-control">-->
+        <!--</div>-->
+        <!--<button onclick="login();" type="submit" class="btn btn-success">Sign in</button>-->
+        <!--</form>-->
+
     </div>
-<!--<div class="container">-->
-              <!--<form id="login" class="navbar-form navbar-right" accept-charset=utf-8 >-->
-            <!--<div class="form-group">-->
-              <!--<input type="text" placeholder="Email" class="form-control">-->
-            <!--</div>-->
-            <!--<div class="form-group">-->
-              <!--<input type="password" placeholder="Password" class="form-control">-->
-            <!--</div>-->
-            <!--<button onclick="login();" type="submit" class="btn btn-success">Sign in</button>-->
-          <!--</form>-->
-
 </div>
-    </div>
- <input id="username" type="text" placeholder="Username" class="col-md-5 form-control">
-              <input id="password" type="password" placeholder="Password" class="col-md-5 form-control">
-            <button onclick="login();" id="loginConfirm" type="submit" class="btn btn-success">Sign in</button>
+<input id="username" type="text" placeholder="Username" class="col-md-5 form-control">
+<input id="password" type="password" placeholder="Password" class="col-md-5 form-control">
+<button onclick="login();" id="loginConfirm" type="submit" class="btn btn-success">Sign in</button>
 
 <div class="alert alert-danger" role="button" style="display: none">fail login</div>
 <div class="alert alert-success" role="button" style="display: none">successful login</div>
 
 <!--<div class="container" id="chillers">-->
-     <!--<div class="alert alert-warning" role="button">connect</div>-->
-    <!--<div class="box">-->
-           <!--<table>-->
-       <!--<tr>-->
+<!--<div class="alert alert-warning" role="button">connect</div>-->
+<!--<div class="box">-->
+<!--<table>-->
+<!--<tr>-->
 
 
-               <!--<input  type="button" class="btn" value="Shiraz Doctors Building" disabled/>-->
+<!--<input  type="button" class="btn" value="Shiraz Doctors Building" disabled/>-->
 
-       <!--</tr>-->
-       <!--<tr>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 01">chiller 01</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 11">chiller 11</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 21">chiller 21</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 31">chiller 31</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 41">chiller 41</button></td>-->
-       <!--</tr>-->
-       <!--<tr>-->
-               <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 02">chiller 02</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 12">chiller 12</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 22" >chiller 22</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 32">chiller 32</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 42">chiller 42</button></td>-->
-       <!--</tr>-->
-         <!--<tr>-->
-              <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 03">chiller 03</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 13">chiller 13</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 23">chiller 23</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 33">chiller 33</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 43">chiller 43</button></td>-->
-       <!--</tr>-->
-         <!--<tr>-->
-            <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 04">chiller 04</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 14">chiller 14</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 24">chiller 24</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 34">chiller 34</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 44">chiller 44</button></td>-->
-       <!--</tr>-->
-           <!--<tr>-->
-              <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 05">chiller 05</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 15">chiller 15</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 25">chiller 25</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 35">chiller 35</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 45">chiller 45</button></td>-->
-       <!--</tr>-->
-           <!--<tr>-->
-            <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 06">chiller 06</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 16">chiller 16</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 26">chiller 26</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 36">chiller 36</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 46">chiller 46</button></td>-->
-       <!--</tr>-->
-             <!--<tr>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 07">chiller 07</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 17">chiller 17</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 27">chiller 27</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 37">chiller 37</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 47">chiller 47</button></td>-->
-       <!--</tr>-->
-             <!--<tr>-->
-             <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 08">chiller 08</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 18">chiller 18</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 28">chiller 28</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 38">chiller 38</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 48">chiller 48</button></td>-->
-       <!--</tr>-->
-           <!--<tr>-->
-        <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 09">chiller 09</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 19">chiller 19</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 29">chiller 29</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 39">chiller 39</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 49">chiller 49</button></td>-->
-       <!--</tr>-->
-           <!--<tr>-->
-              <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 10">chiller 10</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 20">chiller 20</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 30">chiller 30</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 40">chiller 40</button></td>-->
-           <!--<td><button class="chillerBtn"-->
-                       <!--onclick="getActiveChiller(this.value)" value="chiller 50">chiller 50</button></td>-->
-       <!--</tr>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 01">chiller 01</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 11">chiller 11</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 21">chiller 21</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 31">chiller 31</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 41">chiller 41</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 02">chiller 02</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 12">chiller 12</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 22" >chiller 22</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 32">chiller 32</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 42">chiller 42</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 03">chiller 03</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 13">chiller 13</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 23">chiller 23</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 33">chiller 33</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 43">chiller 43</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 04">chiller 04</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 14">chiller 14</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 24">chiller 24</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 34">chiller 34</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 44">chiller 44</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 05">chiller 05</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 15">chiller 15</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 25">chiller 25</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 35">chiller 35</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 45">chiller 45</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 06">chiller 06</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 16">chiller 16</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 26">chiller 26</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 36">chiller 36</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 46">chiller 46</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 07">chiller 07</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 17">chiller 17</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 27">chiller 27</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 37">chiller 37</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 47">chiller 47</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 08">chiller 08</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 18">chiller 18</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 28">chiller 28</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 38">chiller 38</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 48">chiller 48</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 09">chiller 09</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 19">chiller 19</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 29">chiller 29</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 39">chiller 39</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 49">chiller 49</button></td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 10">chiller 10</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 20">chiller 20</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 30">chiller 30</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 40">chiller 40</button></td>-->
+<!--<td><button class="chillerBtn"-->
+<!--onclick="getActiveChiller(this.value)" value="chiller 50">chiller 50</button></td>-->
+<!--</tr>-->
 
-   <!--</table>-->
-    <!--</div>-->
+<!--</table>-->
+<!--</div>-->
 
-     <!--<div class="form-group">-->
-  <!--<textarea class="form-control" rows="5" id="warning"></textarea>-->
+<!--<div class="form-group">-->
+<!--<textarea class="form-control" rows="5" id="warning"></textarea>-->
 <!--</div>-->
 <!--</div>-->
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".chillerBtn").prop('disabled', true);
     });
-    function login(){
-            $(".alert-success").hide();
-                $(".alert-danger").hide();
+    function login() {
+        $(".alert-success").hide();
+        $(".alert-danger").hide();
         console.log("login in process");
         $.get(
-        baseUrl+"/auth",
-                {user:$("#username").val(),pass:$("#password").val()},
-        function( rawdata, textStatus, jqXHR) {
-            console.log(rawdata);
-           if(jqXHR.status===202){
-               $(".alert-success").show();
-               $(".chillerBtn").prop('disabled', false);
-           }else{
-                $(".alert-danger").show();
-           }
-})
-    };
-    function getActiveChiller(val){
+                baseUrl + "/auth",
+                {user: $("#username").val(), pass: $("#password").val()},
+                function (rawdata, textStatus, jqXHR) {
+                    console.log(rawdata);
+                    if (jqXHR.status === 202) {
+                        $(".alert-success").show();
+                        $(".chillerBtn").prop('disabled', false);
+                    } else {
+                        $(".alert-danger").show();
+                    }
+                })
+    }
+    ;
+    function getActiveChiller(val) {
         sessionStorage.setItem('activeChiller', val);
-        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
+        console.log('set activeChiller ' + sessionStorage.getItem('activeChiller'));
         $.get(
-        baseUrl+"/chillerInfo",
-                {id:getChillerNumber(val)},
-        function( rawdata, textStatus, jqXHR) {
-             sessionStorage.setItem('chillerInfo', rawdata);
-            location.href='templates/chillerInfo.html';
-});
+                baseUrl + "/chillerInfo",
+                {id: getChillerNumber(val)},
+                function (rawdata, textStatus, jqXHR) {
+                    sessionStorage.setItem('chillerInfo', rawdata);
+                    location.href = 'templates/chillerInfo.html';
+                });
 
     }
 </script>

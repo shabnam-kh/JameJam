@@ -50,51 +50,51 @@ function showDate() {
     return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ":" + seconds + ampm;
 }
 
-    function logOutAction() {
+function logOutAction() {
 
-        var r = confirm("Do you want to LogOut ??!!");
-        if (r == true) {
-            console.log("user logout");
-            getSecureId(function (id) {
-                $.ajax(
-                        {
-                            url: serverURL + "/logout",
-                            data: {id: id},
-                            success: function (data, textStatus, jqXHR) {
-                                console.log(data);
-                                location.href = '../index.html';
-                            },
-                            error: function (jqXHR, textStatus, errorThrown) {
-                                console.log("logout error " + errorThrown)
-                            }
-                        }
-                )
-            })
-        } else {
-            console.log("user not logout");
-        }
+    var r = confirm("Do you want to LogOut ??!!");
+    if (r == true) {
+        console.log("user logout");
+        getSecureId(function (id) {
+            $.ajax(
+                {
+                    url: serverURL + "/logout",
+                    data: {id: id},
+                    success: function (data, textStatus, jqXHR) {
+                        console.log(data);
+                        location.href = '../index.html';
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log("logout error " + errorThrown)
+                    }
+                }
+            )
+        })
+    } else {
+        console.log("user not logout");
+    }
 
-    };
+};
 
-function setSize(callback){
+function setSize(callback) {
     console.log("setSize function");
-   $("#chillerImg").width($(window).width());
+    $("#chillerImg").width($(window).width());
     //$("#chillerImg").height($(window).height());
     callback();
 };
 
-function storelastTime(T,callback){
-    var lastT=sessionStorage.getItem("lastTime");
-    callback(lastT,T);
+function storelastTime(T, callback) {
+    var lastT = sessionStorage.getItem("lastTime");
+    callback(lastT, T);
 }
 
-function updateTime(T,callback){
-    $("#updateTime").text(" last updated on "+T);
+function updateTime(T, callback) {
+    $("#updateTime").text(" last updated on " + T);
     callback();
 }
 
-    function getSecureId(callback){
-        var sID=sessionStorage.getItem('secureID');
-        console.log("secureID is "+sID);
-        callback(sID);
-    }
+function getSecureId(callback) {
+    var sID = sessionStorage.getItem('secureID');
+    console.log("secureID is " + sID);
+    callback(sID);
+}

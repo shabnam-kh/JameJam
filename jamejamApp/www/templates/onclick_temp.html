@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8"/>
     <!-- Custom styles for this template -->
-        <script src="../cordova.js"></script>
+    <script src="../cordova.js"></script>
     <script src="../js/notifyAlarm.js"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/information.js"></script>
     <script src="../bower_components/handlebars/handlebars.js"></script>
     <script src="../js/chillerInfoHandle.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -164,7 +165,8 @@
             table-layout: auto;
             white-space: nowrap;
         }
-        .imgTemp{
+
+        .imgTemp {
             color: #000000;
             background-color: #f5f5f5;
         }
@@ -189,8 +191,19 @@
                     <td><p>welcome userTTF </p></td>
                     <td> &nbsp &nbsp</td>
                     <td>
-                        <a href="javascript:logOutAction()"><span id="icon" class="glyphicon glyphicon-cog large"
-                                                      aria-hidden="true"></span></a>
+                        <!--<a href="javascript:logOutAction()"><span id="icon" class="glyphicon glyphicon-cog large"-->
+                        <!--aria-hidden="true"></span></a>-->
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="icon"
+                                                                                                 class="glyphicon glyphicon-cog large"
+                                                                                                 aria-hidden="true"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="setting.html">setting</a></li>
+                                    <li><a href="javascript:logOutAction()">logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </td>
                     <td> &nbsp &nbsp</td>
                     <td>
@@ -212,7 +225,7 @@
 <!--<td>-->
 
 <div class="container">
-<div id="updateTime" class="alert alert-link" role="alertdialog"></div>
+    <div id="updateTime" class="alert alert-link" role="alertdialog"></div>
     <div id="outDate" class="alert alert-warning" role="alertdialog" style="display: none"></div>
     <div class="row">
         <div class="col-md-5 box">
@@ -381,40 +394,41 @@
 
         <div id="fake" class="col-md-5 box">
 
-         <div class="infoBox">
-            <script class="chillerInfoTemp" type="text/x-handlebars-template">
-                <ul>
-                    <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">{{complex}}</span></li>
-                    </br>
-                    <li> نام مالک<span>&nbsp : &nbsp</span><span class="infoName">{{name}}</span></li>
-                    </br>
-                    <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">{{chiller}}</span></li>
-                    </br>
-                    <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">{{tell}}</span></li>
+            <div class="infoBox">
+                <script class="chillerInfoTemp" type="text/x-handlebars-template">
+                    <ul>
+                        <li> نام مجموعه<span>&nbsp : &nbsp</span><span class="infoComplex">{{complex}}</span></li>
+                        </br>
+                        <li> نام مالک<span>&nbsp : &nbsp</span><span class="infoName">{{name}}</span></li>
+                        </br>
+                        <li> نام مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoChiller">{{chiller}}</span></li>
+                        </br>
+                        <li> تلفن مسئول چیلر<span>&nbsp : &nbsp</span><span class="infoTell">{{tell}}</span></li>
 
-                </ul>
-            </script>
-                </div>
+                    </ul>
+                </script>
+            </div>
             <!--<img id="chillerImg" src="../img/chiller(2).png" width="100%" height="auto">-->
-            <img id="chillerImg" src='../img/chiller(2).png' style='position:absolute; top:100%; left:0.1%; width:100%; max-height:100%; border:0;' >
+            <img id="chillerImg" src='../img/chiller(2).png'
+                 style='position:absolute; top:100%; left:0.1%; width:100%; max-height:100%; border:0;'>
+
             <div class="imgBox">
 
                 <!--4left label, from top to down-->
                 <label class="imgTemp num1 cowO" style="position: absolute;top:105%;left: 7%;z-index: 3;">22.5</label>
 
-                 <label class="imgTemp num1 chwO" style="position: absolute;top:130%;left: 7%;z-index: 3;">40</label>
+                <label class="imgTemp num1 chwO" style="position: absolute;top:130%;left: 7%;z-index: 3;">40</label>
 
-                 <label class="imgTemp num1 chwI" style="position: absolute;top:145%;left: 5%;z-index: 3;">53.8</label>
+                <label class="imgTemp num1 chwI" style="position: absolute;top:145%;left: 5%;z-index: 3;">53.8</label>
 
-                   <label class="imgTemp num1 cowI" style="position: absolute;top:155%;left: 4%;z-index: 3;">53.8</label>
+                <label class="imgTemp num1 cowI" style="position: absolute;top:155%;left: 4%;z-index: 3;">53.8</label>
 
-                 <label class="imgTemp num1 ref" style="position: absolute;top:165%;left: 60%;z-index: 3;">53.8</label>
+                <label class="imgTemp num1 ref" style="position: absolute;top:165%;left: 60%;z-index: 3;">53.8</label>
 
 
-                 <label class="imgTemp num1 solu" style="position: absolute;top:185%;left: 50%;z-index: 3;">53.8</label>
+                <label class="imgTemp num1 solu" style="position: absolute;top:185%;left: 50%;z-index: 3;">53.8</label>
 
                 <label class="imgTemp num1 ex" style="position: absolute;top:140%;left: 90%;z-index: 3;">53.8</label>
-
 
 
             </div>
@@ -442,7 +456,7 @@ as needed -->
 <script src="../js/function.js"></script>
 <script src="../js/temp.js"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
         //$(".imgTemp").hide();
         //changeSize();
@@ -453,29 +467,30 @@ as needed -->
 //            })
     })
 
-    $(window).resize(function(){
-         //$(".imgTemp").hide();
+    $(window).resize(function () {
+        //$(".imgTemp").hide();
         //changeSize();
     })
 
-    function setSize(callback){
-    console.log("setSize function");
-    $(".imgBox").width($("#chillerImg").width());
-    $(".imgBox").height($("#chillerImg").height());
-    callback();
-};
-            function changeSize(){
-            console.log("changesize function");
-if($(window).width()<=500){
-    console.log("change size first condition is true;");
-      $(".num2").show();
-}else if($(window).width()<=700){
-             console.log("change size second condition is true;");
-                    $(".num3").show();
+    function setSize(callback) {
+        console.log("setSize function");
+        $(".imgBox").width($("#chillerImg").width());
+        $(".imgBox").height($("#chillerImg").height());
+        callback();
+    }
+    ;
+    function changeSize() {
+        console.log("changesize function");
+        if ($(window).width() <= 500) {
+            console.log("change size first condition is true;");
+            $(".num2").show();
+        } else if ($(window).width() <= 700) {
+            console.log("change size second condition is true;");
+            $(".num3").show();
 
-            }else{
-     $(".num1").show();
-}
+        } else {
+            $(".num1").show();
+        }
 
     }
 </script>

@@ -14,6 +14,7 @@
 <script src="../js/information.js"></script>
 <script src="../bower_components/handlebars/handlebars.js"></script>
 <script src="../js/chillerInfoHandle.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -157,9 +158,20 @@
                     <td><p>welcome userTTF </p></td>
                     <td> &nbsp; &nbsp;</td>
                     <td>
-                        <a href="javascript:logOutAction()"><span id="icon"
+                        <!--<a href="javascript:logOutAction()"><span id="icon"-->
+                        <!--class="glyphicon glyphicon-cog large"-->
+                        <!--aria-hidden="true"></span></a>-->
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="icon"
                                                                                                  class="glyphicon glyphicon-cog large"
                                                                                                  aria-hidden="true"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="setting.html">setting</a></li>
+                                    <li><a href="javascript:logOutAction()">logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </td>
                     <td> &nbsp &nbsp</td>
                     <td>

@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/shabnam-kh/JameJam/issues"
   },
-    "dependencies": {
-    "bower":""
+  "dependencies": {
+    "bower": ""
   }
 }

@@ -4,9 +4,8 @@
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-
-
+    <meta charset="UTF-8" name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
 
     <script src="js/information.js"></script>
@@ -21,93 +20,95 @@
 <title>Jame_Jam</title>
 
 <!-- Bootstrap -->
-       <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme -->
+    <!-- Bootstrap theme -->
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
-<style>
-/*#logo{*/
-    /*width: 200%;*/
-    /*height: 200%;*/
-/*}*/
-.navbar-inner {
-    min-height: 0px;
-}
+    <style>
+        /*#logo{*/
+        /*width: 200%;*/
+        /*height: 200%;*/
+        /*}*/
+        .navbar-inner {
+            min-height: 0px;
+        }
 
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 50px;
-    height: 50px;
-    padding-top: 0;
-}
-#logo {
-    width: 150px;
-    height: auto;
-    border-top: none;
-}
+        .navbar-brand,
+        .navbar-nav li a {
+            line-height: 50px;
+            height: 50px;
+            padding-top: 0;
+        }
 
+        #logo {
+            width: 150px;
+            height: auto;
+            border-top: none;
+        }
 
+        .btn {
+            border: 1px solid grey;
+            background-color: #d3d3d3;
+        }
 
-.btn {	border:1px solid grey;
-background-color:#d3d3d3;
-}
+        .bold {
+            font-weight: bold;
+            font-size: larger;
+        }
 
-        .bold{
-        font-weight: bold;
-        font-size:larger;
-    }
-    #login{
-        float:left;
-        padding-top: 25px;
-    }
-    .box{
-        background-color: #afd9ee;
-    }
-</style>
+        #login {
+            float: left;
+            padding-top: 25px;
+        }
+
+        .box {
+            background-color: #afd9ee;
+        }
+    </style>
 </head>
 <body>
 
 
 <div class="navbar navbar-default">
-<div class="container">
-<div class="navbar-header">
+    <div class="container">
+        <div class="navbar-header">
 
 
-<a href="javascript:warn();" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
-    <!--</div>-->
+            <a href="javascript:warn();" class="navbar-brand"><img id="logo" src="img/imageedit_2_6147829167.bmp"></a>
+            <!--</div>-->
+        </div>
+        <!--<div class="container">-->
+        <!--<form id="login" class="navbar-form navbar-right" accept-charset=utf-8 >-->
+        <!--<div class="form-group">-->
+        <!--<input type="text" placeholder="Email" class="form-control">-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--<input type="password" placeholder="Password" class="form-control">-->
+        <!--</div>-->
+        <!--<button onclick="login();" type="submit" class="btn btn-success">Sign in</button>-->
+        <!--</form>-->
+
     </div>
-<!--<div class="container">-->
-              <!--<form id="login" class="navbar-form navbar-right" accept-charset=utf-8 >-->
-            <!--<div class="form-group">-->
-              <!--<input type="text" placeholder="Email" class="form-control">-->
-            <!--</div>-->
-            <!--<div class="form-group">-->
-              <!--<input type="password" placeholder="Password" class="form-control">-->
-            <!--</div>-->
-            <!--<button onclick="login();" type="submit" class="btn btn-success">Sign in</button>-->
-          <!--</form>-->
-
 </div>
-    </div>
 <div class="container">
-</br>
- <input id="username" type="text" placeholder="Username" class="col-md-5 form-control">
-              <input id="password" type="password" placeholder="Password" class="col-md-5 form-control">
-            <button onclick="login();" id="loginConfirm" type="submit" class="btn btn-success">Sign in</button>
-<!--<span>&nbsp</span><a href="">Sign Up</a><span>&nbsp&nbsp&nbsp&nbsp</span><a href="">Forgot password</a>-->
+    </br>
+    <input id="username" type="text" placeholder="Username" class="col-md-5 form-control">
+    <input id="password" type="password" placeholder="Password" class="col-md-5 form-control">
+    <button onclick="login();" id="loginConfirm" type="submit" class="btn btn-success">Sign in</button>
+    <!--<span>&nbsp</span><a href="">Sign Up</a><span>&nbsp&nbsp&nbsp&nbsp</span><a href="">Forgot password</a>-->
 
-<div class="alert alert-danger" role="alertdialog" style="display: none">fail login</div>
-<div class="alert alert-success" role="alertdialog" style="display: none">successful login</div>
+    <div class="alert alert-danger" role="alertdialog" style="display: none">fail login</div>
+    <div class="alert alert-success" role="alertdialog" style="display: none">successful login</div>
 </div>
 <script>
-//    $(document).ready(function(){
-//        $(".chillerBtn").prop('disabled', true);
-//    });
+    //    $(document).ready(function(){
+    //        $(".chillerBtn").prop('disabled', true);
+    //    });
 
-    function login(){
-            $(".alert-success").hide();
-                $(".alert-danger").hide();
+    function login() {
+        $(".alert-success").hide();
+        $(".alert-danger").hide();
         console.log("login in process");
 //        $.get(
 //        baseUrl+"/auth",
@@ -125,41 +126,41 @@ background-color:#d3d3d3;
 //})
         //TODO success and error
         $.ajax(
-             {
-                 url: serverURL+"/auth",
-                 data:{user:$("#username").val(),pass:$("#password").val()},
-                 success: function (data, textStatus, jqXHR) {
-                     setID(data, function () {
-                         $(".alert-success").show();
-                        location.href="chillerList.html";
-                     })
-                 },
-                 error: function (jqXHR, textStatus, errorThrown)
-                 {
-                     $(".alert-danger").show();
-                 }
-     }
-         )
-    };
-function setID(data,callback){
-    sessionStorage.setItem('secureID',data);
-    callback();
-}
-function warn(){
-    alert("you should login first");
-}
-//    function getActiveChiller(val){
-//        sessionStorage.setItem('activeChiller', val);
-//        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
-//        $.get(
-//        baseUrl+"/chillerInfo",
-//                {id:getChillerNumber(val)},
-//        function( rawdata, textStatus, jqXHR) {
-//             sessionStorage.setItem('chillerInfo', rawdata);
-//            location.href='templates/chillerInfo.html';
-//});
-//
-//    }
+                {
+                    url: serverURL + "/auth",
+                    data: {user: $("#username").val(), pass: $("#password").val()},
+                    success: function (data, textStatus, jqXHR) {
+                        setID(data, function () {
+                            $(".alert-success").show();
+                            location.href = "chillerList.html";
+                        })
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $(".alert-danger").show();
+                    }
+                }
+        )
+    }
+    ;
+    function setID(data, callback) {
+        sessionStorage.setItem('secureID', data);
+        callback();
+    }
+    function warn() {
+        alert("you should login first");
+    }
+    //    function getActiveChiller(val){
+    //        sessionStorage.setItem('activeChiller', val);
+    //        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
+    //        $.get(
+    //        baseUrl+"/chillerInfo",
+    //                {id:getChillerNumber(val)},
+    //        function( rawdata, textStatus, jqXHR) {
+    //             sessionStorage.setItem('chillerInfo', rawdata);
+    //            location.href='templates/chillerInfo.html';
+    //});
+    //
+    //    }
 </script>
 </body>
 </html>
