@@ -102,9 +102,9 @@
     <div class="alert alert-success" role="alertdialog" style="display: none">successful login</div>
 </div>
 <script>
-    //    $(document).ready(function(){
-    //        $(".chillerBtn").prop('disabled', true);
-    //    });
+        $(document).ready(function(){
+            sessionStorage.setItem("alarm","active");
+        });
 
     function login() {
         $(".alert-success").hide();

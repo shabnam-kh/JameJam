@@ -17,6 +17,7 @@
     "jquery": "~1.11.3",
     "bootstrap": "~3.3.5",
     "handlebars": "~3.0.3",
-    "angular": "~1.4.3"
+    "angular": "~1.4.3",
+    "knockout": "~3.3.0"
   }
 }

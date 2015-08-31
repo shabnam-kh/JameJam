@@ -15,6 +15,9 @@
     <script src="js/function.js"></script>
     <script src="js/findLocalIP.js"></script>
     <script src="js/bootstrap-switch.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/notifyAlarm.js"></script>
+    <script src="js/information.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -97,14 +100,19 @@
     </br>
         <div class="row">
             <b>alarm notification</b>
-            <input type="checkbox" name="my-checkbox" checked></div>
+            <input id="alarmCheck" class="checkbox-inline" type="checkbox" name="my-checkbox" checked/></div>
 
     </div>
 
 <script>
     $(document).ready(function(){
-         $("[name='my-checkbox']").bootstrapSwitch();
-    })
+            var tmp=sessionStorage.getItem("alarm");
+        if(tmp=="active"){
+            $("#alarmCheck").attr("checked",true);
+        }else{
+            $("#alarmCheck").attr("checked",false);
+        }
+        })
 
 </script>
 </body>

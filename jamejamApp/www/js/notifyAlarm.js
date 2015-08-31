@@ -5,8 +5,11 @@
 document.addEventListener('deviceready', function () {
 
     var sendReqToServer = setInterval(function () {
-        //$(".field").val("hello");
-        console.log("call sendReq");
+
+        var alarm=sessionStorage.getItem("alarm");
+        console.log("storage alarm is " +alarm);
+        if(alarm=="active"){
+            console.log("call sendReq");
         sendReq(function () {
         }, function (data) {
             console.log("notification alarm page");
@@ -23,10 +26,30 @@ document.addEventListener('deviceready', function () {
                 notifyAlarm();
             }
         });
+        }else{
+            console.log("alarm deactivated by user");
+        }
+
+
+
     }, 5000);
 
-    cordova.plugins.notification.local.on("click", function (notification, state) {
-    }, this)
+    //cordova.plugins.notification.local.on("click", function (notification, state) {
+    //}, this)
+
+    $("#alarmCheck").click(function () {
+        if ($("#alarmCheck").is(":checked")) {
+            console.log("notification alarm is active");
+            sessionStorage.setItem("alarm","active");
+        } else {
+            console.log("deactive notification alarm");
+            sessionStorage.removeItem("alarm");
+            cordova.plugins.notification.local.cancelAll(function(){
+                alert("cancel alarm notification");
+            });
+        }
+        ;
+    });
 
     function notifyAlarm() {
         console.log("call notification plugin");
