@@ -89,7 +89,7 @@
         <button id="local" class="btn-info">local network (offline)</button>
         <button id="global" class="btn-info">global network (online)</button>
         <div class="alert alert-info" role="alertdialog" style="display: none">you are choosing local network, please
-            wait to find server IP</br>waiting ...</br>
+            wait to find server IP</br>waiting ...</br><span id="try" style="display: none">cannot find device IP,try again</span>
         </div>
     </div>
 </div>
@@ -103,15 +103,17 @@
         sessionStorage.setItem("network","global");
     })
     $("#local").click(function () {
+         $("#try").hide();
         console.log("user choose local network");
         $(".alert").show();
             var DeviceIP = sessionStorage.getItem("DeviceIP");
             console.log("Device IP is " + DeviceIP);
             if (DeviceIP == null) {
                 console.log("cannot find device IP,try again");
-                $(".alert").append("cannot find device IP,try again");
+                $("#try").show();
 
             } else {
+                $("#try").hide();
                 findServerIP(DeviceIP,function(ip){
                     console.log("local server IP is " + ip);
                     sessionStorage.setItem("network","local");
