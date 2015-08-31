@@ -1,7 +1,7 @@
 /**
  * Created by klappo on 8/25/15.
  */
-function findDeviceIP(callback) {
+function findDeviceIP() {
     // NOTE: window.RTCPeerConnection is "not a constructor" in FF22/23
     var RTCPeerConnection = /*window.RTCPeerConnection ||*/ window.webkitRTCPeerConnection || window.mozRTCPeerConnection;
 
@@ -59,6 +59,4 @@ function findDeviceIP(callback) {
         console.log("Device IP " + "<code>ifconfig | grep inet | grep -v inet6 | cut -d\" \" -f2 | tail -n1</code>");
         //document.getElementById('list').nextSibling.textContent = "In Chrome and Firefox your IP should display automatically, by the power of WebRTCskull.";
     }
-
-    callback();
 };

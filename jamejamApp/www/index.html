@@ -94,13 +94,9 @@
     </div>
 </div>
 <script>
-    //       document.addEventListener('deviceready', function () {
-    //    // Schedule notification for tomorrow to remember about the meeting
-    //    cordova.plugins.notification.local.schedule({
-    //        id: 10,
-    //        title: "Alarm Notification Activated"
-    //    });
-    //}, false);
+$(document).ready(function(){
+    findDeviceIP();
+})
     $("#global").click(function () {
         console.log("user choose global network");
         location.href = "login.html";
@@ -109,7 +105,6 @@
     $("#local").click(function () {
         console.log("user choose local network");
         $(".alert").show();
-        findDeviceIP(function () {
             var DeviceIP = sessionStorage.getItem("DeviceIP");
             console.log("Device IP is " + DeviceIP);
             if (DeviceIP == null) {
@@ -126,7 +121,7 @@
 
 
             }
-        })
+
         //location.href="login.html";
     })
 
