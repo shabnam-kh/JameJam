@@ -89,21 +89,24 @@
         <button id="local" class="btn-info">local network (offline)</button>
         <button id="global" class="btn-info">global network (online)</button>
         <div class="alert alert-info" role="alertdialog" style="display: none">you are choosing local network, please
-            wait to find server IP</br>waiting ...</br><span id="try" style="display: none">cannot find device IP,try again</span>
+            wait to find server IP</br>waiting ...<span id="try" style="display: none"></br>cannot find device IP,try again</span><span id="serverNotice" style="display: none"></br>can not find local server, please try again or choose global network instead</span>
         </div>
     </div>
 </div>
 <script>
-$(document).ready(function(){
+    $(document).ready(function(){
     findDeviceIP();
 })
     $("#global").click(function () {
+                $("#try").hide();
+         $("#serverNotice").hide();
         console.log("user choose global network");
         location.href = "login.html";
-        sessionStorage.setItem("network", "global");
+        sessionStorage.setItem("network","global");
     })
     $("#local").click(function () {
-        $("#try").hide();
+         $("#try").hide();
+        $("#serverNotice").hide();
         console.log("user choose local network");
         $(".alert").show();
             var DeviceIP = sessionStorage.getItem("DeviceIP");
@@ -113,64 +116,68 @@ $(document).ready(function(){
                 $("#try").show();
 
             } else {
-                findServerIP(DeviceIP, function (ip) {
-                    $("#try").hide();
+                $("#try").hide();
+                findServerIP(DeviceIP,function(ip){
+                    $("#serverNotice").hide();
                     console.log("local server IP is " + ip);
-                    sessionStorage.setItem("network", "local");
-                    sessionStorage.setItem("serverIP", ip);
+                    sessionStorage.setItem("network","local");
+                    sessionStorage.setItem("serverIP",ip);
                     location.href = "login.html";
+                },function(ip){
+                    $("#serverNotice").show();
+                    console.log("no server IP " + ip);
+                    console.log("can not find local server");
                 });
 
 
             }
-
         //location.href="login.html";
     })
 
     function warn() {
         alert("you should first choose your network");
     }
-    function findServerIP(DeviceIP, callback) {
+    function findServerIP(DeviceIP,callsuccess,callfail) {
         var tmp = DeviceIP.split(".");
-        console.log("split device ip " + tmp);
-        var flag = false;
-        //var serverIP;
-        for (var i = 1; i < 256; i++) {
+        console.log("split device ip "+tmp);
+        var flag=false;
+        var serverIP;
+       for(var i=1;i<256;i++){
             // if(flag==true){
             //     console.log("server IP found");
             //     break;}
-            var URL = "http://" + tmp[0] + "." + tmp[1] + "." + tmp[2] + "." + i + ":8002";
+           var URL="http://"+tmp[0]+"."+tmp[1]+"."+tmp[2]+"."+i+":8002";
 //            if(i==tmp[3]){
 //                console.log("condition is true");
 //                continue;}
-            var fake = "http://192.168.1.105:8002";
-            //console.log("send request to "+URL);
-            $.ajax(
-                    {
-                        url: URL + "/local",
-                        //data: {sID: Sid, id: activeChill},
-                        //timeout: 2000,
-                        method: "POST",
-                        success: function (data, textStatus, jqXHR) {
-                            console.log("ajax req " + textStatus);
-                            console.log("ajax req data " + data);
-                            //callSuccess(data);
-                            var serverIP = data;
-                            console.log("server IP found " + serverIP);
-                            //flag=true;
-                            callback(serverIP);
+        var fake="http://192.168.1.105:8002";
+          //console.log("send request to "+URL);
+              $.ajax(
+            {
+                url: URL + "/local",
+                //data: {sID: Sid, id: activeChill},
+                //timeout: 2000,
+                method:"POST",
+                success: function (data, textStatus, jqXHR) {
+                    console.log("ajax req " + textStatus);
+                    console.log("ajax req data " + data);
+                    //callSuccess(data);
+                    serverIP=data;
+                    console.log("server IP found "+serverIP);
+                    //flag=true;
+                    callsuccess(serverIP);
 
-                        },
-                        error: function (jqXHR, textStatus, errorThrown) {
-                            // console.log("ajax req fail" + textStatus);
-                            // console.log("ajax req error " + errorThrown);
-                            //callFail();
-                        }
-                    }
-            )
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    // console.log("ajax req fail" + textStatus);
+                    // console.log("ajax req error " + errorThrown);
+                    //callFail();
+                }
+            }
+        )
 
         }
-
+        callfail(serverIP);
 
     }
 
