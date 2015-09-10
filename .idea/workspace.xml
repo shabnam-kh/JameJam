@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f4c5cd-3ea6-46d0-be38-4296ddf55ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/chillerInfo.html" afterPath="$PROJECT_DIR$/jamejamApp/www/chillerInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/index.html" afterPath="$PROJECT_DIR$/jamejamApp/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/userInfo.html" afterPath="$PROJECT_DIR$/jamejamApp/www/userInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamejamApp/www/chillerList.html" afterPath="$PROJECT_DIR$/jamejamApp/www/chillerList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JameJam.iws" />
@@ -30,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jamejamApp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64507043" vertical-offset="2224" max-vertical-offset="3168">
-              <caret line="149" column="51" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
+            <state vertical-scroll-proportion="-36.296295" vertical-offset="1594" max-vertical-offset="3168">
+              <caret line="143" column="6" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -45,6 +43,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-10.296296" vertical-offset="1846" max-vertical-offset="2556">
               <caret line="118" column="48" selection-start-line="118" selection-start-column="48" selection-end-line="118" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chillerList.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jamejamApp/www/chillerList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4169014" vertical-offset="5824" max-vertical-offset="7704">
+              <caret line="340" column="47" selection-start-line="340" selection-start-column="47" selection-end-line="340" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -63,8 +71,8 @@
       <file leaf-file-name="userInfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jamejamApp/www/userInfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.962963" vertical-offset="4114" max-vertical-offset="5040">
-              <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+            <state vertical-scroll-proportion="-13.62963" vertical-offset="4330" max-vertical-offset="5040">
+              <caret line="261" column="15" selection-start-line="261" selection-start-column="15" selection-end-line="261" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -73,8 +81,8 @@
       <file leaf-file-name="information.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/information.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -108,7 +116,6 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/draft.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/js/function.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/chillerInfo.html" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/chillerList.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_temp.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_alarm.html" />
@@ -116,10 +123,11 @@
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_other.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/status_setting.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/templates/onclick_status.html" />
-        <option value="$PROJECT_DIR$/jamejamApp/www/js/information.js" />
         <option value="$PROJECT_DIR$/jamejamApp/www/userInfo.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/chillerInfo.html" />
         <option value="$PROJECT_DIR$/jamejamApp/www/index.html" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/js/information.js" />
+        <option value="$PROJECT_DIR$/jamejamApp/www/chillerList.html" />
       </list>
     </option>
   </component>
@@ -492,12 +500,6 @@
       <option name="number" value="Default" />
       <updated>1437473249263</updated>
     </task>
-    <task id="LOCAL-00005" summary="edit gitignore">
-      <created>1437552057003</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1437552057003</updated>
-    </task>
     <task id="LOCAL-00006" summary="bower.json&#10;">
       <created>1437554157846</created>
       <option name="number" value="00006" />
@@ -786,7 +788,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441867786574</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="set array of chiller numbers for user permission">
+      <created>1441871238087</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1441871238087</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -854,7 +862,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="change index in temp" />
     <MESSAGE value="cleaning code" />
     <MESSAGE value="change index setting mode" />
     <MESSAGE value="add image to onclick temp" />
@@ -879,7 +886,8 @@
     <MESSAGE value="log out confirm for all pages" />
     <MESSAGE value="change chiller info in status page" />
     <MESSAGE value="add control panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="add control panel" />
+    <MESSAGE value="set array of chiller numbers for user permission" />
+    <option name="LAST_COMMIT_MESSAGE" value="set array of chiller numbers for user permission" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1145,13 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/chillerList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34084508" vertical-offset="6814" max-vertical-offset="7524">
-          <caret line="392" column="49" selection-start-line="392" selection-start-column="49" selection-end-line="392" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/templates/setting_mode.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31830987" vertical-offset="3482" max-vertical-offset="6930">
@@ -1225,10 +1226,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/controlPannel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/js/information.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1241,26 +1250,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jamejamApp/www/controlPannel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/userInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.962963" vertical-offset="4114" max-vertical-offset="5040">
-          <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+        <state vertical-scroll-proportion="-13.62963" vertical-offset="4330" max-vertical-offset="5040">
+          <caret line="261" column="15" selection-start-line="261" selection-start-column="15" selection-end-line="261" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jamejamApp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64507043" vertical-offset="2224" max-vertical-offset="3168">
-          <caret line="149" column="51" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
+        <state vertical-scroll-proportion="-36.296295" vertical-offset="1594" max-vertical-offset="3168">
+          <caret line="143" column="6" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jamejamApp/www/chillerList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4169014" vertical-offset="5824" max-vertical-offset="7704">
+          <caret line="340" column="47" selection-start-line="340" selection-start-column="47" selection-end-line="340" selection-end-column="47" />
           <folding />
         </state>
       </provider>
