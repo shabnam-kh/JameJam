@@ -139,23 +139,23 @@ scale=1">
                     <td class="fake"></td>
                 </tr>
        <tr>
-                    <td>21&nbsp<input type="checkbox" class="checkbox" id="21" value="01"></td>
+                    <td>21&nbsp<input type="checkbox" class="checkbox" id="21" value="21"></td>
                     <td class="fake"></td>
-                    <td>22&nbsp<input type="checkbox" class="checkbox" id="22" value="02"></td>
+                    <td>22&nbsp<input type="checkbox" class="checkbox" id="22" value="22"></td>
                     <td class="fake"></td>
-                    <td>23&nbsp<input type="checkbox" class="checkbox" id="23" value="03"></td>
+                    <td>23&nbsp<input type="checkbox" class="checkbox" id="23" value="23"></td>
                     <td class="fake"></td>
-                    <td>24&nbsp<input type="checkbox" class="checkbox" id="24" value="04"></td>
+                    <td>24&nbsp<input type="checkbox" class="checkbox" id="24" value="24"></td>
                     <td class="fake"></td>
-                    <td>25&nbsp<input type="checkbox" class="checkbox" id="25" value="05"></td>
+                    <td>25&nbsp<input type="checkbox" class="checkbox" id="25" value="25"></td>
                     <td class="fake"></td>
-                    <td>26&nbsp<input type="checkbox" class="checkbox" id="26" value="06"></td>
+                    <td>26&nbsp<input type="checkbox" class="checkbox" id="26" value="26"></td>
                     <td class="fake"></td>
-                    <td>27&nbsp<input type="checkbox" class="checkbox" id="27" value="07"></td>
+                    <td>27&nbsp<input type="checkbox" class="checkbox" id="27" value="27"></td>
                     <td class="fake"></td>
-                    <td>28&nbsp<input type="checkbox" class="checkbox" id="28" value="08"></td>
+                    <td>28&nbsp<input type="checkbox" class="checkbox" id="28" value="28"></td>
                     <td class="fake"></td>
-                    <td>29&nbsp<input type="checkbox" class="checkbox" id="29" value="09"></td>
+                    <td>29&nbsp<input type="checkbox" class="checkbox" id="29" value="29"></td>
                     <td class="fake"></td>
                     <td>30&nbsp<input type="checkbox" class="checkbox" id="30" value="30"></td>
                     <td class="fake"></td>
@@ -231,30 +231,12 @@ as needed -->
 //
 //    })
 
-    var username;
-    var password;
-//    var permission=[];
     $("#postReq").click(function () {
-//        for(var i=1;i<50;i++){
-//            if($("#"+i).is(":checked")){
-//
-//            }
-//        }
-        username = $("#user").val();
-        password = $("#pass").val();
-        console.log("post data to server data base");
-//        $.post(
-//              baseUrl+"/auth",
-//               {"user":username,"pass":password},
-//              function(resp){
-//                  //$("#msgbox").append(resp+"<br>");
-//                  //alert(resp);
-//              }
-//      );
-        $.ajax(
+      sendRequest(function(Dta){
+             $.ajax(
                 {
-                    url: baseUrl + "/auth",
-                    data: JSON.stringify({"user": String(username), "pass": String(password)}),
+                    url: serverURL + "/auth",
+                    data: Dta,
                     type: "POST",
                     success: function (data, textStatus, jqXHR) {
                         console.log("ajax req " + textStatus);
@@ -268,7 +250,26 @@ as needed -->
                     }
                 }
         )
+      })
+
     });
+    function sendRequest(callback){
+
+    var username;
+    var password;
+    var permission=[];
+          for(var i=1;i<51;i++){
+            if($("#"+i).is(":checked")){
+                permission.push($("#"+i).val());
+            }
+        }
+        username = $("#user").val();
+        password = $("#pass").val();
+        var data=JSON.stringify({"user": String(username), "pass": String(password),"permission":String(permission)});
+        console.log("post data to server data base "+data);
+
+        callback(data);
+    }
 </script>
 </body>
 </html>

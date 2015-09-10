@@ -143,7 +143,12 @@ background-color:#d3d3d3;
          )
     };
 function setID(data,callback){
-    sessionStorage.setItem('secureID',data);
+    var jData=JSON.parse(data);
+    sessionStorage.setItem('secureID',jData.sID);
+    var tmp=jData.permission;
+    var array = tmp.split(',');
+    sessionStorage.setItem('userPermission',array);
+
     callback();
 }
 function warn(){

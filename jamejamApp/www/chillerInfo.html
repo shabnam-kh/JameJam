@@ -116,7 +116,7 @@ as needed -->
 //      );
             $.ajax(
             {
-                url: baseUrl + "/chillerInfo",
+                url: serverURL + "/chillerInfo",
                 data:  JSON.stringify({"id":String($("#id").val()),"complexName":String($("#complex").val()),"ownerName":String($("#owner").val()),"chillerName":String($("#chName").val()),"tell":String($("#tell").val())}),
                 type: "POST",
                 success: function (data, textStatus, jqXHR) {
