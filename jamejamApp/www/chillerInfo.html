@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-
+scale=1">
+<title>Post chillerInformation Data</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <script src="js/information.js"></script>
+<style>
+
+.box {	border:1px solid grey;
+background-color:#d3d3d3;
+}
+    .bold{
+        font-weight: bold;
+        font-size:larger;
+    }
+    #msgbox{
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="navbar navbar-default">
+
+<div class="container">
+
+<div class="navbar-header">
+
+<a href="index.html" class="navbar-brand"><span class="bold">TTF</span></a>
+
+<button type="button" class="navbar-toggle" data-
+toggle="collapse" data-target=".navbar-collapse">
+
+<span class="sr-only">Toggle navigation</span>
+
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+
+
+</button>
+</div>
+
+<div class="collapse navbar-collapse">
+
+<ul class="nav navbar-nav">
+
+<li ><a href="#">Get Data</a></li>
+<li><a href="userInfo.html">userInformation</a></li>
+    <li><a class="active" href="chillerInfo.html">chillerInformation</a></li>
+
+<!--<li><a href="">link 3</a></li>-->
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<form class="form-inline" role="form">
+
+
+<div class="form-group">
+<label for="ID">id : </label>
+<input id="id" class="form-control" type="text" name="email"
+placeholder=" exp. 01 " />
+    <label for="ID">complexName : </label>
+<input id="complex" class="form-control" type="text" name="email"
+placeholder=" exp. fars " />
+    <label for="ID">ownerName : </label>
+<input id="owner" class="form-control" type="text" name="email"
+placeholder=" exp. namjoo " />
+    <label for="ID">chillerName : </label>
+<input id="chName" class="form-control" type="text" name="email"
+placeholder=" exp. ????? " />
+    <label for="ID">tell : </label>
+<input id="tell" class="form-control" type="text" name="email"
+placeholder=" exp. 711 " />
+
+</div>
+
+
+<input id="postReq" type="button" class="btn btn-success" value="Post Data" />
+    <div id="msgbox"></div>
+
+</form>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files
+as needed -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $("#postReq").click(function(){
+//        $.post(
+//              baseUrl+"/chillerInfo",
+//               {"id":$("#id").val(),"complexName":$("#complex").val(),"ownerName":$("#owner").val(),"chillerName":$("#chName").val(),"tell":$("#tell").val()},
+//              function(resp){
+//                  //$("#msgbox").append(resp+"<br>");
+//                  //alert(resp);
+//              }
+//      );
+            $.ajax(
+            {
+                url: baseUrl + "/chillerInfo",
+                data:  JSON.stringify({"id":String($("#id").val()),"complexName":String($("#complex").val()),"ownerName":String($("#owner").val()),"chillerName":String($("#chName").val()),"tell":String($("#tell").val())}),
+                type: "POST",
+                success: function (data, textStatus, jqXHR) {
+                    console.log("ajax req " + textStatus);
+                    console.log("ajax req data " + data);
+                   // callSuccess(data);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("ajax req fail" + textStatus);
+                    console.log("ajax req error " + errorThrown);
+                    //callFail();
+                }
+            }
+        )
+    });
+</script>
+</body>
+</html>

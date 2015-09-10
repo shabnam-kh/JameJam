@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-
+scale=1">
+    <title>Post UserInformation Data</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/information.js"></script>
+    <style>
+
+        .box {
+            border: 1px solid grey;
+            background-color: #d3d3d3;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #msgbox {
+            margin-top: 50px;
+        }
+
+        .fake {
+            width: 40px;
+        }
+        .all{
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="navbar navbar-default">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <a href="index.html" class="navbar-brand"><span class="bold">TTF</span></a>
+
+            <button type="button" class="navbar-toggle" data-
+                    toggle="collapse" data-target=".navbar-collapse">
+
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="get.html">Get Data</a></li>
+                <li><a class="active" href="userInfo.html">userInformation</a></li>
+                <li><a href="chillerInfo.html">chillerInformation</a></li>
+
+                <!--<li><a href="">link 3</a></li>-->
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container">
+
+
+    <form class="form-inline" role="form">
+
+        <div class="form-group">
+            <label for="ID">username : </label>
+            <input id="user" class="form-control" type="email" name="email"
+                   placeholder=" exp. username "/>
+            <label for="ID">password : </label>
+            <input id="pass" class="form-control" type="password" name="email"
+                   placeholder=" exp. 12345 "/>
+            <label for="ID">user permission : (chiller number)</label>
+            </br>
+            <table>
+                <tr>all of the chillers&nbsp<input type="checkbox" class="all" id="all" value="all"></tr>
+                <tr>
+                    <td>01&nbsp<input type="checkbox" class="checkbox" id="1" value="01"></td>
+                    <td class="fake"></td>
+                    <td>02&nbsp<input type="checkbox" class="checkbox" id="2" value="02"></td>
+                    <td class="fake"></td>
+                    <td>03&nbsp<input type="checkbox" class="checkbox" id="3" value="03"></td>
+                    <td class="fake"></td>
+                    <td>04&nbsp<input type="checkbox" class="checkbox" id="4" value="04"></td>
+                    <td class="fake"></td>
+                    <td>05&nbsp<input type="checkbox" class="checkbox" id="5" value="05"></td>
+                    <td class="fake"></td>
+                    <td>06&nbsp<input type="checkbox" class="checkbox" id="6" value="06"></td>
+                    <td class="fake"></td>
+                    <td>07&nbsp<input type="checkbox" class="checkbox" id="7" value="07"></td>
+                    <td class="fake"></td>
+                    <td>08&nbsp<input type="checkbox" class="checkbox" id="8" value="08"></td>
+                    <td class="fake"></td>
+                    <td>09&nbsp<input type="checkbox" class="checkbox" id="9" value="09"></td>
+                    <td class="fake"></td>
+                    <td>10&nbsp<input type="checkbox" class="checkbox" id="10" value="10"></td>
+                    <td class="fake"></td>
+                </tr>
+               <tr>
+                    <td>11&nbsp<input type="checkbox" class="checkbox" id="11" value="11"></td>
+                    <td class="fake"></td>
+                    <td>12&nbsp<input type="checkbox" class="checkbox" id="12" value="12"></td>
+                    <td class="fake"></td>
+                    <td>13&nbsp<input type="checkbox" class="checkbox" id="13" value="13"></td>
+                    <td class="fake"></td>
+                    <td>14&nbsp<input type="checkbox" class="checkbox" id="14" value="14"></td>
+                    <td class="fake"></td>
+                    <td>15&nbsp<input type="checkbox" class="checkbox" id="15" value="15"></td>
+                    <td class="fake"></td>
+                    <td>16&nbsp<input type="checkbox" class="checkbox" id="16" value="16"></td>
+                    <td class="fake"></td>
+                    <td>17&nbsp<input type="checkbox" class="checkbox" id="17" value="17"></td>
+                    <td class="fake"></td>
+                    <td>18&nbsp<input type="checkbox" class="checkbox" id="18" value="18"></td>
+                    <td class="fake"></td>
+                    <td>19&nbsp<input type="checkbox" class="checkbox" id="19" value="19"></td>
+                    <td class="fake"></td>
+                    <td>20&nbsp<input type="checkbox" class="checkbox" id="20" value="20"></td>
+                    <td class="fake"></td>
+                </tr>
+       <tr>
+                    <td>21&nbsp<input type="checkbox" class="checkbox" id="21" value="01"></td>
+                    <td class="fake"></td>
+                    <td>22&nbsp<input type="checkbox" class="checkbox" id="22" value="02"></td>
+                    <td class="fake"></td>
+                    <td>23&nbsp<input type="checkbox" class="checkbox" id="23" value="03"></td>
+                    <td class="fake"></td>
+                    <td>24&nbsp<input type="checkbox" class="checkbox" id="24" value="04"></td>
+                    <td class="fake"></td>
+                    <td>25&nbsp<input type="checkbox" class="checkbox" id="25" value="05"></td>
+                    <td class="fake"></td>
+                    <td>26&nbsp<input type="checkbox" class="checkbox" id="26" value="06"></td>
+                    <td class="fake"></td>
+                    <td>27&nbsp<input type="checkbox" class="checkbox" id="27" value="07"></td>
+                    <td class="fake"></td>
+                    <td>28&nbsp<input type="checkbox" class="checkbox" id="28" value="08"></td>
+                    <td class="fake"></td>
+                    <td>29&nbsp<input type="checkbox" class="checkbox" id="29" value="09"></td>
+                    <td class="fake"></td>
+                    <td>30&nbsp<input type="checkbox" class="checkbox" id="30" value="30"></td>
+                    <td class="fake"></td>
+                </tr>
+          <tr>
+                    <td>31&nbsp<input type="checkbox" class="checkbox" id="31" value="31"></td>
+                    <td class="fake"></td>
+                    <td>32&nbsp<input type="checkbox" class="checkbox" id="32" value="32"></td>
+                    <td class="fake"></td>
+                    <td>33&nbsp<input type="checkbox" class="checkbox" id="33" value="33"></td>
+                    <td class="fake"></td>
+                    <td>34&nbsp<input type="checkbox" class="checkbox" id="34" value="34"></td>
+                    <td class="fake"></td>
+                    <td>35&nbsp<input type="checkbox" class="checkbox" id="35" value="35"></td>
+                    <td class="fake"></td>
+                    <td>36&nbsp<input type="checkbox" class="checkbox" id="36" value="36"></td>
+                    <td class="fake"></td>
+                    <td>37&nbsp<input type="checkbox" class="checkbox" id="37" value="37"></td>
+                    <td class="fake"></td>
+                    <td>38&nbsp<input type="checkbox" class="checkbox" id="38" value="38"></td>
+                    <td class="fake"></td>
+                    <td>39&nbsp<input type="checkbox" class="checkbox" id="39" value="39"></td>
+                    <td class="fake"></td>
+                    <td>40&nbsp<input type="checkbox" class="checkbox" id="40" value="40"></td>
+                    <td class="fake"></td>
+                </tr>
+           <tr>
+                    <td>41&nbsp<input type="checkbox" class="checkbox" id="41" value="41"></td>
+                    <td class="fake"></td>
+                    <td>42&nbsp<input type="checkbox" class="checkbox" id="42" value="42"></td>
+                    <td class="fake"></td>
+                    <td>43&nbsp<input type="checkbox" class="checkbox" id="43" value="43"></td>
+                    <td class="fake"></td>
+                    <td>44&nbsp<input type="checkbox" class="checkbox" id="44" value="44"></td>
+                    <td class="fake"></td>
+                    <td>45&nbsp<input type="checkbox" class="checkbox" id="45" value="45"></td>
+                    <td class="fake"></td>
+                    <td>46&nbsp<input type="checkbox" class="checkbox" id="46" value="46"></td>
+                    <td class="fake"></td>
+                    <td>47&nbsp<input type="checkbox" class="checkbox" id="47" value="47"></td>
+                    <td class="fake"></td>
+                    <td>48&nbsp<input type="checkbox" class="checkbox" id="48" value="48"></td>
+                    <td class="fake"></td>
+                    <td>49&nbsp<input type="checkbox" class="checkbox" id="49" value="49"></td>
+                    <td class="fake"></td>
+                    <td>50&nbsp<input type="checkbox" class="checkbox" id="50" value="50"></td>
+                    <td class="fake"></td>
+                </tr>
+            </table>
+
+            <input id="postReq" type="button" class="btn btn-success" value="Post Data"/>
+        </div>
+
+
+    </form>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files
+as needed -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+//   $("#all").click(function(){
+//        //console.log("attention "+$("#all").is(":checked"));
+//        if($("#all").is(":checked")){
+//                    console.log("select all chillers");
+//        $(".checkbox").attr("checked",true);
+//        }else{
+//              console.log("cancel chillers ");
+//        $(".checkbox").attr("checked",false);
+//        }
+//
+//    })
+
+    var username;
+    var password;
+//    var permission=[];
+    $("#postReq").click(function () {
+//        for(var i=1;i<50;i++){
+//            if($("#"+i).is(":checked")){
+//
+//            }
+//        }
+        username = $("#user").val();
+        password = $("#pass").val();
+        console.log("post data to server data base");
+//        $.post(
+//              baseUrl+"/auth",
+//               {"user":username,"pass":password},
+//              function(resp){
+//                  //$("#msgbox").append(resp+"<br>");
+//                  //alert(resp);
+//              }
+//      );
+        $.ajax(
+                {
+                    url: baseUrl + "/auth",
+                    data: JSON.stringify({"user": String(username), "pass": String(password)}),
+                    type: "POST",
+                    success: function (data, textStatus, jqXHR) {
+                        console.log("ajax req " + textStatus);
+                        console.log("ajax req data " + data);
+                        // callSuccess(data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log("ajax req fail" + textStatus);
+                        console.log("ajax req error " + errorThrown);
+                        //callFail();
+                    }
+                }
+        )
+    });
+</script>
+</body>
+</html>
