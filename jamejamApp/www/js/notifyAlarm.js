@@ -16,6 +16,7 @@ document.addEventListener('deviceready', function () {
             var JsonData = JSON.parse(data);
 
             var alarmData = JsonData.Alarm;
+            sessionStorage.setItem("alarmData",alarmData);
             var digi = alarmData.split(",");
             console.log("alarm data is  " + digi);
             var flag = digi.indexOf("1");

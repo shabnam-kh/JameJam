@@ -102,13 +102,13 @@
     <div class="alert alert-success" role="alertdialog" style="display: none">successful login</div>
 </div>
 <script>
-        $(document).ready(function(){
-            sessionStorage.setItem("alarm","active");
-        });
+          //    $(document).ready(function(){
+//        $(".chillerBtn").prop('disabled', true);
+//    });
 
-    function login() {
-        $(".alert-success").hide();
-        $(".alert-danger").hide();
+    function login(){
+            $(".alert-success").hide();
+                $(".alert-danger").hide();
         console.log("login in process");
 //        $.get(
 //        baseUrl+"/auth",
@@ -126,41 +126,46 @@
 //})
         //TODO success and error
         $.ajax(
-                {
-                    url: serverURL + "/auth",
-                    data: {user: $("#username").val(), pass: $("#password").val()},
-                    success: function (data, textStatus, jqXHR) {
-                        setID(data, function () {
-                            $(".alert-success").show();
-                            location.href = "chillerList.html";
-                        })
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        $(".alert-danger").show();
-                    }
-                }
-        )
-    }
-    ;
-    function setID(data, callback) {
-        sessionStorage.setItem('secureID', data);
-        callback();
-    }
-    function warn() {
-        alert("you should login first");
-    }
-    //    function getActiveChiller(val){
-    //        sessionStorage.setItem('activeChiller', val);
-    //        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
-    //        $.get(
-    //        baseUrl+"/chillerInfo",
-    //                {id:getChillerNumber(val)},
-    //        function( rawdata, textStatus, jqXHR) {
-    //             sessionStorage.setItem('chillerInfo', rawdata);
-    //            location.href='templates/chillerInfo.html';
-    //});
-    //
-    //    }
+             {
+                 url: serverURL+"/auth",
+                 data:{user:$("#username").val(),pass:$("#password").val()},
+                 success: function (data, textStatus, jqXHR) {
+                     setID(data, function () {
+                         $(".alert-success").show();
+                        location.href="chillerList.html";
+                     })
+                 },
+                 error: function (jqXHR, textStatus, errorThrown)
+                 {
+                     $(".alert-danger").show();
+                 }
+     }
+         )
+    };
+function setID(data,callback){
+    var jData=JSON.parse(data);
+    sessionStorage.setItem('secureID',jData.sID);
+    var tmp=jData.permission;
+    var array = tmp.split(',');
+    sessionStorage.setItem('userPermission',array);
+
+    callback();
+}
+function warn(){
+    alert("you should login first");
+}
+//    function getActiveChiller(val){
+//        sessionStorage.setItem('activeChiller', val);
+//        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
+//        $.get(
+//        baseUrl+"/chillerInfo",
+//                {id:getChillerNumber(val)},
+//        function( rawdata, textStatus, jqXHR) {
+//             sessionStorage.setItem('chillerInfo', rawdata);
+//            location.href='templates/chillerInfo.html';
+//});
+//
+//    }
 </script>
 </body>
 </html>
