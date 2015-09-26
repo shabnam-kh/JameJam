@@ -1,14 +1,12 @@
 /**
  * Created by klappo on 8/29/15.
  */
-
 document.addEventListener('deviceready', function () {
-
+    var alarmID=1;
     checkAlarm();
     var sendReqToServer = setInterval(function () {
-
-
-        checkOldAlarm();
+        alarmID++;
+        checkOldAlarm(alarmID);
 
     }, 5000);
 
@@ -29,18 +27,20 @@ document.addEventListener('deviceready', function () {
         ;
     });
 
-    function notifyAlarm() {
+    function notifyAlarm(id,callback) {
         console.log("call notification plugin");
         // Schedule notification for tomorrow to remember about the meeting
         cordova.plugins.notification.local.schedule({
-            id: 11,
+            id: id,
             title: "Alarm Notification",
             text: "WARNING !!! chiller has alarm !!!"
         });
+        callback(id);
 
     }
 
     function checkAlarm() {
+        id=1;
         var alarm = sessionStorage.getItem("alarm");
         console.log("storage alarm is " + alarm);
         if (alarm == "active") {
@@ -59,7 +59,11 @@ document.addEventListener('deviceready', function () {
                     console.log("NO ALARM");
                 } else {
                     console.log("ALARM NOTIFICATION");
-                    notifyAlarm();
+                    notifyAlarm(1,function(){
+                        cordova.plugins.notification.local.cancel(1, function(){
+                            console.log("auto cancel notification");
+                        });
+                    });
                 }
             });
         } else {
@@ -68,8 +72,8 @@ document.addEventListener('deviceready', function () {
 
     }
 
-    function checkOldAlarm() {
-        var alarmOldData;
+    function checkOldAlarm(id) {
+
         var alarm = sessionStorage.getItem("alarm");
         console.log("storage alarm is " + alarm);
         if (alarm == "active") {
@@ -81,25 +85,48 @@ document.addEventListener('deviceready', function () {
                 var alarmData = JsonData.Alarm;
                 var digi = alarmData.split(",");
                 console.log("alarm data is  " + digi);
-                getOldDataAlarm(function (dd) {
-                    alarmOldData = dd;
-                    sessionStorage.setItem("alarmData", digi);
-                    for (var i = 0; i < digi.length; i++) {
-                        var flag = digi.indexOf("1");
-                        if (flag == -1) {
-                            console.log("NO ALARM");
-                        } else {
-                            console.log("ALARM NOTIFICATION");
-                            if (digi[flag] == alarmOldData[flag]) {
-                                console.log("alarm expired");
+                var flag = digi.indexOf("1");
+                if(flag!=-1){
+                    getOldDataAlarm(function(dd){
+                        var alarmOldData=dd.split(",");
+                        console.log("alarm old data is "+alarmOldData);
+                        if(alarmOldData==null){
+                            setOldDataAlarm(digi,function(){});
+                                      notifyAlarm(id,function(){
+                        cordova.plugins.notification.local.cancel(id, function(){
+                            console.log("auto cancel notification");
+                        });
+                    });
+                        }else{
+                            for (var i = 0; i < digi.length; i++) {
+                                if(digi[i]!=1){continue;}
+
+                                console.log(digi[i]);
+                                console.log(alarmOldData[i]);
+                            if (digi[i] == alarmOldData[i]) {
+                                console.log("alarm expired"+i);
                             } else {
-                                notifyAlarm();
+                                setOldDataAlarm(digi,function(){});
+                                console.log("ALARM NOTIFICATION");
+                                 notifyAlarm(id,function(){
+                        cordova.plugins.notification.local.cancel(id, function(){
+                            console.log("auto cancel notification");
+                        });
+                    });
                                 break;
                             }
+//});
 
-                        }
+
                     }
-                });
+                        }
+                    });
+
+                }else{
+                    console.log("NO ALARM");
+                }
+
+
 
 
             });
@@ -110,8 +137,14 @@ document.addEventListener('deviceready', function () {
     }
 
     function getOldDataAlarm(callback) {
+        console.log("get old data");
         var data = sessionStorage.getItem("alarmData");
         callback(data);
+    }
+    function setOldDataAlarm(data,callback) {
+        console.log("set old data");
+        sessionStorage.setItem("alarmData", data);
+        callback();
     }
 
 }, false);
