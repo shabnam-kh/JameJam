@@ -40,7 +40,6 @@ document.addEventListener('deviceready', function () {
     }
 
     function checkAlarm() {
-        id=1;
         var alarm = sessionStorage.getItem("alarm");
         console.log("storage alarm is " + alarm);
         if (alarm == "active") {
@@ -88,9 +87,9 @@ document.addEventListener('deviceready', function () {
                 var flag = digi.indexOf("1");
                 if(flag!=-1){
                     getOldDataAlarm(function(dd){
-                        var alarmOldData=dd.split(",");
-                        console.log("alarm old data is "+alarmOldData);
-                        if(alarmOldData==null){
+
+                        console.log("alarm old data is "+dd);
+                        if(dd==null){
                             setOldDataAlarm(digi,function(){});
                                       notifyAlarm(id,function(){
                         cordova.plugins.notification.local.cancel(id, function(){
@@ -98,6 +97,7 @@ document.addEventListener('deviceready', function () {
                         });
                     });
                         }else{
+                            var alarmOldData=dd.split(",");
                             for (var i = 0; i < digi.length; i++) {
                                 if(digi[i]!=1){continue;}
 
