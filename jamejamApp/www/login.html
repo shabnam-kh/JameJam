@@ -98,7 +98,8 @@
     <button onclick="login();" id="loginConfirm" type="submit" class="btn btn-success">Sign in</button>
     <!--<span>&nbsp</span><a href="">Sign Up</a><span>&nbsp&nbsp&nbsp&nbsp</span><a href="">Forgot password</a>-->
 
-    <div class="alert alert-danger" role="alertdialog" style="display: none">fail login</div>
+    <div class="alert alert-danger auth" role="alertdialog" style="display: none">Unauthorized user, user not register in database</div>
+    <div class="alert alert-danger connection" role="alertdialog" style="display: none">error connecting to server</div>
     <div class="alert alert-success" role="alertdialog" style="display: none">successful login</div>
 </div>
 <script>
@@ -137,7 +138,14 @@
                  },
                  error: function (jqXHR, textStatus, errorThrown)
                  {
-                     $(".alert-danger").show();
+                     console.log(errorThrown)
+                     if(jqXHR.status==401){
+                         $(".auth").show();
+                     }else{
+                         $(".connection").show();
+                     }
+
+
                  }
      }
          )
@@ -159,13 +167,14 @@ function warn(){
 //        console.log('set activeChiller '+sessionStorage.getItem('activeChiller'));
 //        $.get(
 //        baseUrl+"/chillerInfo",
-//                {id:getChillerNumber(val)},
+//                {id:getChillerNumber(val)},ck
 //        function( rawdata, textStatus, jqXHR) {
 //             sessionStorage.setItem('chillerInfo', rawdata);
 //            location.href='templates/chillerInfo.html';
 //});
 //
 //    }
+
 </script>
 </body>
 </html>
