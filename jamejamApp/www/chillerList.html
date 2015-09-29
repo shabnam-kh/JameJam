@@ -151,7 +151,8 @@
 
 <div class="container" id="chillers">
     <!--<div class="alert alert-warning" role="button">connect</div>-->
-    <div class="alert alert-danger" role="alertdialog" style="display: none">You Are Not Log In</div>
+    <div class="alert alert-danger auth" role="alertdialog" style="display: none">Unauthorized user, you should login first</div>
+    <div class="alert alert-danger connection" role="alertdialog" style="display: none">there is no information for this chiller in database</div>
     <div class="row">
     <div class="col-md-5 box">
            <table>
@@ -432,7 +433,12 @@
                             location.href = 'templates/chillerInfo.html';
                         },
                         error: function (jqXHR, textStatus, errorThrown) {
-                            $(".alert-danger").show();
+                            console.log(errorThrown);
+                             if(jqXHR.status==401){
+                         $(".auth").show();
+                     }else{
+                         $(".connection").show();
+                     }
                         }
                     }
             )
