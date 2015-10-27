@@ -122,3 +122,19 @@ function getSecureId(callback) {
     console.log("secureID is " + sID);
     callback(sID);
 }
+
+function tempBoundsAlarm(data,chID) {
+    var tempData = data.Temp;
+        var tempArr = tempData.split(',')
+        var bound=chTempBounds[chID]
+        for(var j=0; j < tempCount; j++){
+            var lowBound=bound[j][0]
+            var upBound=bound[j][1]
+            if(tempArr[j]>=lowBound && tempArr[j]<=upBound){
+
+            }else{
+                console.log('temp num '+j+' chiller '+chID+' is out of bound')
+                alert('temp num '+j+' chiller'+chID+' is out of bound')
+            }
+        }
+}
