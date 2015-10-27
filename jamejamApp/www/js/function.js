@@ -135,6 +135,9 @@ function tempBoundsAlarm(data,chID) {
             }else{
                 console.log('temp num '+j+' chiller '+chID+' is out of bound')
                 alert('temp num '+j+' chiller'+chID+' is out of bound')
+                var id=j+1
+                $("#l" + id).css("color", 'red');
+
             }
         }
 }
